@@ -1,38 +1,28 @@
 import { writable, readable, derived } from 'svelte/store'
+import dataConfig from '$lib/data/community-config.json'
+import npaGeography from '$lib/data/npa.geojson.json'
+import data from '$lib/data/community-data.json'
+
+function assignId(metric, idx) {
+  let newElem = Object.assign({}, metric)
+  newElem.id = idx
+  return newElem
+}
 
 export let activeMetrics = writable([
-    {id: 1, title: "item1"},
-    {id: 2, title: "item2"},
-    {id: 3, title: "item3"}
+    assignId(dataConfig[1], 1),
+    assignId(dataConfig[2], 2),
+    assignId(dataConfig[3], 3)
 ])
+
+export let geography = readable({
+  npaGeography: npaGeography
+})
+
+export let metricData = readable(data)
 
 export let maxId = derived(activeMetrics, $activeMetrics => {
     return Math.max(...$activeMetrics.map(el => el.id))
 })
 
-export let metrics = readable([
-    {
-        "metric": "m1",
-        "title": "Population"
-    },
-    {
-        "metric": "m2",
-        "title": "Population"
-    },
-    {
-        "metric": "m3",
-        "title": "Population"
-    },
-    {
-        "metric": "m4",
-        "title": "Population"
-    },
-    {
-        "metric": "m5",
-        "title": "Population"
-    },
-    {
-        "metric": "m6",
-        "title": "Population"
-    }
-])
+export let metrics = readable(dataConfig)
