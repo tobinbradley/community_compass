@@ -1,23 +1,37 @@
 <script>
+  export let metric
 
-export let years = [2000, 2010, 2015, 2020]
+  const max = Math.max(...metric.years)
+  const min = Math.min(...metric.years)
+  let year = max
 
-function handleChange() {
-  let closest = getClosest(years, this.value);
-  this.value = document.querySelector("#rangevalue").value = closest;
-}
+  function handleChange() {
+    year = getClosest(metric.years, year)
+    // gotta bubble up year somehow
+  }
 
-function getClosest(arr, val) {
-	return arr.reduce(function (prev, curr) {
-    return (Math.abs(curr - val) < Math.abs(prev - val) ? curr : prev);
-  });
-}
+  function getClosest(arr, val) {
+    return arr.reduce(function (prev, curr) {
+      return Math.abs(curr - val) < Math.abs(prev - val) ? curr : prev
+    })
+  }
 </script>
 
-<input id="yearslider" class="range blue" type="range" :min={Math.min(...years)} :value={Math.max(...years)} :max={Math.max(...years)} step="1" list="ticks">
-<datalist id="ticks" on:change={handleChange}>
-    {#each years as year}
+{#if metric.years.length > 1 }
+<input
+  type="range"
+  {min}
+  bind:value={year}
+  {max}
+  step="1"
+  list="ticks"
+  on:input={handleChange}
+/>
+<datalist id="ticks">
+  {#each metric.years as year}
     <option>{year}</option>
-    {/each}
+  {/each}
 </datalist>
-<output id="rangevalue">2000</output>
+{/if}
+
+<span>{year}</span>
