@@ -14,13 +14,13 @@
     "postcss": "^8.3.9",
     "postcss-load-config": "^3.1.0",
     "svelte": "^3.42.6",
-    "svelte-dnd-action": "^0.9.11",
     "svelte-preprocess": "^4.9.8",
     "tailwindcss": "^2.2.16"
   },
   "type": "module",
   "dependencies": {
     "d3-scale-chromatic": "^3.0.0",
-    "maplibre-gl": "^2.0.0-pre.1"
+    "maplibre-gl": "^2.0.0-pre.1",
+    "sortablejs": "^1.14.0"
   }
 }
