@@ -6,13 +6,11 @@ Coming soon! (maybe!)
 
 ## TODO
 
-* Sidebar filter
-* Sidebar formatting
-* Card bottom button bar
-  * Map
-  * Chart
-  * Table
-  * Drop down
-  * Close
-* Real metric meta
-* Card title
+* Map
+* Export GeoJSON
+* Export CSV
+* Table
+* Meta
+* Modal
+* PWA
+* Chart
