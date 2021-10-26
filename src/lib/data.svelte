@@ -1,5 +1,5 @@
 <script>
-  import { activeMetrics, maxId, metrics } from "$lib/store"
+  import { cards, metrics, maxId } from "$lib/store"
 
   let isOpen = false
   let filterInput
@@ -24,13 +24,13 @@
   function handleAddMetric(metric) {
     let newElem = Object.assign({}, metric)
     newElem.id = $maxId + 1
-    $activeMetrics.push(newElem)
-    $activeMetrics = $activeMetrics
+    $cards.push(newElem)
+    $cards = $cards
   }
 </script>
 
 <aside
-  class="transform top-0 right-0 w-64 px-2 py-4 bg-white fixed h-full drop-shadow-xl shadow-2xl overflow-auto ease-in-out transition-all duration-300 z-30 {isOpen
+  class="transform top-0 right-0 w-64 px-2 py-4 bg-white fixed h-full drop-shadow-xl shadow-2xl overflow-auto ease-in-out transition-all duration-300 z-100 {isOpen
     ? 'translate-x-0'
     : 'translate-x-full'}"
 >
@@ -60,7 +60,7 @@
 </aside>
 
 <button
-  class="bg-pink-600 p-4 mr-2 absolute top-20 shadow z-30 rounded-full hover:opacity-100 ease-in-out transition-all duration-300
+  class="bg-pink-600 p-4 mr-2 fixed top-20 shadow z-100 rounded-full hover:opacity-100 ease-in-out transition-all duration-300
     {isOpen ? 'right-64 open' : 'right-0 opacity-70'}"
   on:click={handleOpenToggle}
 >

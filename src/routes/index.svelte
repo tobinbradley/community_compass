@@ -11,5 +11,3 @@ import Data from '$lib/data.svelte'
     <Footer />
     <Data />
 </div>
-
-

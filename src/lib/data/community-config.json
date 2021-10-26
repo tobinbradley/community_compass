@@ -1,5 +1,61 @@
 [
   {
+    "metric": "52",
+    "title": "311 Requests",
+    "years": [
+      "2013",
+      "2015",
+      "2016"
+    ],
+    "label": "Calls per 100 People"
+  },
+  {
+    "metric": "43",
+    "title": "Adopt-a-Stream Participation",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2021"
+    ]
+  },
+  {
+    "metric": "71",
+    "title": "Adopt-a-Street Participation",
+    "years": [
+      "2017",
+      "2021"
+    ]
+  },
+  {
+    "metric": "57",
+    "title": "Age of Death",
+    "years": [
+      "2010",
+      "2012",
+      "2014",
+      "2016"
+    ],
+    "label": "Years"
+  },
+  {
+    "metric": "2",
+    "title": "Age of Residents",
+    "years": [
+      "2019"
+    ],
+    "label": "Years"
+  },
+  {
+    "metric": "50",
+    "title": "Arts and Culture Participation",
+    "years": [
+      "2013"
+    ]
+  },
+  {
     "metric": "34",
     "title": "Bicycle Friendliness",
     "years": [
@@ -21,6 +77,62 @@
       "2014",
       "2016"
     ]
+  },
+  {
+    "metric": "61",
+    "title": "Calls for Animal Care and Control",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "label": "Calls per 1,000 People"
+  },
+  {
+    "metric": "42",
+    "title": "Commercial Building Age",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020"
+    ],
+    "label": "Years"
+  },
+  {
+    "metric": "19",
+    "title": "Commercial Construction",
+    "years": [
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "label": "Permits per 100 Acres"
+  },
+  {
+    "metric": "41",
+    "title": "Commercial Space",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020"
+    ],
+    "label": "Average Square Feet"
   },
   {
     "metric": "10",
@@ -56,8 +168,34 @@
     "label": "Crimes per 1,000 People"
   },
   {
+    "metric": "60",
+    "title": "Disorder-related Calls",
+    "years": [
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "label": "Calls per 1,000 People"
+  },
+  {
     "metric": "20",
     "title": "Education Level - Bachelor's Degree",
+    "years": [
+      "2019"
+    ]
+  },
+  {
+    "metric": "39",
+    "title": "Education Level - High School Diploma",
+    "years": [
+      "2019"
+    ]
+  },
+  {
+    "metric": "38",
+    "title": "Employment",
     "years": [
       "2019"
     ]
@@ -70,6 +208,26 @@
       "2013"
     ],
     "label": "Kilowatt hours per month per unit"
+  },
+  {
+    "metric": "77",
+    "title": "Energy Consumption - Natural Gas",
+    "years": [
+      "2013"
+    ],
+    "label": "Therms per month per unit"
+  },
+  {
+    "metric": "78",
+    "title": "Fire Calls for Service",
+    "years": [
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "label": "Calls per 1,000 People"
   },
   {
     "metric": "80",
@@ -97,6 +255,13 @@
     ]
   },
   {
+    "metric": "29",
+    "title": "Home Ownership",
+    "years": [
+      "2019"
+    ]
+  },
+  {
     "metric": "76",
     "title": "Home Sales Price",
     "years": [
@@ -114,11 +279,167 @@
     ]
   },
   {
+    "metric": "7",
+    "title": "Housing Age",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020"
+    ],
+    "label": "Years"
+  },
+  {
+    "metric": "82",
+    "title": "Housing Assistance – Development-Based",
+    "years": [
+      "2013",
+      "2017"
+    ]
+  },
+  {
+    "metric": "68",
+    "title": "Housing Code Violations",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2018",
+      "2020"
+    ],
+    "label": "Violations per 100 Units"
+  },
+  {
+    "metric": "5",
+    "title": "Housing Density",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020"
+    ],
+    "label": "Units per Acre"
+  },
+  {
+    "metric": "6",
+    "title": "Housing Size",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020"
+    ],
+    "label": "Average Sqft"
+  },
+  {
+    "metric": "4",
+    "title": "Impervious Surface",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ]
+  },
+  {
+    "metric": "75",
+    "title": "Job Density",
+    "years": [
+      "2002",
+      "2003",
+      "2004",
+      "2005",
+      "2006",
+      "2007",
+      "2008",
+      "2009",
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "label": "Jobs per Acre"
+  },
+  {
+    "metric": "51",
+    "title": "Library Card Holders",
+    "years": [
+      "2013",
+      "2015"
+    ]
+  },
+  {
     "metric": "33",
     "title": "Long Commute",
     "years": [
       "2019"
     ]
+  },
+  {
+    "metric": "55",
+    "title": "Low Birthweight",
+    "years": [
+      "2012",
+      "2014",
+      "2016"
+    ]
+  },
+  {
+    "metric": "72",
+    "title": "Municipal Board/Committee Participation",
+    "years": [
+      "2017",
+      "2018"
+    ],
+    "label": "Residents serving per 1,000 People"
+  },
+  {
+    "metric": "73",
+    "title": "Neighborhood Organizations",
+    "years": [
+      "2017"
+    ],
+    "label": "Organizations"
+  },
+  {
+    "metric": "67",
+    "title": "Neighborhood School Attendance ",
+    "years": [
+      "2011",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ]
+  },
+  {
+    "metric": "32",
+    "title": "Nuisance Violations",
+    "years": [
+      "2013",
+      "2015",
+      "2016"
+    ],
+    "label": "Violations per 100 Units"
   },
   {
     "metric": "13",
@@ -144,9 +465,65 @@
       "2015",
       "2016",
       "2017",
-      "2018"
+      "2018",
+      "2020"
     ],
     "label": "People per Acre"
+  },
+  {
+    "metric": "56",
+    "title": "Prenatal Care",
+    "years": [
+      "2012",
+      "2014",
+      "2016"
+    ]
+  },
+  {
+    "metric": "21",
+    "title": "Proximity to Early Care and Education",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2017"
+    ]
+  },
+  {
+    "metric": "79",
+    "title": "Proximity to Financial Services",
+    "years": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ]
+  },
+  {
+    "metric": "28",
+    "title": "Proximity to Low-Cost Health Care",
+    "years": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ]
+  },
+  {
+    "metric": "74",
+    "title": "Proximity to Public Outdoor Recreation",
+    "years": [
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ]
   },
   {
     "metric": "36",
@@ -163,11 +540,33 @@
     ]
   },
   {
+    "metric": "22",
+    "title": "Proximity to School-Age Care",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2017"
+    ]
+  },
+  {
     "metric": "45",
     "title": "Proximity to a Grocery Store",
     "years": [
       "2011",
       "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ]
+  },
+  {
+    "metric": "46",
+    "title": "Proximity to a Pharmacy",
+    "years": [
+      "2011",
+      "2013",
       "2015",
       "2016",
       "2017",
@@ -184,12 +583,30 @@
     ]
   },
   {
+    "metric": "17",
+    "title": "Race/Ethnicity - All Other Races",
+    "years": [
+      "2000",
+      "2010",
+      "2020"
+    ]
+  },
+  {
+    "metric": "16",
+    "title": "Race/Ethnicity - Asian",
+    "years": [
+      "2000",
+      "2010",
+      "2020"
+    ]
+  },
+  {
     "metric": "15",
     "title": "Race/Ethnicity - Black or African American",
     "years": [
       "2000",
       "2010",
-      "2019"
+      "2020"
     ]
   },
   {
@@ -198,7 +615,7 @@
     "years": [
       "2000",
       "2010",
-      "2019"
+      "2020"
     ]
   },
   {
@@ -207,13 +624,165 @@
     "years": [
       "2000",
       "2010",
-      "2019"
+      "2020"
     ]
   },
   {
     "metric": "40",
     "title": "Rental Costs",
     "years": [
+      "2019"
+    ]
+  },
+  {
+    "metric": "53",
+    "title": "Rental Houses",
+    "years": [
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ]
+  },
+  {
+    "metric": "83",
+    "title": "Residential Demolitions",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "label": "Demos per 1,000 units"
+  },
+  {
+    "metric": "69",
+    "title": "Residential Foreclosures",
+    "years": [
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ]
+  },
+  {
+    "metric": "8",
+    "title": "Residential New Construction",
+    "years": [
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "label": "Units per 100 Acres"
+  },
+  {
+    "metric": "31",
+    "title": "Residential Occupancy",
+    "years": [
+      "2019"
+    ]
+  },
+  {
+    "metric": "23",
+    "title": "Residential Recycling",
+    "years": [
+      "2013"
+    ]
+  },
+  {
+    "metric": "9",
+    "title": "Residential Renovation",
+    "years": [
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "label": "Units per 100 Acres"
+  },
+  {
+    "metric": "24",
+    "title": "Residential Solid Waste",
+    "years": [
+      "2013"
+    ],
+    "label": "Pounds per Day per unit"
+  },
+  {
+    "metric": "25",
+    "title": "Residential Solid Waste Diversion",
+    "years": [
+      "2013"
+    ]
+  },
+  {
+    "metric": "70",
+    "title": "Sidewalk Availability",
+    "years": [
+      "2015"
+    ]
+  },
+  {
+    "metric": "30",
+    "title": "Single-Family Housing",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020"
+    ]
+  },
+  {
+    "metric": "35",
+    "title": "Street Connectivity",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "label": "Index Value (1-3)"
+  },
+  {
+    "metric": "66",
+    "title": "Student Absenteeism",
+    "years": [
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ]
+  },
+  {
+    "metric": "62",
+    "title": "Test Proficiency - Elementary School",
+    "years": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
       "2019"
     ]
   },
@@ -230,10 +799,51 @@
     ]
   },
   {
+    "metric": "63",
+    "title": "Test Proficiency - middle School",
+    "years": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ]
+  },
+  {
+    "metric": "44",
+    "title": "Transit Ridership",
+    "years": [
+      "2013",
+      "2014",
+      "2015"
+    ],
+    "label": "Boardings per stop"
+  },
+  {
     "metric": "3",
     "title": "Tree Canopy",
     "years": [
       "2012"
+    ]
+  },
+  {
+    "metric": "49",
+    "title": "Tree Canopy - Residential",
+    "years": [
+      "2012"
+    ]
+  },
+  {
+    "metric": "11",
+    "title": "Vacant Land",
+    "years": [
+      "2011",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018"
     ]
   },
   {

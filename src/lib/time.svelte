@@ -1,13 +1,13 @@
 <script>
-  export let metric
+  export let years
 
-  const max = Math.max(...metric.years)
-  const min = Math.min(...metric.years)
+  const max = Math.max(...years)
+  const min = Math.min(...years)
+
   let year = max
 
   function handleChange() {
-    year = getClosest(metric.years, year)
-    // gotta bubble up year somehow
+    year = getClosest(years, year)
   }
 
   function getClosest(arr, val) {
@@ -17,7 +17,8 @@
   }
 </script>
 
-{#if metric.years.length > 1 }
+
+{#if years.length > 1 }
 <input
   type="range"
   {min}
@@ -28,7 +29,7 @@
   on:input={handleChange}
 />
 <datalist id="ticks">
-  {#each metric.years as year}
+  {#each years as year}
     <option>{year}</option>
   {/each}
 </datalist>
