@@ -17,8 +17,10 @@
   }
 </script>
 
-
+<div class="flex">
+  <div class="flex-grow px-4">
 {#if years.length > 1 }
+
 <input
   type="range"
   {min}
@@ -27,12 +29,16 @@
   step="1"
   list="ticks"
   on:input={handleChange}
+  class="w-full"
 />
 <datalist id="ticks">
   {#each years as year}
     <option>{year}</option>
   {/each}
 </datalist>
-{/if}
 
-<span>{year}</span>
+{/if}
+</div>
+
+<div>{year}</div>
+</div>

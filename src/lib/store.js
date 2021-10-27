@@ -20,6 +20,6 @@ export let maxId = derived(cards, $cards => {
 
 export let metrics = readable(dataConfig)
 
-cards.subscribe(value => {
-  console.log(value)
-})
+// cards.subscribe(value => {
+//   console.log(value)
+// })

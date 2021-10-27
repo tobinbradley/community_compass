@@ -30,11 +30,14 @@
 
 <div
   class="bg-white shadow-lg rounded-lg flex flex-col z-0"
-  style="height: 500px;"
+  style="min-height: 500px;"
 >
   <!-- Title -->
-  <div class="p-2 draghandle" style="cursor: grab">
+  <div class="pt-2 draghandle" style="cursor: grab">
     <h2 class="text-bold text-center">{card.title}</h2>
+    {#if (card.label)}
+    <h3 class="text-center text-sm text-gray-800">{card.label}</h3>
+    {/if}
   </div>
 
   <!-- content area -->
@@ -43,10 +46,12 @@
     <Map {card} {data} {geography} />
   {/if}
   {#if mode === "c"}
-    <Chart {card} />
+    <div class="{mode !== 'c' ? 'hidden' : ''}">
+    <Chart metric={card} />
+    </div>
   {/if}
   {#if mode === "t"}
-    <Tabular {card} />
+    <Tabular metric={card} />
   {/if}
   </div>
 
