@@ -29,6 +29,19 @@
   }
 </script>
 
+{#if (isOpen)}
+<div class="fixed top-0 left-0 right-0 bottom-0 bg-gray-400 opacity-60" on:click={handleOpenToggle}></div>
+{/if}
+
+<button
+  class="bg-pink-600 p-4 mr-2 right-0 fixed top-20 shadow-lg hover:shadow hover:bg-pink-700 transition-all rounded-full inline-block"
+  on:click={handleOpenToggle}
+>
+  <svg class="w-6 h-6 text-white fill-current"
+    ><use xlink:href="#icon-plus" /></svg
+  >
+</button>
+
 <aside
   class="transform top-0 right-0 w-64 px-2 py-4 bg-white fixed h-full drop-shadow-xl shadow-2xl overflow-auto ease-in-out transition-all duration-300 z-100 {isOpen
     ? 'translate-x-0'
@@ -59,44 +72,3 @@
   </div>
 </aside>
 
-<button
-  class="bg-pink-600 p-4 mr-2 fixed top-20 shadow z-100 rounded-full hover:opacity-100 ease-in-out transition-all duration-300
-    {isOpen ? 'right-64 open' : 'right-0 opacity-70'}"
-  on:click={handleOpenToggle}
->
-  <svg class="w-6 h-6 text-white fill-current"
-    ><use xlink:href="#icon-plus" /></svg
-  >
-</button>
-
-<svg
-  aria-hidden="true"
-  style="position: absolute; width: 0; height: 0; overflow: hidden;"
-  version="1.1"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
->
-  <defs>
-    <symbol id="icon-plus" viewBox="0 0 32 32">
-      <path
-        d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"
-      />
-    </symbol>
-  </defs>
-</svg>
-
-<style>
-  @keyframes spin {
-    0% {
-      transform: rotate(45deg);
-    }
-    100% {
-      transform: rotate(-315deg);
-    }
-  }
-  .open svg {
-    animation: spin 400ms ease-out;
-    animation-iteration-count: 1;
-    transform: rotate(45deg);
-  }
-</style>
