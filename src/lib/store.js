@@ -1,5 +1,5 @@
 import { writable, readable, derived } from 'svelte/store'
-import dataConfig from '$lib/data/community-config.json'
+import dataConfig from '$lib/data/config.json'
 
 
 function assignId(metric, idx) {

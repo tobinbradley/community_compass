@@ -15,8 +15,7 @@
   // get data for min/max for colors
   let mapData = []
   Object.values(data).forEach(valArray => {
-    mapData.push(...valArray.filter(val => val !== null).map(val => val.replace(/[^\d.-]/g, '')
-    ))
+    mapData.push(...valArray.filter(val => val !== null))
   })
   let dataStats = {"min" : Math.min(...mapData), "max": Math.max(...mapData)}
 
@@ -56,7 +55,6 @@
     if (!val) {
       return "rgba(0,0,0,0)"
     } else {
-      val = Number(val.replace(/[^\d.-]/g, ''))
       val = val - dataStats.min
       val = ((val * 100) / dataStats.max) / 100
       return interpolate(val)
