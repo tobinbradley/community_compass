@@ -1,13 +1,18 @@
 <script>
+  import { createEventDispatcher } from "svelte"
+
   export let years
+  export let year = Math.max(...years)
 
   const max = Math.max(...years)
   const min = Math.min(...years)
-
-  let year = max
+  const dispatch = createEventDispatcher()
 
   function handleChange() {
     year = getClosest(years, year)
+    dispatch("changeYear", {
+      year: getClosest(years, year),
+    })
   }
 
   function getClosest(arr, val) {
@@ -17,28 +22,19 @@
   }
 </script>
 
-<div class="flex">
-  <div class="flex-grow px-4">
-{#if years.length > 1 }
-
-<input
-  type="range"
-  {min}
-  bind:value={year}
-  {max}
-  step="1"
-  list="ticks"
-  on:input={handleChange}
-  class="w-full"
-/>
-<datalist id="ticks">
-  {#each years as year}
-    <option>{year}</option>
-  {/each}
-</datalist>
-
-{/if}
-</div>
-
-<div>{year}</div>
+<div class="flex pb-1">
+  <div class="flex-grow flex px-4 items-center">
+    {#if years.length > 1}
+      <input
+        type="range"
+        {min}
+        bind:value={year}
+        {max}
+        step="1"
+        on:input={handleChange}
+        class="w-full"
+      />
+    {/if}
+  </div>
+  <div class="flex items-center">{year}</div>
 </div>

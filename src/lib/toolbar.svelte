@@ -6,6 +6,7 @@
 
   export let idx
   export let mode = "m"
+  export let metric
 
   let isOpen = false
 
@@ -40,10 +41,11 @@
         title="Map"
         on:click={() => handleModeChange("m")}
       >
-        <svg class="w-5 h-5 text-white fill-current"
+        <svg class="w-4 h-4 text-white fill-current"
           ><use xlink:href="#icon-map" /></svg
         >
       </button>
+      {#if (metric.years.length > 1)}
       <button
         class="bg-gray-400 hover:bg-gray-500 transition-colors py-2 px-3 rounded-none {mode ===
         'c'
@@ -52,10 +54,11 @@
         title="Chart"
         on:click={() => handleModeChange("c")}
       >
-        <svg class="w-5 h-5 text-white fill-current"
+        <svg class="w-4 h-4 text-white fill-current"
           ><use xlink:href="#icon-stats-dots" /></svg
         >
       </button>
+      {/if}
       <button
         class="bg-gray-400 hover:bg-gray-500 transition-colors py-2 px-3 rounded-none {mode ===
         't'
@@ -64,7 +67,7 @@
         title="Table"
         on:click={() => handleModeChange("t")}
       >
-        <svg class="w-5 h-5 text-white fill-current">
+        <svg class="w-4 h-4 text-white fill-current">
           <use xlink:href="#icon-table2" />
         </svg>
       </button>
@@ -75,34 +78,41 @@
           title="Menu"
           on:click={handleOpen}
         >
-          <svg class="w-5 h-5 text-white fill-current"
+          <svg class="w-4 h-4 text-white fill-current"
             ><use xlink:href="#icon-menu" /></svg
           >
         </button>
 
         <div
-          class="absolute right-0 bottom-11 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none {isOpen
+          class="absolute menu right-0 top-10 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none {isOpen
             ? ''
             : 'hidden'}"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
-          tabindex="-1"
         >
           <div class="py-1" role="none">
             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
             <button
-              class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300
-              transition-colors whitespace-nowrap" role="menuitem" tabindex="-1"
+             role="menuitem" tabindex="-1"
               id="menu-item-0">Download GeoJSON
           </button>
-            <button class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300
-              transition-colors whitespace-nowrap" role="menuitem" tabindex="-1"
+            <button role="menuitem" tabindex="-1"
               id="menu-item-1">Download CSV
             </button>
+            <button role="menuitem" tabindex="-1"
+              id="menu-item-1">Download Summary CSV
+            </button>
             <button
-              class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300
-              transition-colors whitespace-nowrap" role="menuitem" tabindex="-1"
+             role="menuitem" tabindex="-1"
+            id="menu-item-2">Download Map
+          </button>
+          <button
+          role="menuitem" tabindex="-1"
+          id="menu-item-2">Download Chart
+        </button>
+            <button
+             role="menuitem" tabindex="-1"
               id="menu-item-2">View Metadata
             </button>
           </div>
@@ -115,9 +125,16 @@
         title="Close"
         on:click={handleRemoveMetric}
       >
-        <svg class="w-5 h-5 text-white fill-current"
-          ><use xlink:href="#icon-cross" /></svg
+        <svg class="w-4 h-4 text-white fill-current"
+          ><use xlink:href="#icon-cancel" /></svg
         >
       </button>
     </div>
   </div>
+
+
+  <style>
+    .menu button {
+      @apply text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 transition-colors whitespace-nowrap w-full text-left;
+    }
+  </style>

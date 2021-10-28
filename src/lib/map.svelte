@@ -4,13 +4,17 @@
   import { onMount } from "svelte"
   import { browser } from "$app/env"
   import { interpolateYlGnBu as interpolate } from 'd3-scale-chromatic'
+  import { createEventDispatcher } from 'svelte'
 
   export let card
   export let data
   export let geography
+  export let year
+
   let mapComponent
   let map
   let geojson
+  const dispatch = createEventDispatcher()
 
   // get data for min/max for colors
   let mapData = []
@@ -22,10 +26,7 @@
   onMount(async () => {
     if (browser) {
       const L = await import("leaflet")
-      const bounds = [
-        [35.0016, -81.0581],
-        [35.5149, -80.5504],
-      ]
+
       map = L.map(mapComponent, {
         attributionControl: false,
         zoomControl: false,
@@ -46,14 +47,21 @@
 
       map.fitBounds(geojson.getBounds())
 
+      map.on("resize", () => {
+        map.fitBounds(geojson.getBounds())
+      })
+
+      
+      //setTimeout(() => {console.log(mapComponent.querySelector('canvas').toDataURL())}, 5000)
+
     }
   })
 
 
   function getColor(d) {
-    let val = data[d][1]
+    let val = data[d][card.years.indexOf(year)]
     if (!val) {
-      return "rgba(0,0,0,0)"
+      return "rgb(245,245,245)"
     } else {
       val = val - dataStats.min
       val = ((val * 100) / dataStats.max) / 100
@@ -67,7 +75,6 @@
         weight: 1,
         opacity: 1,
         color: 'white',
-        dashArray: '3',
         fillOpacity: 0.7
     }
   }
@@ -97,12 +104,22 @@
         mouseout: resetHighlight
     });
   }
+
+  function handleYear(event) {
+    dispatch('changeYear', {
+			year: event.detail.year
+		})
+    //geojson.onEachFeature((feature) => style(feature))
+    geojson.eachLayer(featureInstanceLayer => {
+      featureInstanceLayer.setStyle(style(featureInstanceLayer.feature))
+    })
+  }
 </script>
 
 <div class="flex flex-col h-full px-2">
   <div class="flex-grow mapBg" bind:this={mapComponent} />
   <div>
-    <Time years={card.years} />
+    <Time years={card.years} {year} on:changeYear={handleYear} />
   </div>
 </div>
 

@@ -6,25 +6,23 @@ Coming soon! (maybe!)
 
 ## TODO
 
-* Map
-  * Draw polys
-  * Shade polys
-  * Hover info polys
-  * Change year
-* Sortable to Grid
-* Data table
-* Chart (s)
-* Downloads
-* Meta
-  * Modal component
-* PWA
+* Map - hover info
+* Print
+* Meta modal
+* Close button on data sidebar
+* Exports
+* Finalize header
+* Finalize footer
 
 ## Bugs
 
-* Leaflet zoomed way out for some reason
+* Data problem - adopt a stream, maybe others have null summary value
 
 
 ## Grok
 
-* min-height for cards, so no potential scrolling?
-* GL JS way bigger lib, but worth it maybe?
+* District overlays?
+* CK means vs continuous color ramp?
+* Auto print layout or show on screen?
+* chart to image?
+* map to image?

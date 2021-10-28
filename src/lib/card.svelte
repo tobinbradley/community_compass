@@ -10,6 +10,7 @@
   export let idx
 
   let mode = 'm'
+  let year = card.years[card.years.length - 1]
   let geography
   let data
 
@@ -26,6 +27,10 @@
     mode = event.detail.mode
   }
 
+  function handleYear(event) {
+    year = event.detail.year
+  }
+
 </script>
 
 <div
@@ -35,20 +40,15 @@
   <!-- Title -->
   <div class="pt-2 draghandle" style="cursor: grab">
     <h2 class="text-bold text-center">{card.title}</h2>
-    {#if (card.label)}
-    <h3 class="text-center text-sm text-gray-800">{card.label}</h3>
-    {/if}
   </div>
 
   <!-- content area -->
   <div class="flex-grow">
     {#if mode === "m" && geography && data}
-    <Map {card} {data} {geography} />
-  {/if}
+    <Map {card} {data} {geography} {year}  on:changeYear={handleYear} />
+    {/if}
   {#if mode === "c"}
-    <div class="{mode !== 'c' ? 'hidden' : ''}">
     <Chart metric={card} />
-    </div>
   {/if}
   {#if mode === "t"}
     <Tabular metric={card} />
@@ -56,5 +56,5 @@
   </div>
 
   <!-- toolbar -->
-  <Toolbar {idx} {mode} on:changeMode={handleChangeMode} />
+  <Toolbar {idx} {mode} metric={card} on:changeMode={handleChangeMode} />
 </div>

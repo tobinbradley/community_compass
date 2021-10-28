@@ -34,7 +34,7 @@
 {/if}
 
 <button
-  class="bg-pink-600 p-4 mr-2 right-0 fixed top-20 shadow-lg hover:shadow hover:bg-pink-700 transition-all rounded-full inline-block"
+  class="bg-pink-600 p-4 mr-2 right-0 fixed top-10 shadow-lg hover:shadow hover:bg-pink-700 transition-all rounded-full inline-block"
   on:click={handleOpenToggle}
 >
   <svg class="w-6 h-6 text-white fill-current"
@@ -49,8 +49,21 @@
 >
   <!-- list -->
   <div>
-    <div class="mb-2 mt-4">
-      <input bind:this={filterInput} type="text" class="w-full ring-2" placeholder="filter..." bind:value={filter}>
+    <div class="mb-2">
+      <button class="rounded-full bg-blue-800 text-white p-2" on:click={() => isOpen = false}><svg class="w-4 h-4 text-white fill-current"
+        ><use xlink:href="#icon-cancel" /></svg
+      ></button>
+    </div>
+    <div class="mb-2 mt-4 flex">
+      <div class="flex items-center pr-2">
+        <button class="rounded-full bg-blue-800 text-white p-1" on:click={() => isOpen = false}><svg class="w-4 h-4 text-white fill-current"
+          ><use xlink:href="#icon-cancel" /></svg
+        ></button>
+      </div>
+      <div class="flex-grow flex items-center">
+        <input bind:this={filterInput} type="text" class="w-full ring-2" placeholder="filter..." bind:value={filter}>
+      </div>
+      
     </div>
     {#each handleFilter(filter) as metric}
       <div

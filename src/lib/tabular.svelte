@@ -1,9 +1,14 @@
 <script>
+  import { formatNumber } from "./common"
+
   export let metric
 </script>
 
 <div class="px-2 py-2">
   <div class="overflow-x-auto">
+    {#if (metric.label)}
+    <h3 class="text-center text-sm text-gray-800">{metric.label}</h3>
+    {/if}
   <table class="w-full">
     <thead class="bg-gray-50">
       <tr>
@@ -18,44 +23,44 @@
       <tr>
         <th>County</th>
         {#each metric.years as year, id}
-          <td class="text-right">{metric.summary.mecklenburg[id]}</td>
+          <td>{formatNumber(metric.summary.mecklenburg[id], metric.format || null)}</td>
         {/each}
       </tr>
       <tr>
         <th>Charlotte</th>
         {#each metric.years as year, id}
-          <td class="text-right">{metric.summary.charlotte[id]}</td>
+          <td>{formatNumber(metric.summary.charlotte[id], metric.format || null)}</td>
         {/each}
       </tr>
       <tr>
         <th>Commission District 1</th>
-        {#each metric.years as year}
-          <td>{year}</td>
+        {#each metric.years as year, id}
+          <td>{formatNumber(metric.summary.cc1[id], metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 2</th>
-        {#each metric.years as year}
-          <td>{year}</td>
+        {#each metric.years as year, id}
+          <td>{formatNumber(metric.summary.cc2[id], metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 3</th>
-        {#each metric.years as year}
-          <td>{year}</td>
+        {#each metric.years as year, id}
+          <td>{formatNumber(metric.summary.cc3[id], metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 4</th>
-        {#each metric.years as year}
-          <td>{year}</td>
+        {#each metric.years as year, id}
+          <td>{formatNumber(metric.summary.cc4[id], metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 5</th>
-        {#each metric.years as year}
-          <td>{year}</td>
+        {#each metric.years as year, id}
+          <td>{formatNumber(metric.summary.cc5[id], metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 6</th>
-        {#each metric.years as year}
-          <td>{year}</td>
+        {#each metric.years as year, id}
+          <td>{formatNumber(metric.summary.cc6[id], metric.format || null)}</td>
         {/each}
       </tr>
     </tbody>
