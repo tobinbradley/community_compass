@@ -4,8 +4,7 @@ export function isNumeric(n) {
 }
 
 // format number output
-export function formatNumber(m, n) {
-  n = n.toFixed(m.decimals || 0)
-  n = n.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-  return (m.prefix || '') + n + (m.suffix || '')
+export function formatNumber(n, type) {
+  if (!isNumeric(n)) return 'N/A'
+  if (type === "decimal") return null
 }

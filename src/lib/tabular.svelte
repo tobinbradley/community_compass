@@ -1,10 +1,5 @@
 <script>
-
-
   export let metric
-
-
-
 </script>
 
 <div class="px-2 py-2">
@@ -22,14 +17,14 @@
     <tbody>
       <tr>
         <th>County</th>
-        {#each metric.years as year}
-          <td class="text-right">{year}</td>
+        {#each metric.years as year, id}
+          <td class="text-right">{metric.summary.mecklenburg[id]}</td>
         {/each}
       </tr>
       <tr>
         <th>Charlotte</th>
-        {#each metric.years as year}
-          <td class="text-right">{year}</td>
+        {#each metric.years as year, id}
+          <td class="text-right">{metric.summary.charlotte[id]}</td>
         {/each}
       </tr>
       <tr>
