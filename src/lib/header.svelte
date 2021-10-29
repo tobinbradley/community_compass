@@ -1,7 +1,7 @@
 <div class="bg-white shadow-xl">
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 md:px-0">
     <div
-      class="flex flex-col py-5 mx-auto md:items-center md:justify-between md:flex-row"
+      class="flex py-5 mx-auto items-center justify-between"
     >
       <div class="flex flex-row items-center justify-between lg:justify-start">
         <a
@@ -13,8 +13,27 @@
       </div>
       <nav class="flex-grow  flex justify-end flex-row">
         <ul
-          class="space-y-2 list-none lg:space-y-0 lg:items-center lg:inline-flex"
+          class="list-none space-y-0 items-center inline-flex"
         >
+        <li>
+          <a
+            href="https://www.wickedtemplates.com/"
+            class="
+        px-2
+        lg:px-6
+        py-6
+        text-sm
+        border-b-2 border-transparent
+        hover:border-blue-400
+        leading-[22px]
+        md:px-3
+        text-gray-400
+        hover:text-blue-500
+      "
+          >
+            Print
+          </a>
+        </li>
           <li>
             <a
               href="https://www.wickedtemplates.com/"

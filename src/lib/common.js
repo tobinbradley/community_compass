@@ -11,3 +11,23 @@ export function formatNumber(n, type = null) {
   if (type === 'decimal') return Intl.NumberFormat('en-US', {maximumFractionDigits: 1}).format(n)
   return Intl.NumberFormat('en-US', {maximumFractionDigits: 0}).format(n)
 }
+
+export function download(payload, encoding = null, filename) {
+  // Murder this when ie11 dies
+  if (window.navigator.msSaveBlob) {
+    const blob = new Blob([payload], { type: encoding })
+    navigator.msSaveBlob(blob, filename)
+  } else {
+    const downloadLink = document.createElement('a')
+
+    if (encoding) {
+      downloadLink.href = `${encoding}base64,${btoa(payload)}`
+    } else {
+      downloadLink.href = payload
+    }
+    downloadLink.download = `${filename}`
+    document.body.appendChild(downloadLink)
+    downloadLink.click()
+    document.body.removeChild(downloadLink)
+  }
+}

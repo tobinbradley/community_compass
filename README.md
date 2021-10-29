@@ -8,11 +8,6 @@ Coming soon! (maybe!)
 
 * Map - hover info
 * Print
-* Meta modal
-* Close button on data sidebar
-* Exports
-* Finalize header
-* Finalize footer
 
 ## Bugs
 
@@ -24,5 +19,3 @@ Coming soon! (maybe!)
 * District overlays?
 * CK means vs continuous color ramp?
 * Auto print layout or show on screen?
-* chart to image?
-* map to image?

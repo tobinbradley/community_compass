@@ -10,6 +10,9 @@
   export let data
   export let geography
   export let year
+  export function exportImage() {
+    return mapComponent.querySelector('canvas').toDataURL()
+  }
 
   let mapComponent
   let map
@@ -50,9 +53,6 @@
       map.on("resize", () => {
         map.fitBounds(geojson.getBounds())
       })
-
-      
-      //setTimeout(() => {console.log(mapComponent.querySelector('canvas').toDataURL())}, 5000)
 
     }
   })
@@ -99,9 +99,10 @@
   }
 
   function onEachFeature(feature, layer) {
+    layer.bindPopup('hi!', {closeButton: false, autoPan: false, className: 'mapPopup'});
     layer.on({
-        mouseover: highlightFeature,
-        mouseout: resetHighlight
+        mouseover: () => layer.openPopup(),
+        mouseout: () => layer.closePopup()
     });
   }
 
@@ -116,7 +117,7 @@
   }
 </script>
 
-<div class="flex flex-col h-full px-2">
+<div class="flex flex-col h-full px-2 relative  z-1">
   <div class="flex-grow mapBg" bind:this={mapComponent} />
   <div>
     <Time years={card.years} {year} on:changeYear={handleYear} />
@@ -127,4 +128,16 @@
   .mapBg {
     @apply bg-white;
   }
+
+
+
+  :global(.leaflet-popup-content) {
+	margin: 3px 3px;
+	line-height: 1;
+	}
+.leaflet-popup-content p {
+	margin: 18px 0;
+	}
+
+
 </style>

@@ -4,6 +4,9 @@
   import { formatNumber } from "./common"
 
   export let metric
+  export function exportImage() {
+    return trendChart.export()
+  }
 
   let targetEl
   let trendChart
@@ -41,7 +44,7 @@
         regionFill: 1, // default: 0
       },
       tooltipOptions: {
-          formatTooltipY: d => formatNumber(d, metric.format || null)   
+          formatTooltipY: d => formatNumber(d, metric.format || null)
       }
     })
   })
@@ -61,8 +64,8 @@
   <div bind:this={targetEl} />
 
   <div class="text-center">
-    
-    Commission District 
+
+    Commission District
     <select
       bind:value={ccDistrict} on:change={handleDistrict}
       class="border-b-2 border-blue-200 outline-none"

@@ -23,7 +23,6 @@
     "d3-scale-chromatic": "^3.0.0",
     "frappe-charts": "^1.6.2",
     "leaflet": "^1.7.1",
-    "maplibre-gl": "^2.0.0-pre.1",
     "sortablejs": "^1.14.0"
   }
 }

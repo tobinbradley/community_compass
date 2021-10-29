@@ -20,6 +20,11 @@ export let maxId = derived(cards, $cards => {
 
 export let metrics = readable(dataConfig)
 
+export let modal = writable({
+  isOpen: false,
+  content: null
+})
+
 // cards.subscribe(value => {
 //   console.log(value)
 // })
