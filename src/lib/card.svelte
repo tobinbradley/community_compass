@@ -106,7 +106,7 @@
 
 <div
   class="bg-white shadow-lg rounded-lg flex flex-col z-0"
-  style="min-height: 500px;"
+  style="height: 550px;"
 >
   <!-- Title -->
   <div class="pt-2 relative draghandle z-0" style="cursor: grab">
