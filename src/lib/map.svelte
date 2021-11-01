@@ -76,13 +76,9 @@
 
       // method that we will use to update the control based on feature properties passed
       info.update = function (val) {
-        if (val) {
           this._div.innerHTML = `
           ${formatNumber(val, card.format)}
           ${card.label ? ' ' + card.label : ''}`
-        } else {
-          this._div.innerHTML = ''
-        }
       }
 
       info.addTo(map)
@@ -91,7 +87,7 @@
 
   function getColor(d) {
     let val = data[d][card.years.indexOf(year)]
-    if (!val) {
+    if (!val && val !== 0) {
       return "rgb(245,245,245)"
     } else {
       val = val - dataStats.min
@@ -113,19 +109,17 @@
   function highlightFeature(e) {
     let layer = e.target
 
-    if (data[layer.feature.id][card.years.indexOf(year)]) {
-      layer.setStyle({
-        weight: 2,
-        color: "#EF4444",
-        fillOpacity: 0.7
-      })
+    layer.setStyle({
+      weight: 2,
+      color: "#EF4444",
+      fillOpacity: 0.7
+    })
 
-      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront()
-      }
-
-      info.update(data[layer.feature.id][card.years.indexOf(year)])
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+      layer.bringToFront()
     }
+
+    info.update(data[layer.feature.id][card.years.indexOf(year)])
   }
 
   function resetHighlight(e) {
@@ -144,7 +138,6 @@
     dispatch("changeYear", {
       year: event.detail.year,
     })
-    //geojson.onEachFeature((feature) => style(feature))
     geojson.eachLayer((featureInstanceLayer) => {
       featureInstanceLayer.setStyle(style(featureInstanceLayer.feature))
     })
