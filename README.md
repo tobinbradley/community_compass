@@ -6,8 +6,6 @@ Coming soon! (maybe!)
 
 ## TODO
 
-* Data processing bug
-
 
 ## Bugs
 

@@ -76,9 +76,13 @@
 
       // method that we will use to update the control based on feature properties passed
       info.update = function (val) {
+        if (val || val == 0) {
           this._div.innerHTML = `
           ${formatNumber(val, card.format)}
           ${card.label ? ' ' + card.label : ''}`
+        } else {
+          this._div.innerHTML = ''
+        }
       }
 
       info.addTo(map)
@@ -109,17 +113,21 @@
   function highlightFeature(e) {
     let layer = e.target
 
-    layer.setStyle({
-      weight: 2,
-      color: "#EF4444",
-      fillOpacity: 0.7
-    })
+    if (data[layer.feature.id][card.years.indexOf(year)] || data[layer.feature.id][card.years.indexOf(year)] == 0) {
+      layer.setStyle({
+        weight: 2,
+        color: "#EF4444",
+        fillOpacity: 0.7
+      })
 
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-      layer.bringToFront()
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront()
+      }
+
+      info.update(data[layer.feature.id][card.years.indexOf(year)])
     }
 
-    info.update(data[layer.feature.id][card.years.indexOf(year)])
+
   }
 
   function resetHighlight(e) {

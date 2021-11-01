@@ -10,9 +10,10 @@ function assignId(metric, idx) {
 
 // initial cards
 export let cards = writable([
-    assignId(dataConfig[1], 1),
-    assignId(dataConfig[2], 2),
-    assignId(dataConfig[3], 3)
+  assignId(dataConfig.filter(el => el.metric == 54)[0], 1),
+    assignId(dataConfig.filter(el => el.metric == 39)[0], 2),
+    assignId(dataConfig.filter(el => el.metric == 20)[0], 3),
+    assignId(dataConfig.filter(el => el.metric == 37)[0], 4)
 ])
 
 // get max card ID to assign the next one
