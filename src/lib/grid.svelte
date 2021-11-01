@@ -1,6 +1,7 @@
 <script>
   import Card from "$lib/card.svelte"
-  import { cards } from "$lib/store"
+  import PrintSplash from '$lib/print.svelte'
+  import { cards, print } from "$lib/store"
   import Sortable from "sortablejs"
   import { onMount } from "svelte"
   import { arrayMoveImmutable } from 'array-move'
@@ -24,8 +25,9 @@
 
 <div class="flex-grow px-4 mt-8">
   <div class="container mx-auto">
+    <PrintSplash />
     <div
-      class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6"
+      class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 print:gap-2 {$print ? 'print' : ''}"
       bind:this={targetEl}
     >
       {#each $cards as card, idx (card.id)}
@@ -34,3 +36,10 @@
     </div>
   </div>
 </div>
+
+<style>
+  .print {
+    @apply grid-cols-2 xl:grid-cols-2 m-auto;
+    width: 8.5in;
+  }
+</style>

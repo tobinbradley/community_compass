@@ -22,7 +22,7 @@
   }
 </script>
 
-<div class="flex pb-1">
+<div class="flex mb-2">
   <div class="flex-grow flex px-4 items-center">
     {#if years.length > 1}
       <input
@@ -32,9 +32,9 @@
         {max}
         step="1"
         on:input={handleChange}
-        class="w-full"
+        class="w-full print:hidden"
       />
     {/if}
   </div>
-  <div class="flex items-center">{year}</div>
+  <!-- <div class="flex items-center">{year}</div> -->
 </div>

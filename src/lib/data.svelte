@@ -34,7 +34,7 @@
 {/if}
 
 <button
-  class="bg-pink-600 p-4 mr-2 absolute top-20 shadow z-30 rounded-full hover:opacity-100 ease-in-out transition-all duration-300 right-0
+  class="bg-pink-600 p-4 mr-2 absolute top-20 shadow z-30 print:hidden rounded-full hover:opacity-100 ease-in-out transition-all duration-300 right-0
   {isOpen ? 'top-2 right-64 open' : ''}"
   on:click={handleOpenToggle}
 >
@@ -44,14 +44,14 @@
 </button>
 
 <aside
-  class="transform top-0 right-0 w-64 px-2 py-4 bg-white fixed h-full drop-shadow-xl shadow-2xl overflow-auto ease-in-out transition-all duration-300 z-100 {isOpen
+  class="transform top-0 right-0 w-64 px-2 py-4 bg-white print:hidden fixed h-full shadow-2xl overflow-auto ease-in-out transition-all duration-300 z-100 {isOpen
     ? 'translate-x-0'
     : 'translate-x-full'}"
 >
   <!-- list -->
   <div>
     <div class="flex-grow flex items-center mt-4">
-      <input bind:this={filterInput} type="text" class="w-full ring-2" placeholder="filter..." bind:value={filter}>
+      <input bind:this={filterInput} type="text" class="w-full ring-1 ring-gray-500 outline-none focus:ring-blue-500 p-1" placeholder="filter..." bind:value={filter}>
     </div>
 
 

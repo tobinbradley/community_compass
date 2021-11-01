@@ -1,5 +1,4 @@
 <script>
-  import { cards } from "$lib/store"
   import { onMount } from "svelte"
   import Map from "$lib/map.svelte"
   import Chart from "$lib/chart.svelte"
@@ -105,12 +104,12 @@
 </script>
 
 <div
-  class="bg-white shadow-lg rounded-lg flex flex-col z-0"
-  style="height: 550px;"
+  class="bg-white shadow-lg print:shadow-none rounded-lg flex flex-col z-0"
+  style="height: 540px; page-break-inside: avoid;"
 >
   <!-- Title -->
-  <div class="pt-2 relative draghandle z-0" style="cursor: grab">
-    <h2 class="text-bold text-center">{card.title}</h2>
+  <div class="py-2 relative draghandle z-0" style="cursor: grab">
+    <h2 class="text-bold text-center">{card.title}, {year}</h2>
   </div>
 
   <!-- content area -->

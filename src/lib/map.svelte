@@ -6,7 +6,7 @@
   import { interpolateYlGnBu as interpolate } from "d3-scale-chromatic"
   import { createEventDispatcher } from "svelte"
   import { formatNumber } from '$lib/common'
-import { metrics } from "./store";
+  import { print } from "./store";
 
   export let card
   export let data
@@ -21,6 +21,12 @@ import { metrics } from "./store";
   let info
   let geojson
   const dispatch = createEventDispatcher()
+
+  $: {
+    if (($print || !$print) && map) {
+      setTimeout(function(){ map.invalidateSize()}, 400)
+    }
+  }
 
   // get data for min/max for colors
   let mapData = []
@@ -77,8 +83,6 @@ import { metrics } from "./store";
         } else {
           this._div.innerHTML = ''
         }
-
-
       }
 
       info.addTo(map)
@@ -107,19 +111,21 @@ import { metrics } from "./store";
   }
 
   function highlightFeature(e) {
-    var layer = e.target
+    let layer = e.target
 
-    layer.setStyle({
-      weight: 5,
-      color: "purple",
-      fillOpacity: 0.7,
-    })
+    if (data[layer.feature.id][card.years.indexOf(year)]) {
+      layer.setStyle({
+        weight: 2,
+        color: "#EF4444",
+        fillOpacity: 0.7
+      })
 
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-      layer.bringToFront()
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront()
+      }
+
+      info.update(data[layer.feature.id][card.years.indexOf(year)])
     }
-
-    info.update(data[layer.feature.id][card.years.indexOf(year)])
   }
 
   function resetHighlight(e) {
