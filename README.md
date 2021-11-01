@@ -6,8 +6,8 @@ Coming soon! (maybe!)
 
 ## TODO
 
-* Map - hover info (where to put it?)
-* Print
+* Data processing bug
+
 
 ## Bugs
 
@@ -19,3 +19,5 @@ Coming soon! (maybe!)
 * District overlays?
 * CK means vs continuous color ramp?
 * Legend?
+* Help vid?
+* Service worker update message?
