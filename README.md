@@ -6,16 +6,16 @@ Coming soon! (maybe!)
 
 ## TODO
 
+* cards to URL
+* Help video
+* busted service worker (not getting relative URL)
+* Is sveltekit ready for business? Do I switch to vite?
 
 ## Bugs
 
-* Data problems - adopt a stream, maybe others have null summary value
+* Print testing
 
 
 ## Grok
 
-* District overlays?
-* CK means vs continuous color ramp?
-* Legend?
-* Help vid?
-* Service worker update message?
+* option to show NPA/Juris/CC geography
