@@ -38,57 +38,35 @@
 </script>
 
 <div
-  class="flex flex-row relative justify-between bg-gray-400 rounded-b-lg draghandle"
+  class="flex flex-row relative justify-between rounded-b-lg draghandle print:hidden"
   style="cursor: grab"
 >
   <div>
-    <button
-      class="bg-gray-400 hover:bg-gray-500 transition-colors py-2 px-3 rounded-bl-lg {mode ===
-      'm'
-        ? 'bg-gray-500'
-        : ''}"
-      title="Map"
-      on:click={() => handleModeChange("m")}
-    >
-      <svg class="w-4 h-4 text-white fill-current"
+    <button title="Map" class="btn rounded-bl-lg {mode === 'm' ? 'active' : ''}" on:click={() => handleModeChange("m")}>
+      <svg class="w-4 h-4 fill-current"
         ><use xlink:href="#icon-map" /></svg
       >
     </button>
     {#if metric.years.length > 1}
-      <button
-        class="bg-gray-400 hover:bg-gray-500 transition-colors py-2 px-3 rounded-none {mode ===
-        'c'
-          ? 'bg-gray-500'
-          : ''}"
-        title="Chart"
-        on:click={() => handleModeChange("c")}
-      >
-        <svg class="w-4 h-4 text-white fill-current"
+      <button title="Chart" class="btn {mode === 'c' ? 'active' : ''}" on:click={() => handleModeChange("c")}>
+        <svg class="w-4 h-4 fill-current"
           ><use xlink:href="#icon-stats-dots" /></svg
         >
       </button>
     {/if}
-    <button
-      class="bg-gray-400 hover:bg-gray-500 transition-colors py-2 px-3 rounded-none {mode ===
-      't'
-        ? 'bg-gray-500'
-        : ''}"
-      title="Table"
-      on:click={() => handleModeChange("t")}
-    >
-      <svg class="w-4 h-4 text-white fill-current">
+    <button title="Table" class="btn {mode === 't' ? 'active' : ''}" on:click={() => handleModeChange("t")}>
+      <svg class="w-4 h-4 fill-current">
         <use xlink:href="#icon-table2" />
       </svg>
     </button>
 
     <div class="inline-block relative">
-      <button
-        class="bg-gray-400 hover:bg-gray-500 transition-colors py-2 px-3 rounded-none"
+      <button class="btn"
         title="Menu"
         on:click={handleOpen}
         on:blur={() => setTimeout(() => isOpen = false, 300)}
       >
-        <svg class="w-4 h-4 text-white fill-current"
+        <svg class="w-4 h-4 fill-current"
           ><use xlink:href="#icon-menu" /></svg
         >
       </button>
@@ -131,11 +109,11 @@
   </div>
   <div>
     <button
-      class="bg-gray-400 hover:bg-red-500 transition-colors py-2 px-3 rounded-br-lg"
+      class="transition-all duration-300 ease-in-out py-2 px-3 hover:bg-red-500 hover:text-white rounded-br-lg"
       title="Close"
       on:click={handleRemoveMetric}
     >
-      <svg class="w-4 h-4 text-white fill-current"
+      <svg class="w-4 h-4 fill-current"
         ><use xlink:href="#icon-cancel" /></svg
       >
     </button>
@@ -143,6 +121,12 @@
 </div>
 
 <style>
+  .btn {
+    @apply hover:ring-2 hover:ring-blue-500 transition-all duration-300 ease-in-out py-2 px-3;
+  }
+  .btn.active {
+    @apply bg-blue-500 text-white;
+  }
   .menu button,
   .menu a {
     @apply text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 transition-colors whitespace-nowrap w-full text-left;
