@@ -9,7 +9,7 @@ function assignId(metric, idx) {
   return newElem
 }
 
-// initial cards 
+// initial cards
 let startCards = []
 if (browser) {
   const args = window.location.hash.replace('#', '').split(',')
