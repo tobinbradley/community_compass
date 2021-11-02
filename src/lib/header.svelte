@@ -8,7 +8,7 @@
       <div class="flex flex-row items-center justify-between lg:justify-start">
         <a
           href="./"
-          class="text-xl font-bold tracking-tighter text-blue-500 transition duration-500 ease-in-out transform tracking-relaxed pr-6"
+          class="text-xl font-bold tracking-tighter text-blue-500 transition duration-500 ease-in-out transform tracking-relaxed px-3"
         >
           Community Compass
         </a>
@@ -16,7 +16,7 @@
       <nav class="flex-grow  flex justify-end flex-row">
         <ul class="list-none space-y-0 items-center inline-flex">
           <li>
-            <a href="javascript:void(0)" 
+            <a href="javascript:void(0)"
             on:click={() => $print = !$print}
               class="
         px-2
