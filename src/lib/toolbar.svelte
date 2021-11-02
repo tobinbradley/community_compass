@@ -73,7 +73,7 @@
       </button>
 
       <div
-        class="absolute menu right-0 bottom-10 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none {isOpen
+        class="absolute menu left-0 bottom-10 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none {isOpen
           ? ''
           : 'hidden'}"
         role="menu"
