@@ -37,7 +37,6 @@
     <img
       src="img/logo.svg"
       alt="logo"
-      loading="lazy"
       class="h-full w-auto m-auto"
     />
   </div>
