@@ -39,7 +39,7 @@
 
 <style>
   .print {
-    @apply grid-cols-2 xl:grid-cols-2 m-auto;
+    @apply grid-cols-2 xl:grid-cols-2 mx-auto;
     width: 8.5in;
   }
 </style>
