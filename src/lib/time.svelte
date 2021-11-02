@@ -22,8 +22,8 @@
   }
 </script>
 
-<div class="flex mb-2">
-  <div class="flex-grow flex px-4 items-center">
+
+  <div class="flex px-4 pb-2 items-center">
     {#if years.length > 1}
       <input
         type="range"
@@ -37,5 +37,4 @@
       />
     {/if}
   </div>
-  <!-- <div class="flex items-center">{year}</div> -->
-</div>
+ 
