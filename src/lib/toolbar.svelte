@@ -42,19 +42,19 @@
   style="cursor: grab"
 >
   <div>
-    <button title="Map" class="btn rounded-bl-lg {mode === 'm' ? 'active' : ''}" on:click={() => handleModeChange("m")}>
+    <button title="Map" aria-label="Map" class="btn rounded-bl-lg {mode === 'm' ? 'active' : ''}" on:click={() => handleModeChange("m")}>
       <svg class="w-4 h-4 fill-current"
         ><use xlink:href="#icon-map" /></svg
       >
     </button>
     {#if metric.years.length > 1}
-      <button title="Chart" class="btn {mode === 'c' ? 'active' : ''}" on:click={() => handleModeChange("c")}>
+      <button title="Chart" aria-label="Chart" class="btn {mode === 'c' ? 'active' : ''}" on:click={() => handleModeChange("c")}>
         <svg class="w-4 h-4 fill-current"
           ><use xlink:href="#icon-stats-dots" /></svg
         >
       </button>
     {/if}
-    <button title="Table" class="btn {mode === 't' ? 'active' : ''}" on:click={() => handleModeChange("t")}>
+    <button title="Table" aria-label="Table" class="btn {mode === 't' ? 'active' : ''}" on:click={() => handleModeChange("t")}>
       <svg class="w-4 h-4 fill-current">
         <use xlink:href="#icon-table2" />
       </svg>
@@ -63,6 +63,7 @@
     <div class="inline-block relative">
       <button class="btn"
         title="Menu"
+        aria-label="Open Menu"
         on:click={handleOpen}
         on:blur={() => setTimeout(() => isOpen = false, 300)}
       >
@@ -111,6 +112,7 @@
     <button
       class="transition-all duration-300 ease-in-out py-2 px-3 hover:bg-red-500 hover:text-white rounded-br-lg"
       title="Close"
+      aria-label="Close"
       on:click={handleRemoveMetric}
     >
       <svg class="w-4 h-4 fill-current"

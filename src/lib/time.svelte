@@ -27,6 +27,7 @@
     {#if years.length > 1}
       <input
         type="range"
+        aria-label="Select Year"
         {min}
         bind:value={year}
         {max}

@@ -3,13 +3,16 @@
 
   let isOpen = false
   let filterInput
-  let filter = ''
+  let filter = ""
 
   function handleFilter() {
     if (filter.trim().length === 0) {
       return $metrics
     } else {
-      return $metrics.filter(el => el.title.toUpperCase().indexOf(filter.trim().toUpperCase()) !== -1)
+      return $metrics.filter(
+        (el) =>
+          el.title.toUpperCase().indexOf(filter.trim().toUpperCase()) !== -1
+      )
     }
   }
 
@@ -17,7 +20,7 @@
     isOpen = !isOpen
     if (isOpen) {
       filterInput.focus()
-      filter = ''
+      filter = ""
     }
   }
 
@@ -29,12 +32,17 @@
   }
 </script>
 
-{#if (isOpen)}
-<div class="fixed top-0 left-0 right-0 bottom-0 bg-gray-400 opacity-60" on:click={handleOpenToggle}></div>
+{#if isOpen}
+  <div
+    class="fixed top-0 left-0 right-0 bottom-0 bg-gray-400 opacity-60"
+    on:click={handleOpenToggle}
+  />
 {/if}
 
 <button
-  class="bg-pink-600 p-4 mr-2 absolute top-20 shadow z-30 print:hidden rounded-full hover:opacity-100 ease-in-out transition-all duration-300 right-0
+  aria-label="Add Data"
+  title="Add Data"
+  class="bg-pink-600 hover:bg-pink-700 p-4 mr-2 absolute top-20 shadow z-30 print:hidden rounded-full hover:opacity-100 ease-in-out transition-all duration-300 right-0
   {isOpen ? 'top-2 right-64 open' : ''}"
   on:click={handleOpenToggle}
 >
@@ -50,22 +58,25 @@
 >
   <!-- list -->
   <div>
-    <div class="flex-grow flex items-center mt-4">
-      <input bind:this={filterInput} type="text" class="w-full ring-1 ring-gray-500 outline-none focus:ring-blue-500 p-1" placeholder="filter..." bind:value={filter}>
+    <div class="flex-grow flex items-center mt-4 mb-2">
+      <input
+        bind:this={filterInput}
+        type="text"
+        class="w-full ring-1 ring-gray-500 outline-none focus:ring-blue-500 p-1"
+        placeholder="filter..."
+        bind:value={filter}
+      />
     </div>
-
 
     {#each handleFilter(filter) as metric}
       <div
-        class="flex items-center pt-1 hover:bg-gray-300 cursor-pointer"
+        class="flex items-center py-1 hover:bg-gray-300 cursor-pointer"
         on:click={handleAddMetric(metric)}
       >
-        <div>
-          <button class=" fill-current text-gray-600 p-2 mx-2 rounded-full">
-            <svg class="w-3 h-3 text-gray-600 fill-current">
-              <use xlink:href="#icon-plus" />
-            </svg>
-          </button>
+        <div class="fill-current text-gray-600 ml-1 mr-2">
+          <svg class="w-3 h-3">
+            <use xlink:href="#icon-plus" />
+          </svg>
         </div>
         <div>
           {metric.title}
@@ -74,7 +85,6 @@
     {/each}
   </div>
 </aside>
-
 
 <style>
   @keyframes spin {
