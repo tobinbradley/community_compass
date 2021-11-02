@@ -3,7 +3,7 @@
   "version": "0.1",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "build": "svelte-kit build && workbox generateSW workbox-config.cjs",
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
@@ -15,7 +15,8 @@
     "postcss-load-config": "^3.1.0",
     "svelte": "^3.44.0",
     "svelte-preprocess": "^4.9.8",
-    "tailwindcss": "^2.2.17"
+    "tailwindcss": "^2.2.17",
+    "workbox-cli": "^6.3.0"
   },
   "type": "module",
   "dependencies": {
