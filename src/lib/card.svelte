@@ -18,7 +18,7 @@
 
   onMount(async () => {
     // get geography
-    const fetchGeograpny = await fetch("data/npa.geojson.json")
+    const fetchGeograpny = await fetch(card.geography || "data/npa.geojson.json")
     geography = await fetchGeograpny.json()
     // get data
     const fetchData = await fetch(`data/metric/m${card.metric}.json`)
