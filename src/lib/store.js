@@ -51,6 +51,9 @@ export let metrics = readable(dataConfig)
 // print styling toggle
 export let print = writable(false)
 
+// toggle Help
+export let help = writable(false)
+
 // print.subscribe(value => {
 //   console.log(value)
 // })

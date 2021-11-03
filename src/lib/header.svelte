@@ -1,10 +1,10 @@
 <script>
-  import { print } from "$lib/store"
+  import { print, help } from "$lib/store"
 </script>
 
 <div class="bg-white shadow-xl print:hidden">
   <div class="container mx-auto px-4 md:px-0">
-    <div class="flex py-5 mx-auto items-center justify-between">
+    <div class="flex mx-auto items-center justify-between">
       <div class="flex flex-row items-center justify-between lg:justify-start">
         <a
           href="./"
@@ -16,7 +16,7 @@
       <nav class="flex-grow  flex justify-end flex-row">
         <ul class="list-none space-y-0 items-center inline-flex">
           <li>
-            <a href="javascript:void(0)"
+            <button
             on:click={() => $print = !$print}
               class="
         px-2
@@ -33,10 +33,11 @@
       "
             >
               Print
-          </a>
+          </button>
           </li>
-          <!-- <li>
-            <a href="javascript:void(0)"
+          <li>
+            <button
+            on:click={() => $help = true}
               class="
           px-2
           lg:px-6
@@ -46,13 +47,13 @@
           hover:border-blue-400
           leading-[22px]
           md:px-3
-          text-gray-400
-          hover:text-blue-500
+          text-gray-500
+          hover:text-blue-500 transition-colors duration-300 ease-in-out
         "
             >
               Help
-          </a>
-          </li> -->
+          </button>
+          </li>
         </ul>
       </nav>
     </div>
