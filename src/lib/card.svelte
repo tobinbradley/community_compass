@@ -97,8 +97,7 @@
     }
 
     if (event.detail.type === "chart") {
-      const img = chartFunctions.exportImage()
-      download(img, null, `${card.title}.svg`)
+      chartFunctions.exportImage()
     }
   }
 </script>

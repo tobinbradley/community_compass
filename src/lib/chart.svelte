@@ -5,7 +5,7 @@
 
   export let metric
   export function exportImage() {
-    return trendChart.export()
+    trendChart.export()
   }
 
   let targetEl
@@ -68,7 +68,7 @@
     Commission District
     <select
       bind:value={ccDistrict} on:change={handleDistrict}
-      class="border-b-2 border-blue-200 outline-none"
+      class="border-b-2 border-blue-200 bg-white outline-none"
     >
       <option>1</option>
       <option>2</option>
