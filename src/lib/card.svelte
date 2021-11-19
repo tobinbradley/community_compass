@@ -1,20 +1,23 @@
 <script>
   import { onMount } from "svelte"
+  import { cards } from '$lib/store'
   import Map from "$lib/map.svelte"
   import Chart from "$lib/chart.svelte"
   import Tabular from "$lib/tabular.svelte"
   import Toolbar from "$lib/toolbar.svelte"
   import { download } from "./common"
 
-  export let card
+
   export let idx
 
-  let mode = "m"
+  const card = $cards[idx]
   let year = card.years[card.years.length - 1]
   let geography
   let data
   let mapFunctions
   let chartFunctions
+
+  $: mode = $cards[idx].mode
 
   onMount(async () => {
     // get geography
@@ -26,7 +29,9 @@
   })
 
   function handleChangeMode(event) {
-    mode = event.detail.mode
+    //mode = event.detail.mode
+    $cards[idx].mode = event.detail.mode
+    $cards = $cards
   }
 
   function handleYear(event) {

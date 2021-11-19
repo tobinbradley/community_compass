@@ -31,7 +31,7 @@
       bind:this={targetEl}
     >
       {#each $cards as card, idx (card.id)}
-        <Card {card} {idx} />
+        <Card {idx} />
       {/each}
     </div>
   </div>

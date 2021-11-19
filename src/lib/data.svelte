@@ -27,6 +27,7 @@
   function handleAddMetric(metric) {
     let newElem = Object.assign({}, metric)
     newElem.id = $maxId + 1
+    newElem.mode = 'm'
     $cards.push(newElem)
     $cards = $cards
   }

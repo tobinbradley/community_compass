@@ -3,9 +3,10 @@ import dataConfig from '$lib/data/config.json'
 import { browser } from "$app/env"
 
 // assign ID for draggable grid
-function assignId(metric, idx) {
+function assignId(metric, idx, mode = 'm') {
   let newElem = Object.assign({}, metric)
   newElem.id = idx
+  newElem.mode = mode
   return newElem
 }
 
@@ -13,12 +14,23 @@ function assignId(metric, idx) {
 let startCards = []
 if (browser) {
   const args = window.location.hash.replace('#', '').split(',')
-  if (args[0].length > 0 && !args.some(isNaN)) {
+  if (args[0].length > 0) {
     startCards = []
     args.forEach((arg, idx) => {
-      let metric = dataConfig.filter(el => el.metric == arg)
+      let argArray = arg.split('|')
+      let metric = dataConfig.filter(el => el.metric == argArray[0])
       if (metric.length === 1) {
-        startCards.push(assignId(metric[0], idx + 1))
+        if (argArray.length === 1) {
+          startCards.push(assignId(metric[0], idx + 1))
+        } else {
+          if (argArray[1] === 'm' || argArray[1] === 't') {
+            startCards.push(assignId(metric[0], idx + 1, argArray[1]))
+          } else if (argArray[1] === 'c' && metric[0].years.length > 1) {
+            startCards.push(assignId(metric[0], idx + 1, argArray[1]))
+          } else {
+            startCards.push(assignId(metric[0], idx + 1))
+          }
+        }
       }
     })
   } else {
@@ -41,7 +53,7 @@ export let maxId = derived(cards, $cards => {
 // set window hash
 cards.subscribe(value => {
   if (browser) {
-    history.replaceState(null, null, `#${value.map(el => el.metric).join(',')}`)
+    history.replaceState(null, null, `#${value.map(el => `${el.metric}|${el.mode}`).join(',')}`)
   }
 })
 
