@@ -30,8 +30,5 @@ You can put anything in the metadata files.
 
 ## TODO (maybe)
 
-* Help video
 * PWA update available message
 * Allow different geographies for different metrics
-* Show summary values on the map as their own geographies
-* Remember card config
