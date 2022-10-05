@@ -18,11 +18,9 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png"><!-- 180×180 -->
     <meta name="theme-color" content="#2A4365"/>
     <link rel="manifest" href="manifest.json">
-
-    %svelte.head%
   </head>
   <body class="bg-gray-300">
-    <div id="svelte">%svelte.body%</div>
+    <div id="app"></div>
 
     <!-- SVG ICONS -->
     <svg
@@ -78,4 +76,6 @@
       </defs>
     </svg>
   </body>
+
+  <script type="module" src="/src/main.js"></script>
 </html>

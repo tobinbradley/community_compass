@@ -1,5 +1,5 @@
 <script>
-  import { cards } from "$lib/store"
+  import { cards } from "./store"
   import { createEventDispatcher } from "svelte"
 
   const dispatch = createEventDispatcher()

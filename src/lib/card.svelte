@@ -1,10 +1,10 @@
 <script>
   import { onMount } from "svelte"
-  import { cards } from '$lib/store'
-  import Map from "$lib/map.svelte"
-  import Chart from "$lib/chart.svelte"
-  import Tabular from "$lib/tabular.svelte"
-  import Toolbar from "$lib/toolbar.svelte"
+  import { cards } from './store'
+  import Map from "./map.svelte"
+  import Chart from "./chart.svelte"
+  import Tabular from "./tabular.svelte"
+  import Toolbar from "./toolbar.svelte"
   import { download } from "./common"
 
 

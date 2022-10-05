@@ -1,13 +1,12 @@
 <script>
-  import { cards, print } from '$lib/store'
-  import { browser } from "$app/env"
+  import { cards, print } from './store'
 
   let url
 
   cards.subscribe(() => {
-    if (browser) {
+
         url = window.location
-    }
+
   })
 </script>
 
@@ -15,7 +14,7 @@
 <div class="print:hidden bg-white py-4 px-8 shadow-lg rounded-lg mb-8 m-auto" style="width: 8.5in;">
     <h2 class="text-lg font-bold">Print</h2>
     <p class="mt-2 mb-4">
-        Your cards have been optimized for printing to an 8.5"x11" page. Arrange them to tell your story, 
+        Your cards have been optimized for printing to an 8.5"x11" page. Arrange them to tell your story,
         then hit the "Print" button. When you are finished, hit the "Close" button to exit print mode.
     </p>
     <div class="text-center">

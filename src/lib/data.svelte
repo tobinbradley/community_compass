@@ -1,5 +1,5 @@
 <script>
-  import { cards, metrics, maxId } from "$lib/store"
+  import { cards, metrics, maxId } from "./store"
 
   let isOpen = false
   let filterInput

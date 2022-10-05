@@ -1,5 +1,5 @@
 <script>
-  import { help } from '$lib/store'
+  import { help } from './store'
 
 </script>
 

@@ -1,10 +1,8 @@
-// import toastMaker from './toastMaker'
-import { browser } from "$app/env"
+
 
 let newWorker
 
 // Register service worker and show update notice if new content
-if (browser) {
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./service-worker.js').then(reg => {
     reg.addEventListener('updatefound', () => {
@@ -30,5 +28,4 @@ if ('serviceWorker' in navigator) {
       });
     });
   });
-}
 }

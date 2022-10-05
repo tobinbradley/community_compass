@@ -1,7 +1,7 @@
 <script>
-  import Card from "$lib/card.svelte"
-  import PrintSplash from '$lib/print.svelte'
-  import { cards, print } from "$lib/store"
+  import Card from "./card.svelte"
+  import PrintSplash from './print.svelte'
+  import { cards, print } from "./store"
   import Sortable from "sortablejs"
   import { onMount } from "svelte"
   import { arrayMoveImmutable } from 'array-move'

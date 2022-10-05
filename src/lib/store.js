@@ -1,6 +1,5 @@
 import { writable, readable, derived } from 'svelte/store'
-import dataConfig from '$lib/data/config.json'
-import { browser } from "$app/env"
+import dataConfig from './data/config.json'
 
 // assign ID for draggable grid
 function assignId(metric, idx, mode = 'm') {
@@ -12,7 +11,7 @@ function assignId(metric, idx, mode = 'm') {
 
 // initial cards
 let startCards = []
-if (browser) {
+
   const args = window.location.hash.replace('#', '').split(',')
   if (args[0].length > 0) {
     startCards = []
@@ -40,7 +39,6 @@ if (browser) {
       assignId(dataConfig.filter(el => el.metric == 20)[0], 3)
     ]
   }
-}
 
 // initial cards
 export let cards = writable(startCards)
@@ -52,9 +50,7 @@ export let maxId = derived(cards, $cards => {
 
 // set window hash
 cards.subscribe(value => {
-  if (browser) {
     history.replaceState(null, null, `#${value.map(el => `${el.metric}|${el.mode}`).join(',')}`)
-  }
 })
 
 // metric configuration

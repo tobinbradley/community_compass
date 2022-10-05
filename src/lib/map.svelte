@@ -1,11 +1,10 @@
 <script>
-  import Time from "$lib/time.svelte"
+  import Time from "./time.svelte"
   import "leaflet/dist/leaflet.css"
   import { onMount } from "svelte"
-  import { browser } from "$app/env"
   import { interpolateYlGnBu as interpolate } from "d3-scale-chromatic"
   import { createEventDispatcher } from "svelte"
-  import { formatNumber } from '$lib/common'
+  import { formatNumber } from './common'
   import { print } from "./store";
 
   export let card
@@ -36,7 +35,6 @@
   let dataStats = { min: Math.min(...mapData), max: Math.max(...mapData) }
 
   onMount(async () => {
-    if (browser) {
       const L = await import("leaflet")
 
       map = L.map(mapComponent, {
@@ -86,7 +84,7 @@
       }
 
       info.addTo(map)
-    }
+
   })
 
   function getColor(d) {

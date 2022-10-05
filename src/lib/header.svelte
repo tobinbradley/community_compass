@@ -1,5 +1,5 @@
 <script>
-  import { print, help } from "$lib/store"
+  import { print, help } from "./store"
 </script>
 
 <div class="bg-white shadow-xl print:hidden">
