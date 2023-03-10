@@ -1,9 +1,11 @@
 <script>
   import { onMount } from "svelte"
   import { Chart } from "frappe-charts/dist/frappe-charts.min.esm"
-  import { formatNumber } from "./common"
+  import { formatNumber, groupYears } from "./common"
+  import groups from './data/neighborhod-groups.json'
 
   export let metric
+  export let data
   export function exportImage() {
     trendChart.export()
   }
@@ -12,23 +14,23 @@
   let trendChart
   let ccDistrict
 
-  const data = {
-    labels: metric.years,
+  const chartData = {
+    labels: data.years,
     datasets: [
       {
         name: "Mecklenburg",
         chartType: "line",
-        values: metric.summary.mecklenburg,
+        values: groupYears(data),
       },
       {
         name: "Charlotte",
         chartType: "line",
-        values: metric.summary.charlotte,
+        values: groupYears(data, groups["Jurisdiction"]["Charlotte"]),
       },
       {
         name: "District 1",
         chartType: "line",
-        values: metric.summary.cc1,
+        values: groupYears(data, groups["County Commission"]["1"]),
       },
     ],
   }
@@ -36,7 +38,7 @@
   onMount(() => {
     trendChart = new Chart(targetEl, {
       title: `${metric.title}${ metric.label ? ` (${metric.label})` : '' }`,
-      data: data,
+      data: chartData,
       type: "line", // or 'bar', 'line', 'scatter', 'pie', 'percentage'
       height: 380,
       colors: ["#7cd6fd", "#743ee2", "#bada55"],
@@ -50,13 +52,13 @@
   })
 
   function handleDistrict() {
-    data.datasets.pop()
-    data.datasets.push({
+    chartData.datasets.pop()
+    chartData.datasets.push({
       name: `District ${ccDistrict}`,
       chartType: "line",
-      values: metric.summary[`cc${ccDistrict}`],
+      values:  groupYears(data, groups["County Commission"][ccDistrict]),
     })
-    trendChart.update(data)
+    trendChart.update(chartData)
   }
 </script>
 

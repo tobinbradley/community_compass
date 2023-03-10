@@ -29,7 +29,7 @@
 
   // get data for min/max for colors
   let mapData = []
-  Object.values(data).forEach((valArray) => {
+  Object.values(data.m).forEach((valArray) => {
     mapData.push(...valArray.filter((val) => val !== null))
   })
   let dataStats = { min: Math.min(...mapData), max: Math.max(...mapData) }
@@ -88,14 +88,17 @@
   })
 
   function getColor(d) {
-    let val = data[d][card.years.indexOf(year)]
-    if (!val && val !== 0) {
-      return "rgb(245,245,245)"
-    } else {
-      val = val - dataStats.min
-      val = (val * 100) / dataStats.max / 100
-      return interpolate(val)
+    if (data.m[d]) {
+      let val = data.m[d][data.years.indexOf(year)] || null
+      if (!val && val !== 0) {
+        return "rgb(245,245,245)"
+      } else {
+        val = val - dataStats.min
+        val = (val * 100) / dataStats.max / 100
+        return interpolate(val)
+      }
     }
+    return "rgb(245,245,245)"
   }
 
   function style(feature) {
@@ -110,22 +113,17 @@
 
   function highlightFeature(e) {
     let layer = e.target
-
-    if (data[layer.feature.id][card.years.indexOf(year)] || data[layer.feature.id][card.years.indexOf(year)] == 0) {
+    if (data.m[layer.feature.id][data.years.indexOf(year)] || data.m[layer.feature.id][data.years.indexOf(year)] == 0) {
       layer.setStyle({
         weight: 2,
         color: "#EF4444",
         fillOpacity: 0.7
       })
-
       if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront()
       }
-
-      info.update(data[layer.feature.id][card.years.indexOf(year)])
+      info.update(data.m[layer.feature.id][data.years.indexOf(year)])
     }
-
-
   }
 
   function resetHighlight(e) {
@@ -153,7 +151,7 @@
 <div class="flex flex-col h-full px-2 relative z-0">
   <div class="flex-grow mapBg" bind:this={mapComponent} />
   <div>
-    <Time years={card.years} {year} on:changeYear={handleYear} />
+    <Time years={data.years} {year} on:changeYear={handleYear} />
   </div>
 </div>
 
@@ -161,5 +159,4 @@
   .mapBg {
     @apply bg-white;
   }
-
 </style>

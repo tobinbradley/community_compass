@@ -5,13 +5,14 @@
   import Chart from "./chart.svelte"
   import Tabular from "./tabular.svelte"
   import Toolbar from "./toolbar.svelte"
-  import { download } from "./common"
+  import groups from './data/neighborhod-groups.json'
+  import { download, groupYears } from "./common"
 
 
   export let idx
 
   const card = $cards[idx]
-  let year = card.years[card.years.length - 1]
+  let year
   let geography
   let data
   let mapFunctions
@@ -24,8 +25,9 @@
     const fetchGeograpny = await fetch(card.geography || "data/npa.geojson.json")
     geography = await fetchGeograpny.json()
     // get data
-    const fetchData = await fetch(`data/metric/m${card.metric}.json`)
+    const fetchData = await fetch(`https://mcmap.org/qol/data/metric/${card.metric}.json`)
     data = await fetchData.json()
+    year = data.years[data.years.length - 1]
   })
 
   function handleChangeMode(event) {
@@ -42,14 +44,14 @@
     //csv
     if (event.detail.type === "csv") {
       const header = []
-      const keys = Object.keys(data)
+      const keys = Object.keys(data.m)
       let body = ""
 
       header.push("GEOID")
-      header.push(...card.years)
+      header.push(...data.years)
 
       keys.forEach((key) => {
-        const row = [key, ...data[key]]
+        const row = [key, ...data.m[key]]
         body += row.join(",") + "\n"
       })
 
@@ -63,16 +65,19 @@
     // Summary CSV
     if (event.detail.type === "summary") {
       const header = []
-      const keys = Object.keys(card.summary)
       let body = ""
 
       header.push("GEOID")
-      header.push(...card.years)
+      header.push(...data.years)
 
-      keys.forEach((key) => {
-        const row = [key.replace('cc', 'county commission district '), ...card.summary[key]]
-        body += row.join(",") + "\n"
-      })
+      body += "Mecklenburg," + groupYears(data).join(',') + "\n"
+      body += "Charlotte," + groupYears(data, groups["Jurisdiction"]["Charlotte"]).join(',') + "\n"
+      body += "County Commission District 1," + groupYears(data, groups["County Commission"]["1"]).join(',') + "\n"
+      body += "County Commission District 2," + groupYears(data, groups["County Commission"]["2"]).join(',') + "\n"
+      body += "County Commission District 3," + groupYears(data, groups["County Commission"]["3"]).join(',') + "\n"
+      body += "County Commission District 4," + groupYears(data, groups["County Commission"]["4"]).join(',') + "\n"
+      body += "County Commission District 5," + groupYears(data, groups["County Commission"]["5"]).join(',') + "\n"
+      body += "County Commission District 6," + groupYears(data, groups["County Commission"]["6"]).join(',') + "\n"
 
       download(
         header.join(",") + "\n" + body,
@@ -87,8 +92,8 @@
 
         outGeoJSON.features.forEach(elem => {
           elem.properties = {}
-          card.years.forEach(year => {
-            elem.properties[year] = data[elem.id][card.years.indexOf(year)]
+          data.years.forEach(year => {
+            if (data.m[elem.id]) elem.properties[year] = data.m[elem.id][data.years.indexOf(year)]
           })
         })
 
@@ -121,11 +126,11 @@
     {#if mode === "m" && geography && data}
       <Map bind:this={mapFunctions} {card} {data} {geography} {year} on:changeYear={handleYear} />
     {/if}
-    {#if mode === "c"}
-      <Chart bind:this={chartFunctions} metric={card} />
+    {#if mode === "c" && data}
+      <Chart bind:this={chartFunctions} metric={card} {data} />
     {/if}
-    {#if mode === "t"}
-      <Tabular metric={card} />
+    {#if mode === "t" && data}
+      <Tabular metric={card} {data} />
     {/if}
   </div>
 
@@ -133,6 +138,7 @@
   <Toolbar
     {idx}
     {mode}
+    {data}
     metric={card}
     on:download={handleDownload}
     on:changeMode={handleChangeMode}

@@ -1,7 +1,9 @@
 <script>
-  import { formatNumber } from "./common"
+  import { formatNumber, sumGroup } from "./common"
+  import groups from './data/neighborhod-groups.json'
 
   export let metric
+  export let data
 </script>
 
 <div class="px-2 py-2">
@@ -13,7 +15,7 @@
     <thead class="bg-gray-50">
       <tr>
         <th />
-        {#each metric.years as year}
+        {#each data.years as year}
           <th>{year}</th>
         {/each}
       </tr>
@@ -22,45 +24,45 @@
     <tbody>
       <tr>
         <th>County</th>
-        {#each metric.years as year, id}
-          <td>{formatNumber(metric.summary.mecklenburg[id], metric.format || null)}</td>
+        {#each data.years as year, id}
+          <td>{formatNumber(sumGroup(data, id), metric.format || null)}</td>
         {/each}
       </tr>
       <tr>
         <th>Charlotte</th>
-        {#each metric.years as year, id}
-          <td>{formatNumber(metric.summary.charlotte[id], metric.format || null)}</td>
+        {#each data.years as year, id}
+          <td>{formatNumber(sumGroup(data, id, groups["Jurisdiction"]["Charlotte"]), metric.format || null)}</td>
         {/each}
       </tr>
       <tr>
         <th>Commission District 1</th>
-        {#each metric.years as year, id}
-          <td>{formatNumber(metric.summary.cc1[id], metric.format || null)}</td>
+        {#each data.years as year, id}
+          <td>{formatNumber(sumGroup(data, id, groups["County Commission"]["1"]), metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 2</th>
-        {#each metric.years as year, id}
-          <td>{formatNumber(metric.summary.cc2[id], metric.format || null)}</td>
+        {#each data.years as year, id}
+          <td>{formatNumber(sumGroup(data, id, groups["County Commission"]["2"]), metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 3</th>
-        {#each metric.years as year, id}
-          <td>{formatNumber(metric.summary.cc3[id], metric.format || null)}</td>
+        {#each data.years as year, id}
+          <td>{formatNumber(sumGroup(data, id, groups["County Commission"]["3"]), metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 4</th>
-        {#each metric.years as year, id}
-          <td>{formatNumber(metric.summary.cc4[id], metric.format || null)}</td>
+        {#each data.years as year, id}
+          <td>{formatNumber(sumGroup(data, id, groups["County Commission"]["4"]), metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 5</th>
-        {#each metric.years as year, id}
-          <td>{formatNumber(metric.summary.cc5[id], metric.format || null)}</td>
+        {#each data.years as year, id}
+          <td>{formatNumber(sumGroup(data, id, groups["County Commission"]["5"]), metric.format || null)}</td>
         {/each}
       </tr><tr>
         <th>Commission District 6</th>
-        {#each metric.years as year, id}
-          <td>{formatNumber(metric.summary.cc6[id], metric.format || null)}</td>
+        {#each data.years as year, id}
+          <td>{formatNumber(sumGroup(data, id, groups["County Commission"]["6"]), metric.format || null)}</td>
         {/each}
       </tr>
     </tbody>

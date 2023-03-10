@@ -7,6 +7,7 @@
   export let idx
   export let mode = "m"
   export let metric
+  export let data
 
   let isOpen = false
 
@@ -47,7 +48,7 @@
         ><use xlink:href="#icon-map" /></svg
       >
     </button>
-    {#if metric.years.length > 1}
+    {#if data && data.years.length > 1}
       <button title="Chart" aria-label="Chart" class="btn {mode === 'c' ? 'active' : ''}" on:click={() => handleModeChange("c")}>
         <svg class="w-4 h-4 fill-current"
           ><use xlink:href="#icon-stats-dots" /></svg
@@ -101,7 +102,7 @@
             >Download Chart
           </button>
           {/if}
-          <a target="_blank" href={`data/meta/m${metric.metric}.html`}
+          <a target="_blank" href={`https://mcmap.org/qol/data/meta/m${metric.metric}.html`}
             on:click={() => isOpen = false}>View Metadata
           </a>
         </div>

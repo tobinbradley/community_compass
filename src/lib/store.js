@@ -1,6 +1,8 @@
 import { writable, readable, derived } from 'svelte/store'
 import dataConfig from './data/config.json'
 
+dataConfig.sort((a, b) => a.title > b.title ? 1 : -1 )
+
 // assign ID for draggable grid
 function assignId(metric, idx, mode = 'm') {
   let newElem = Object.assign({}, metric)
@@ -22,21 +24,15 @@ let startCards = []
         if (argArray.length === 1) {
           startCards.push(assignId(metric[0], idx + 1))
         } else {
-          if (argArray[1] === 'm' || argArray[1] === 't') {
-            startCards.push(assignId(metric[0], idx + 1, argArray[1]))
-          } else if (argArray[1] === 'c' && metric[0].years.length > 1) {
-            startCards.push(assignId(metric[0], idx + 1, argArray[1]))
-          } else {
-            startCards.push(assignId(metric[0], idx + 1))
-          }
+          startCards.push(assignId(metric[0], idx + 1, argArray[1]))
         }
       }
     })
   } else {
     startCards = [
-      assignId(dataConfig.filter(el => el.metric == 39)[0], 1),
-      assignId(dataConfig.filter(el => el.metric == 54)[0], 2),
-      assignId(dataConfig.filter(el => el.metric == 20)[0], 3)
+      assignId(dataConfig.filter(el => el.metric == 'm39')[0], 1),
+      assignId(dataConfig.filter(el => el.metric == 'm54')[0], 2),
+      assignId(dataConfig.filter(el => el.metric == 'm20')[0], 3)
     ]
   }
 

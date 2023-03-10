@@ -3,6 +3,43 @@ export function isNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n)
 }
 
+export function groupYears(data, grp = null) {
+  const vals = []
+  data.years.forEach((year, idx) => {
+    vals.push(sumGroup(data, idx, grp))
+  })
+  return vals
+}
+
+// sum qol group
+export function sumGroup(data, yearId, grp = null) {
+  let n = []
+  let d = []
+
+  Object.keys(data.m).forEach((k) => {
+    if (
+      (!grp || grp.includes(k)) &&
+      isNumeric(data.m[k][yearId]) &&
+      isNumeric(data.d[k][yearId])
+    ) {
+      n.push(data.m[k][yearId] * data.d[k][yearId])
+      d.push(data.d[k][yearId])
+    }
+  })
+
+  if (n.length > 0) {
+    return (
+      n.reduce((x, y) => {
+        return x + y
+      }) /
+      d.reduce((x, y) => {
+        return x + y
+      })
+    )
+  }
+  return "--"
+}
+
 // format number output
 export function formatNumber(n, type = null) {
   if (!isNumeric(n)) return 'N/A'

@@ -1,5981 +1,738 @@
 [
   {
-    "metric": "52",
-    "title": "311 Requests",
-    "years": [
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Calls per 100 People",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        22.9,
-        22,
-        23.2,
-        25.6,
-        27,
-        27.6,
-        26.2,
-        31.9
-      ],
-      "charlotte": [
-        27.5,
-        26.6,
-        28.1,
-        31,
-        32.8,
-        33.5,
-        31.8,
-        38.7
-      ],
-      "cc1": [
-        10.3,
-        9.6,
-        10,
-        11.4,
-        12.3,
-        12.2,
-        12.1,
-        14.8
-      ],
-      "cc2": [
-        32.8,
-        31.6,
-        32.9,
-        35.9,
-        37.9,
-        38.4,
-        35.7,
-        43
-      ],
-      "cc3": [
-        27.3,
-        26.7,
-        28.4,
-        31.5,
-        33,
-        34,
-        32.1,
-        39.3
-      ],
-      "cc4": [
-        27.4,
-        26.4,
-        28.1,
-        30.2,
-        31.3,
-        32.7,
-        32,
-        38.6
-      ],
-      "cc5": [
-        28.8,
-        27.4,
-        29.3,
-        31.9,
-        34.1,
-        35.4,
-        33.1,
-        40.6
-      ],
-      "cc6": [
-        14,
-        13.2,
-        14,
-        15.5,
-        16.9,
-        16.4,
-        15.6,
-        19.3
-      ]
-    }
-  },
-  {
-    "metric": "43",
-    "title": "Adopt-a-Stream Participation",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        19.6,
-        36.1,
-        33.3,
-        38.5,
-        34.3,
-        45.6
-      ],
-      "charlotte": [
-        22.6,
-        39.5,
-        35.6,
-        40.2,
-        35.5,
-        46.6
-      ],
-      "cc1": [
-        8.9,
-        23.5,
-        24.3,
-        27.7,
-        24,
-        40.9
-      ],
-      "cc2": [
-        8.7,
-        19.3,
-        16.4,
-        18.9,
-        21.2,
-        32.2
-      ],
-      "cc3": [
-        15.2,
-        30.8,
-        26.8,
-        29.4,
-        35.9,
-        41.6
-      ],
-      "cc4": [
-        26.3,
-        50.6,
-        47.3,
-        56.1,
-        42.3,
-        50.2
-      ],
-      "cc5": [
-        50.3,
-        79.9,
-        76.3,
-        76.3,
-        62.9,
-        76.5
-      ],
-      "cc6": [
-        8.8,
-        22.1,
-        25.8,
-        36.6,
-        27.9,
-        38.2
-      ]
-    }
-  },
-  {
-    "metric": "71",
-    "title": "Adopt-a-Street Participation",
-    "years": [
-      "2017",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        15.7,
-        19.7
-      ],
-      "charlotte": [
-        14.9,
-        18.9
-      ],
-      "cc1": [
-        8.3,
-        10.4
-      ],
-      "cc2": [
-        13.8,
-        18.5
-      ],
-      "cc3": [
-        15.2,
-        20
-      ],
-      "cc4": [
-        23.5,
-        26.7
-      ],
-      "cc5": [
-        17.1,
-        21.1
-      ],
-      "cc6": [
-        7.7,
-        11.1
-      ]
-    }
-  },
-  {
-    "metric": "57",
-    "title": "Age of Death",
-    "years": [
-      "2010",
-      "2012",
-      "2014",
-      "2016",
-      "2019"
-    ],
-    "label": "Years",
-    "summary": {
-      "mecklenburg": [
-        70,
-        72,
-        71,
-        71,
-        72
-      ],
-      "charlotte": [
-        69,
-        71,
-        70,
-        70,
-        71
-      ],
-      "cc1": [
-        71,
-        73,
-        72,
-        72,
-        73
-      ],
-      "cc2": [
-        65,
-        66,
-        67,
-        67,
-        67
-      ],
-      "cc3": [
-        65,
-        67,
-        67,
-        66,
-        67
-      ],
-      "cc4": [
-        68,
-        69,
-        68,
-        68,
-        69
-      ],
-      "cc5": [
-        76,
-        77,
-        78,
-        77,
-        78
-      ],
-      "cc6": [
-        72,
-        75,
-        75,
-        76,
-        76
-      ]
-    }
-  },
-  {
-    "metric": "2",
+    "metric": "m2",
+    "category": "Character",
+    "label": "years",
     "title": "Age of Residents",
-    "years": [
-      "2020"
-    ],
-    "label": "Years",
-    "summary": {
-      "mecklenburg": [
-        37
-      ],
-      "charlotte": [
-        36
-      ],
-      "cc1": [
-        40
-      ],
-      "cc2": [
-        34
-      ],
-      "cc3": [
-        33
-      ],
-      "cc4": [
-        33
-      ],
-      "cc5": [
-        40
-      ],
-      "cc6": [
-        40
-      ]
-    }
+    "world_val": {
+      "y_2020": 35.2
+    },
+    "subtitle": "Median age of residents",
+    "related": ["m47", "m13", "m12"]
   },
   {
-    "metric": "50",
-    "title": "Arts and Culture Participation",
-    "years": [
-      "2013"
-    ],
+    "metric": "m13",
+    "category": "Character",
     "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        15
-      ],
-      "charlotte": [
-        14.9
-      ],
-      "cc1": [
-        16.2
-      ],
-      "cc2": [
-        6.4
-      ],
-      "cc3": [
-        8.2
-      ],
-      "cc4": [
-        13.3
-      ],
-      "cc5": [
-        26.7
-      ],
-      "cc6": [
-        17.5
-      ]
-    }
+    "title": "Population - Older Adult",
+    "subtitle": "Percentage of the population age 65 and over",
+    "related": ["m12", "m2"]
   },
   {
-    "metric": "34",
-    "title": "Bicycle Friendliness",
-    "years": [
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2021"
-    ],
-    "label": "Index Value (1-3)",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        1.5,
-        1.5,
-        1.4,
-        1.4,
-        1.4,
-        1.4
-      ],
-      "charlotte": [
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.5
-      ],
-      "cc1": [
-        1.4,
-        1.4,
-        1.4,
-        1.4,
-        1.4,
-        1.5
-      ],
-      "cc2": [
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.5
-      ],
-      "cc3": [
-        1.4,
-        1.4,
-        1.4,
-        1.4,
-        1.5,
-        1.5
-      ],
-      "cc4": [
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.5
-      ],
-      "cc5": [
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.5
-      ],
-      "cc6": [
-        1.4,
-        1.3,
-        1.3,
-        1.3,
-        1.3,
-        0.7
-      ]
-    }
-  },
-  {
-    "metric": "54",
-    "title": "Births to Adolescents",
-    "years": [
-      "2010",
-      "2012",
-      "2014",
-      "2016",
-      "2019"
-    ],
+    "metric": "m12",
+    "category": "Character",
     "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        4.8,
-        3.5,
-        2.9,
-        2.7,
-        2.4
-      ],
-      "charlotte": [
-        5.1,
-        3.8,
-        3.2,
-        3,
-        2.6
-      ],
-      "cc1": [
-        2,
-        1.3,
-        1.2,
-        0.8,
-        0.7
-      ],
-      "cc2": [
-        8.1,
-        6,
-        4.7,
-        4.5,
-        3.7
-      ],
-      "cc3": [
-        6.1,
-        4.6,
-        4,
-        3.6,
-        3.2
-      ],
-      "cc4": [
-        5.9,
-        4.8,
-        3.8,
-        3.7,
-        3.3
-      ],
-      "cc5": [
-        2.1,
-        1.3,
-        1.5,
-        1.3,
-        1.1
-      ],
-      "cc6": [
-        2.4,
-        1.4,
-        1.1,
-        1,
-        1.3
-      ]
-    }
+    "title": "Population - Youth",
+    "subtitle": "Percentage of the population under the age of 18",
+    "related": ["m13", "m47", "m2", "m22", "m21"]
   },
   {
-    "metric": "61",
-    "title": "Calls for Animal Care and Control",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Calls per 1,000 People",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        51.4,
-        45.7,
-        36.8,
-        34.8,
-        31.7,
-        31.8,
-        30,
-        25.4,
-        25
-      ],
-      "charlotte": [
-        51.9,
-        47.8,
-        38.3,
-        36.4,
-        34,
-        33.5,
-        30.7,
-        26,
-        25.6
-      ],
-      "cc1": [
-        38.2,
-        34.9,
-        25.8,
-        24.5,
-        14,
-        22.3,
-        20.4,
-        17.2,
-        18.1
-      ],
-      "cc2": [
-        71.3,
-        72.6,
-        53,
-        53.8,
-        48.3,
-        46.8,
-        44.6,
-        36.6,
-        34.9
-      ],
-      "cc3": [
-        61.9,
-        55.9,
-        43,
-        40.1,
-        34.8,
-        36.1,
-        33.1,
-        29,
-        28.6
-      ],
-      "cc4": [
-        65.3,
-        56.2,
-        47.8,
-        43.3,
-        42.2,
-        40.5,
-        35,
-        30.2,
-        29.9
-      ],
-      "cc5": [
-        34.8,
-        31.8,
-        26.6,
-        23.4,
-        25,
-        24.8,
-        22.3,
-        18.8,
-        18
-      ],
-      "cc6": [
-        25.4,
-        20.1,
-        21.9,
-        20,
-        23.9,
-        16.3,
-        16.6,
-        12.9,
-        13.7
-      ]
-    }
+    "metric": "m47",
+    "category": "Character",
+    "label": "people per Acre",
+    "raw_label": "people",
+    "title": "Population Density",
+    "subtitle": "Concentration of residents",
+    "raw_val": {
+      "y_2020": 1115482
+    },
+    "related": ["m5", "m13", "m12"]
   },
   {
-    "metric": "42",
+    "metric": "m17",
+    "category": "Character",
+    "format": "percent",
+    "title": "Race/Ethnicity - All Other Races",
+    "subtitle": "Percentage of population self-identified as American Indian, Native Hawaiian, some other race, or two or more races",
+    "related": ["m2", "m18", "m16", "m15", "m14"]
+  },
+  {
+    "metric": "m16",
+    "category": "Character",
+    "format": "percent",
+    "title": "Race/Ethnicity - Asian",
+    "subtitle": "Percentage of population self-identified as Asian",
+    "related": ["m2", "m18", "m15", "m17", "m14"]
+  },
+  {
+    "metric": "m15",
+    "category": "Character",
+    "format": "percent",
+    "title": "Race/Ethnicity - Black or African American",
+    "subtitle": "Percentage of population self-identified as Black or African-American",
+    "related": ["m2", "m18", "m16", "m17", "m14"]
+  },
+  {
+    "metric": "m18",
+    "category": "Character",
+    "format": "percent",
+    "title": "Race/Ethnicity - Hispanic or Latino",
+    "subtitle": "Percentage of population self-identified as Hispanic or Latino",
+    "related": ["m2", "m16", "m15", "m14", "m17"]
+  },
+  {
+    "metric": "m14",
+    "category": "Character",
+    "format": "percent",
+    "title": "Race/Ethnicity - White or Caucasian",
+    "subtitle": "Percentage of population self-identified as White or Caucasian",
+    "related": ["m2", "m18", "m16", "m15", "m17"]
+  },
+  {
+    "metric": "m11",
+    "category": "Character",
+    "format": "percent",
+    "raw_label": "acres",
+    "title": "Vacant Land",
+    "subtitle": "Percentage of land area that is classified as vacant",
+    "related": ["m1", "m3", "m8", "m4", "m19"]
+  },
+  {
+    "metric": "m42",
+    "category": "Economy",
+    "label": "years",
     "title": "Commercial Building Age",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020"
-    ],
-    "label": "Years",
-    "summary": {
-      "mecklenburg": [
-        34,
-        36,
-        37,
-        38,
-        38,
-        39,
-        36
-      ],
-      "charlotte": [
-        35,
-        36,
-        38,
-        38,
-        39,
-        39,
-        37
-      ],
-      "cc1": [
-        24,
-        26,
-        27,
-        28,
-        28,
-        29,
-        26
-      ],
-      "cc2": [
-        36,
-        37,
-        39,
-        39,
-        40,
-        40,
-        40
-      ],
-      "cc3": [
-        37,
-        38,
-        40,
-        40,
-        41,
-        41,
-        40
-      ],
-      "cc4": [
-        44,
-        46,
-        48,
-        48,
-        49,
-        49,
-        47
-      ],
-      "cc5": [
-        35,
-        36,
-        38,
-        38,
-        39,
-        39,
-        37
-      ],
-      "cc6": [
-        24,
-        25,
-        27,
-        28,
-        29,
-        29,
-        27
-      ]
-    }
+    "subtitle": "Average age of commercial buildings",
+    "related": ["m41", "m19", "m75"]
   },
   {
-    "metric": "19",
+    "metric": "m19",
+    "category": "Economy",
+    "label": "permits per 100 acres",
+    "raw_label": "permits",
     "title": "Commercial Construction",
-    "years": [
-      "2011",
-      "2012",
-      "2013",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Permits per 100 Acres",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        1.2,
-        1.4,
-        1.3,
-        1.2,
-        1.3,
-        1.3,
-        1.3,
-        1.2,
-        1.2,
-        1.3,
-        1.3
-      ],
-      "charlotte": [
-        1.4,
-        1.6,
-        1.5,
-        1.4,
-        1.6,
-        1.4,
-        1.4,
-        1.4,
-        1.4,
-        1.5,
-        1.6
-      ],
-      "cc1": [
-        0.5,
-        0.6,
-        0.7,
-        0.6,
-        0.5,
-        0.6,
-        0.5,
-        0.5,
-        0.5,
-        0.5,
-        0.5
-      ],
-      "cc2": [
-        1,
-        1,
-        0.9,
-        1.2,
-        1.1,
-        1.1,
-        1.1,
-        1,
-        1.2,
-        1.4,
-        1.3
-      ],
-      "cc3": [
-        1.2,
-        1.1,
-        1.1,
-        1,
-        1.1,
-        1.1,
-        1.2,
-        1.7,
-        1.1,
-        1.2,
-        1.4
-      ],
-      "cc4": [
-        2.3,
-        3,
-        1.7,
-        2,
-        2.1,
-        1.9,
-        1.9,
-        1.7,
-        1.8,
-        2.2,
-        2
-      ],
-      "cc5": [
-        1.8,
-        2,
-        2.7,
-        2.1,
-        3.2,
-        2,
-        2.3,
-        1.8,
-        2.1,
-        2,
-        3.1
-      ],
-      "cc6": [
-        0.8,
-        1.2,
-        1.2,
-        0.8,
-        0.9,
-        1,
-        1,
-        0.9,
-        0.9,
-        0.9,
-        0.9
-      ]
-    }
+    "decimals": 1,
+    "subtitle": "Concentration of commercial building permits",
+    "related": ["m42", "m41", "m19", "m75"]
   },
   {
-    "metric": "41",
+    "metric": "m41",
+    "category": "Economy",
+    "label": "average ft<sup>2</sup>",
+    "raw_label": "ft<sup>2</sup>",
     "title": "Commercial Space",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020"
-    ],
-    "label": "Average Square Feet",
-    "summary": {
-      "mecklenburg": [
-        31399,
-        32214,
-        32239,
-        32607,
-        32834,
-        31271,
-        21977
-      ],
-      "charlotte": [
-        30520,
-        31324,
-        31217,
-        31707,
-        32127,
-        31281,
-        22164
-      ],
-      "cc1": [
-        31218,
-        31494,
-        31574,
-        33233,
-        32336,
-        28653,
-        20917
-      ],
-      "cc2": [
-        25600,
-        25743,
-        25289,
-        25479,
-        26156,
-        26625,
-        17541
-      ],
-      "cc3": [
-        38018,
-        38588,
-        38520,
-        39098,
-        39512,
-        39152,
-        26506
-      ],
-      "cc4": [
-        21205,
-        22587,
-        22372,
-        23126,
-        23991,
-        23873,
-        16510
-      ],
-      "cc5": [
-        27944,
-        29023,
-        28504,
-        29151,
-        30031,
-        29251,
-        21338
-      ],
-      "cc6": [
-        28832,
-        29226,
-        30102,
-        29337,
-        29447,
-        27856,
-        18713
-      ]
-    }
+    "subtitle": "Average square footage of commercial space per parcel",
+    "related": ["m19", "m42", "m75"]
   },
   {
-    "metric": "10",
-    "title": "Commuters Driving Alone",
-    "years": [
-      "2020"
-    ],
+    "metric": "m38",
+    "category": "Economy",
     "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        83.1
-      ],
-      "charlotte": [
-        82.8
-      ],
-      "cc1": [
-        89.3
-      ],
-      "cc2": [
-        79.9
-      ],
-      "cc3": [
-        82.4
-      ],
-      "cc4": [
-        79.7
-      ],
-      "cc5": [
-        86.2
-      ],
-      "cc6": [
-        85.7
-      ]
-    }
-  },
-  {
-    "metric": "59",
-    "title": "Crime - Property",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Crimes per 1,000 People",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        37,
-        33,
-        31.5,
-        35.6,
-        37.4,
-        33.4,
-        35.8,
-        35.8,
-        31.5
-      ],
-      "charlotte": [
-        39.6,
-        35.2,
-        34.5,
-        38.4,
-        38.2,
-        36.2,
-        35.6,
-        35.7,
-        31.3
-      ],
-      "cc1": [
-        25.4,
-        20.9,
-        14.9,
-        21.8,
-        26.4,
-        20.5,
-        26.8,
-        23.4,
-        21
-      ],
-      "cc2": [
-        56.1,
-        47.8,
-        46.4,
-        51.3,
-        48.3,
-        46.9,
-        44,
-        46.5,
-        41
-      ],
-      "cc3": [
-        47.9,
-        43.9,
-        43.8,
-        47.7,
-        45.9,
-        42.8,
-        41.7,
-        43.4,
-        38.5
-      ],
-      "cc4": [
-        50.7,
-        45.6,
-        43.9,
-        46.7,
-        46.9,
-        41.9,
-        44,
-        43.9,
-        35.6
-      ],
-      "cc5": [
-        28.7,
-        23,
-        22.2,
-        24.7,
-        27.2,
-        26.2,
-        25.5,
-        24.2,
-        21.4
-      ],
-      "cc6": [
-        23.1,
-        18.2,
-        18.4,
-        17.9,
-        22.5,
-        14,
-        16.6,
-        14,
-        14.9
-      ]
-    }
-  },
-  {
-    "metric": "58",
-    "title": "Crime - Violent",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Crimes per 1,000 People",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        4.1,
-        4.4,
-        4.2,
-        5,
-        5.2,
-        4.6,
-        5,
-        5.2,
-        5.5
-      ],
-      "charlotte": [
-        4.3,
-        4.8,
-        4.6,
-        5.5,
-        5.6,
-        5,
-        5.2,
-        5.4,
-        5.7
-      ],
-      "cc1": [
-        1.3,
-        1.1,
-        1.2,
-        1.6,
-        1.6,
-        2,
-        2.1,
-        2.4,
-        2.9
-      ],
-      "cc2": [
-        7.3,
-        8.2,
-        8.4,
-        9.1,
-        9.1,
-        8.3,
-        8.4,
-        9,
-        9.8
-      ],
-      "cc3": [
-        6,
-        6.8,
-        6.4,
-        8.5,
-        8.2,
-        7.3,
-        7.1,
-        7.5,
-        7.9
-      ],
-      "cc4": [
-        6.6,
-        7,
-        6.2,
-        7.1,
-        7.4,
-        6.3,
-        7,
-        6.6,
-        6.2
-      ],
-      "cc5": [
-        1.8,
-        1.7,
-        1.3,
-        1.8,
-        1.9,
-        1.8,
-        1.8,
-        2,
-        2.3
-      ],
-      "cc6": [
-        1.2,
-        1.6,
-        1.5,
-        1,
-        1.2,
-        1,
-        1,
-        0.9,
-        0.9
-      ]
-    }
-  },
-  {
-    "metric": "60",
-    "title": "Disorder-related Calls",
-    "years": [
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Calls per 1,000 People",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        134.9,
-        122.7,
-        126.8,
-        122.6,
-        111,
-        90.7,
-        107.2,
-        97
-      ],
-      "charlotte": [
-        133.8,
-        131.3,
-        133.2,
-        126.2,
-        113.3,
-        102.7,
-        104.5,
-        95.3
-      ],
-      "cc1": [
-        67.9,
-        42.8,
-        46.8,
-        46.5,
-        41.4,
-        25.9,
-        54.8,
-        51.9
-      ],
-      "cc2": [
-        199.6,
-        200.9,
-        196.4,
-        188,
-        170.6,
-        155.6,
-        155.2,
-        139
-      ],
-      "cc3": [
-        171.5,
-        168,
-        175.7,
-        159.6,
-        136.1,
-        131.8,
-        131.7,
-        122.4
-      ],
-      "cc4": [
-        182.5,
-        181.4,
-        179.7,
-        167.2,
-        153.7,
-        135.1,
-        139.1,
-        121.6
-      ],
-      "cc5": [
-        80.5,
-        71.9,
-        75.7,
-        76.1,
-        69,
-        59.3,
-        58.5,
-        53
-      ],
-      "cc6": [
-        42.3,
-        50.3,
-        43.2,
-        45.8,
-        42.4,
-        18,
-        32.6,
-        31.8
-      ]
-    }
-  },
-  {
-    "metric": "20",
-    "title": "Education Level - Bachelor's Degree",
-    "years": [
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        45.8
-      ],
-      "charlotte": [
-        44.3
-      ],
-      "cc1": [
-        52.1
-      ],
-      "cc2": [
-        30.5
-      ],
-      "cc3": [
-        35.1
-      ],
-      "cc4": [
-        37.6
-      ],
-      "cc5": [
-        63.9
-      ],
-      "cc6": [
-        53.3
-      ]
-    }
-  },
-  {
-    "metric": "39",
-    "title": "Education Level - High School Diploma",
-    "years": [
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        90.5
-      ],
-      "charlotte": [
-        89.5
-      ],
-      "cc1": [
-        95.7
-      ],
-      "cc2": [
-        84.9
-      ],
-      "cc3": [
-        86.2
-      ],
-      "cc4": [
-        85.8
-      ],
-      "cc5": [
-        95.3
-      ],
-      "cc6": [
-        94.3
-      ]
-    }
-  },
-  {
-    "metric": "38",
     "title": "Employment",
-    "years": [
-      "2020"
-    ],
+    "subtitle": "Percentage of adults in the labor force who are employed",
+    "related": ["m20", "m39", "m33", "m40"]
+  },
+  {
+    "metric": "m80",
+    "category": "Economy",
     "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        95.2
-      ],
-      "charlotte": [
-        94.9
-      ],
-      "cc1": [
-        96.4
-      ],
-      "cc2": [
-        93.4
-      ],
-      "cc3": [
-        94.9
-      ],
-      "cc4": [
-        94.3
-      ],
-      "cc5": [
-        96.1
-      ],
-      "cc6": [
-        95.9
-      ]
-    }
-  },
-  {
-    "metric": "26",
-    "title": "Energy Consumption - Electricity",
-    "years": [
-      "2012",
-      "2013"
-    ],
-    "label": "Kilowatt hours per month per unit",
-    "summary": {
-      "mecklenburg": [
-        1123,
-        1184
-      ],
-      "charlotte": [
-        1123,
-        1172
-      ],
-      "cc1": [
-        1101,
-        1047
-      ],
-      "cc2": [
-        1056,
-        1087
-      ],
-      "cc3": [
-        1090,
-        1148
-      ],
-      "cc4": [
-        1029,
-        1110
-      ],
-      "cc5": [
-        1218,
-        1266
-      ],
-      "cc6": [
-        1281,
-        1249
-      ]
-    }
-  },
-  {
-    "metric": "77",
-    "title": "Energy Consumption - Natural Gas",
-    "years": [
-      "2013"
-    ],
-    "label": "Therms per month per unit",
-    "summary": {
-      "mecklenburg": [
-        51
-      ],
-      "charlotte": [
-        51
-      ],
-      "cc1": [
-        52
-      ],
-      "cc2": [
-        48
-      ],
-      "cc3": [
-        49
-      ],
-      "cc4": [
-        46
-      ],
-      "cc5": [
-        56
-      ],
-      "cc6": [
-        53
-      ]
-    }
-  },
-  {
-    "metric": "78",
-    "title": "Fire Calls for Service",
-    "years": [
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Calls per 1,000 People",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        26.9,
-        29.8,
-        31,
-        34.1,
-        33.2,
-        36.1,
-        36.1,
-        37.1
-      ],
-      "charlotte": [
-        26.4,
-        29.1,
-        30.3,
-        36.4,
-        34.2,
-        35.5,
-        35.5,
-        36.7
-      ],
-      "cc1": [
-        16.9,
-        20.6,
-        22.3,
-        20.3,
-        23,
-        23.1,
-        22.7,
-        25.4
-      ],
-      "cc2": [
-        33.6,
-        37,
-        37.3,
-        46.4,
-        43.5,
-        42.4,
-        43.3,
-        45
-      ],
-      "cc3": [
-        29.8,
-        32.5,
-        33.8,
-        40.2,
-        37.7,
-        39.3,
-        39.3,
-        41.6
-      ],
-      "cc4": [
-        28.6,
-        31.3,
-        32.6,
-        40.3,
-        39.2,
-        40.6,
-        41.1,
-        42.3
-      ],
-      "cc5": [
-        26,
-        28.6,
-        29.7,
-        35.9,
-        33,
-        37.2,
-        36.2,
-        35.8
-      ],
-      "cc6": [
-        18.2,
-        20.5,
-        21.3,
-        23.4,
-        24.5,
-        20.4,
-        21.2,
-        20.4
-      ]
-    }
-  },
-  {
-    "metric": "80",
     "title": "Food and Nutrition Services",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        16,
-        15,
-        15.8,
-        16.3,
-        13.5,
-        11.8,
-        9.9,
-        12.6,
-        14.9
-      ],
-      "charlotte": [
-        18,
-        17,
-        18,
-        18.5,
-        15.3,
-        13.5,
-        11.3,
-        14.4,
-        16.9
-      ],
-      "cc1": [
-        6.8,
-        6,
-        5.9,
-        6,
-        5.2,
-        4.7,
-        4.7,
-        6.5,
-        8
-      ],
-      "cc2": [
-        29.3,
-        27.3,
-        29.2,
-        29.8,
-        24.5,
-        21.8,
-        17.5,
-        21.8,
-        25.1
-      ],
-      "cc3": [
-        22.7,
-        21.7,
-        23.4,
-        23.9,
-        20.2,
-        17.5,
-        14.4,
-        18.5,
-        21.9
-      ],
-      "cc4": [
-        25.4,
-        23.9,
-        24.7,
-        25.5,
-        20.9,
-        18.1,
-        14.4,
-        18,
-        20.9
-      ],
-      "cc5": [
-        7.2,
-        6.6,
-        6.5,
-        6.6,
-        5.3,
-        4.8,
-        4.1,
-        5.4,
-        6.5
-      ],
-      "cc6": [
-        6.8,
-        6.4,
-        6.3,
-        6.5,
-        5.5,
-        4.7,
-        4.1,
-        5.6,
-        6.9
-      ]
-    }
+    "subtitle": "Percentage of the population who receive Food and Nutrition Services (FNS)",
+    "related": ["m81", "m45", "m28", "m37"]
   },
   {
-    "metric": "65",
+    "metric": "m37",
+    "category": "Economy",
+    "format": "money",
+    "title": "Household Income",
+    "world_val": {
+      "y_2020": 69240
+    },
+    "subtitle": "Median household income",
+    "related": ["m38", "m20", "m39", "m47", "m40"]
+  },
+  {
+    "metric": "m75",
+    "category": "Economy",
+    "label": "jobs per acre",
+    "raw_label": "jobs",
+    "title": "Job Density",
+    "decimals": 1,
+    "subtitle": "Concentration of jobs",
+    "related": ["m42", "m41", "m19", "m10", "m33"]
+  },
+  {
+    "metric": "m71",
+    "category": "Environment",
+    "format": "percent",
+    "raw_label": "miles",
+    "title": "Adopt-a-Street Participation",
+    "subtitle": "Percentage of eligible streets adopted for clean-up",
+    "related": ["m43", "m32", "m60", "m32"]
+  },
+  {
+    "metric": "m79",
+    "category": "Economy",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Proximity to Financial Services",
+    "subtitle": "Percentage of housing units within &#189;-mile of a bank or credit union"
+  },
+  {
+    "metric": "m20",
+    "category": "Education",
+    "format": "percent",
+    "title": "Education Level - Bachelor's Degree",
+    "subtitle": "Percentage of adults over age 25 with a Bachelor's degree or higher",
+    "related": ["m39", "m38", "m37", "m80", "m57"]
+  },
+  {
+    "metric": "m39",
+    "category": "Education",
+    "format": "percent",
+    "title": "Education Level - High School Diploma",
+    "subtitle": "Percentage of adults over age 25 with a high school diploma or equivalent",
+    "related": ["m20", "m65", "m38", "m37", "m80"]
+  },
+  {
+    "metric": "m65",
+    "category": "Education",
+    "format": "percent",
     "title": "High School Graduation Rate",
-    "years": [
-      "2013",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        81,
-        85.5,
-        88.8,
-        90.3,
-        91.2,
-        89.3,
-        89.1
-      ],
-      "charlotte": [
-        79.8,
-        84.4,
-        88,
-        89.5,
-        90.6,
-        89.1,
-        89.1
-      ],
-      "cc1": [
-        90,
-        92.2,
-        92.6,
-        94.4,
-        94.6,
-        90.8,
-        88.9
-      ],
-      "cc2": [
-        74.3,
-        78.4,
-        80.9,
-        85.4,
-        85.5,
-        89.2,
-        89.8
-      ],
-      "cc3": [
-        76.3,
-        81.2,
-        86.7,
-        88.1,
-        89.3,
-        85.6,
-        85.4
-      ],
-      "cc4": [
-        70.6,
-        78.4,
-        84.8,
-        85.3,
-        87.8,
-        87,
-        85.2
-      ],
-      "cc5": [
-        86.3,
-        90.4,
-        92.3,
-        93,
-        93.9,
-        91.8,
-        92.4
-      ],
-      "cc6": [
-        90.2,
-        93.3,
-        95,
-        95.3,
-        96.4,
-        91.7,
-        92
-      ]
-    }
+    "subtitle": "Percentage of Charlotte-Mecklenburg Schools (CMS) students graduating high school in 4 years",
+    "world_val": {
+      "y_2014": "86.00",
+      "y_2013": "81.00",
+      "y_2017": "89.00",
+      "y_2015": "89.00",
+      "y_2016": "90.00"
+    },
+    "related": ["m39", "m64", "m66", "m38", "m37", "m54"]
   },
   {
-    "metric": "88",
+    "metric": "m51",
+    "category": "Education",
+    "format": "percent",
+    "title": "Library Card Holders",
+    "subtitle": "Percentage of population with an active library card",
+    "related": ["m12", "m62", "m63", "m64"]
+  },
+  {
+    "metric": "m67",
+    "category": "Education",
+    "format": "percent",
+    "title": "Neighborhood School Attendance ",
+    "subtitle": "Percentage of Charlotte-Mecklenburg Schools (CMS) students attending their home school",
+    "related": ["m12", "m62", "m63", "m64", "m37"]
+  },
+  {
+    "metric": "m21",
+    "category": "Education",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Proximity to Early Care and Education",
+    "subtitle": "Percentage of housing units within &#189;-mile of a licensed early care and education program for children birth to age 5",
+    "related": ["m22", "m12"]
+  },
+  {
+    "metric": "m22",
+    "category": "Education",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Proximity to School-Age Care",
+    "subtitle": "Percentage of housing units within &#189;-mile of a licensed school-age program for children ages 5-12",
+    "related": ["m12", "m21"]
+  },
+  {
+    "metric": "m66",
+    "category": "Education",
+    "format": "percent",
+    "title": "Student Absenteeism",
+    "subtitle": "Percentage of Charlotte-Mecklenburg Schools (CMS) students absent 10 percent or more of school days",
+    "related": ["m12", "m65", "m62", "m63", "m64", "m37", "m38"]
+  },
+  {
+    "metric": "m62",
+    "category": "Education",
+    "format": "percent",
+    "title": "Test Proficiency - Elementary School",
+    "subtitle": "Percentage of Charlotte-Mecklenburg Schools (CMS) students in grades 3-5 proficient in End of Grade testing",
+    "related": ["m63", "m64", "m20", "m39", "m37", "m38"]
+  },
+  {
+    "metric": "m64",
+    "category": "Education",
+    "format": "percent",
+    "title": "Test Proficiency - High School",
+    "subtitle": "Percentage of Charlotte-Mecklenburg Schools (CMS) students in grades 9-12 proficient in End-of-Course testing",
+    "related": ["m62", "m63", "m20", "m39", "m37", "m38"]
+  },
+  {
+    "metric": "m63",
+    "category": "Education",
+    "format": "percent",
+    "title": "Test Proficiency - Middle School",
+    "subtitle": "Percentage of Charlotte-Mecklenburg Schools (CMS) students in grades 6-8 proficient in End of Grade testing",
+    "related": ["m62", "m64", "m20", "m39", "m37", "m38"]
+  },
+  {
+    "metric": "m52",
+    "category": "Engagement",
+    "label": "calls per 100 people",
+    "raw_label": "calls",
+    "title": "311 Requests",
+    "decimals": 1,
+    "subtitle": "Concentration of 311 requests from residents",
+    "related": ["m32", "m68", "m73", "m31"]
+  },
+  {
+    "metric": "m72",
+    "category": "Engagement",
+    "label": "residents serving per 1,000 people",
+    "raw_label": "people",
+    "title": "Municipal Board/Committee Participation",
+    "subtitle": "Number of residents that serve on appointed public boards, committees and commissions per 1,000 residents"
+  },
+  {
+    "metric": "m73",
+    "category": "Engagement",
+    "label": "organizations",
+    "title": "Neighborhood Organizations",
+    "type": "sum",
+    "subtitle": "Number of neighborhood organizations registered with the Charlotte-Mecklenburg Planning Department"
+  },
+  {
+    "metric": "m48",
+    "category": "Engagement",
+    "format": "percent",
+    "raw_label": "people",
+    "title": "Voter Participation",
+    "subtitle": "Percentage of registered voters that voted in the general election",
+    "related": ["m20", "m39", "m37"]
+  },
+  {
+    "metric": "m43",
+    "category": "Environment",
+    "format": "percent",
+    "raw_label": "miles",
+    "title": "Adopt-a-Stream Participation",
+    "subtitle": "Percentage of eligible streams adopted for clean-up",
+    "related": ["m71", "m4", "m73"]
+  },
+  {
+    "metric": "m10",
+    "category": "Environment",
+    "format": "percent",
+    "title": "Commuters Driving Alone",
+    "raw_label": "commuters",
+    "subtitle": "Percentage of workers who commute by driving alone",
+    "world_val": {
+      "y_2017": 83
+    },
+    "related": ["m75", "m33", "m44", "m34"]
+  },
+  {
+    "metric": "m26",
+    "category": "Environment",
+    "label": "<span title='Kilowatt-Hour' class='underline cursor-pointer'>kWh</span> per month per unit",
+    "raw_label": "<span title='Kilowatt-Hour' class='underline cursor-pointer'>kWh</span> per month",
+    "title": "Energy Consumption - Electricity",
+    "subtitle": "Average monthly household electricity consumption",
+    "related": ["m7", "m6", "m77", "m3"]
+  },
+  {
+    "metric": "m77",
+    "category": "Environment",
+    "label": "therms per month per unit",
+    "raw_label": "therms per month",
+    "title": "Energy Consumption - Natural Gas",
+    "subtitle": "Average monthly household natural gas consumption",
+    "related": ["m7", "m6", "m26", "m3"]
+  },
+  {
+    "metric": "m4",
+    "category": "Environment",
+    "format": "percent",
+    "raw_label": "acres",
+    "title": "Impervious Surface",
+    "subtitle": "Percentage of land area that is impervious",
+    "related": ["m11", "m47", "m3"]
+  },
+  {
+    "metric": "m23",
+    "category": "Environment",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Residential Recycling",
+    "subtitle": "Percentage of eligible households that participate in municipal curbside recycling",
+    "related": ["m24", "m25"]
+  },
+  {
+    "metric": "m24",
+    "category": "Environment",
+    "label": "pounds per day per unit",
+    "raw_label": "pounds per day",
+    "title": "Residential Solid Waste",
+    "decimals": 1,
+    "subtitle": "Average daily waste generation per household",
+    "related": ["m23", "m25", "m47"]
+  },
+  {
+    "metric": "m25",
+    "category": "Environment",
+    "format": "percent",
+    "raw_label": "tons",
+    "title": "Residential Solid Waste Diversion",
+    "decimals": 1,
+    "subtitle": "Percentage of residential solid waste diverted from landfills through recycling and yard waste processing",
+    "related": ["m23", "m24", "m47"]
+  },
+  {
+    "metric": "m3",
+    "category": "Environment",
+    "format": "percent",
+    "raw_label": "acres",
+    "title": "Tree Canopy",
+    "subtitle": "Percentage of land area covered by tree canopy",
+    "related": ["m4", "m49"]
+  },
+  {
+    "metric": "m49",
+    "category": "Environment",
+    "format": "percent",
+    "raw_label": "acres",
+    "title": "Tree Canopy - Residential",
+    "subtitle": "Percentage of residential land area covered by tree canopy",
+    "related": ["m4", "m3"]
+  },
+  {
+    "metric": "m27",
+    "category": "Environment",
+    "label": "gallons per day per unit",
+    "raw_label": "gallons per day",
+    "title": "Water Consumption",
+    "subtitle": "Average daily water consumption for single-family housing units",
+    "related": ["m30", "m26", "m77", "m24", "m23", "m4", "m43"]
+  },
+  {
+    "metric": "m57",
+    "category": "Health",
+    "label": "years",
+    "title": "Age of Death",
+    "subtitle": "Average age of death"
+  },
+  {
+    "metric": "m54",
+    "category": "Health",
+    "format": "percent",
+    "title": "Births to Adolescents",
+    "decimals": 1,
+    "subtitle": "Percentage of births to females under 19"
+  },
+  {
+    "metric": "m55",
+    "category": "Health",
+    "format": "percent",
+    "title": "Low Birthweight",
+    "subtitle": "Percentage of births where birth weight was less than 5lb 8oz",
+    "related": ["m56", "m81"]
+  },
+  {
+    "metric": "m56",
+    "category": "Health",
+    "format": "percent",
+    "title": "Prenatal Care",
+    "subtitle": "Percentage of births where mother received adequate pre-natal care",
+    "related": ["m55", "m54", "m81"]
+  },
+  {
+    "metric": "m46",
+    "category": "Health",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Proximity to a Pharmacy",
+    "subtitle": "Percentage of housing units within &#189;-mile of a pharmacy",
+    "related": ["m28", "m81"]
+  },
+  {
+    "metric": "m28",
+    "category": "Health",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Proximity to Low-Cost Health Care",
+    "subtitle": "Percentage of housing units within &#189;-mile of a Medicaid provider or free clinic",
+    "related": ["m46", "m81"]
+  },
+  {
+    "metric": "m74",
+    "category": "Health",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Proximity to Public Outdoor Recreation",
+    "subtitle": "Percentage of housing units within &#189;-mile of an outdoor public recreation area",
+    "related": ["m70", "m3", "m47", "m5", "m37"]
+  },
+  {
+    "metric": "m45",
+    "category": "Health",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Proximity to a Grocery Store",
+    "subtitle": "Percentage of housing units within &#189;-mile of a full-service, chain grocery store",
+    "related": ["m80", "m47", "m5", "m37", "m74"]
+  },
+  {
+    "metric": "m81",
+    "category": "Health",
+    "format": "percent",
+    "title": "Public Health Insurance",
+    "subtitle": "Percentage of the population who receive Medicaid or N.C. Health Choice",
+    "related": ["m80", "m28", "m46", "m37"]
+  },
+  {
+    "metric": "m29",
+    "category": "Housing",
+    "format": "percent",
+    "title": "Home Ownership",
+    "subtitle": "Percentage of housing units that are owner-occupied",
+    "related": ["m30", "m53", "m40", "m37", "m2", "m38", "m82"]
+  },
+  {
+    "metric": "m76",
+    "category": "Housing",
+    "format": "money",
+    "title": "Home Sales Price",
+    "subtitle": "Average sales price of homes",
+    "related": ["m29", "m69", "m30"]
+  },
+  {
+    "metric": "m7",
+    "category": "Housing",
+    "label": "years",
+    "title": "Housing Age",
+    "subtitle": "Average age of single-family housing units",
+    "related": ["m8", "m9", "m68", "m6"]
+  },
+  {
+    "metric": "m82",
+    "category": "Housing",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Housing Assistance – Development-Based",
+    "subtitle": "Percentage of housing units with development-based rental assistance",
+    "related": ["m5", "m8", "m9"]
+  },
+  {
+    "metric": "m68",
+    "category": "Housing",
+    "label": "violations per 100 units",
+    "title": "Housing Code Violations",
+    "raw_label": "violations",
+    "subtitle": "Housing-related code violations per 100 units",
+    "related": ["m32", "m5"]
+  },
+  {
+    "metric": "m5",
+    "category": "Housing",
+    "label": "units per acre",
+    "raw_label": "units",
+    "title": "Housing Density",
+    "decimals": 1,
+    "subtitle": "Concentration of housing units",
+    "related": ["m8", "m47", "m82", "m11", "m35", "m36", "m75"]
+  },
+  {
+    "metric": "m6",
+    "category": "Housing",
+    "label": "average ft<sup>2</sup>",
+    "title": "Housing Size",
+    "subtitle": "Average heated living space of single-family housing units",
+    "related": ["m7", "m76", "m8", "m9", "m26", "m77", "m4", "m3"]
+  },
+  {
+    "metric": "m40",
+    "category": "Housing",
+    "format": "money",
+    "title": "Rental Costs",
+    "world_val": {
+      "y_2020": 1195
+    },
+    "subtitle": "Median gross rent of renter-occupied housing units",
+    "related": ["m53", "m29", "m37", "m82"]
+  },
+  {
+    "metric": "m53",
+    "category": "Housing",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Rental Houses",
+    "subtitle": "Percentage of detached single-family dwellings that are rentals",
+    "related": ["m29", "m7", "m40", "m31", "m69", "m37", "m32"]
+  },
+  {
+    "metric": "m83",
+    "category": "Housing",
+    "label": "demos per 1,000 units",
+    "raw_label": "demolitions",
+    "title": "Residential Demolitions",
+    "decimals": 1,
+    "subtitle": "Concentration of residential demolitions",
+    "related": ["m8", "m9", "m5", "m47", "m29", "m53"]
+  },
+  {
+    "metric": "m69",
+    "category": "Housing",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Residential Foreclosures",
+    "decimals": 1,
+    "subtitle": "Percentage of dwellings that were foreclosed",
+    "related": ["m31", "m76", "m68", "m32", "m5", "m30", "m78"]
+  },
+  {
+    "metric": "m8",
+    "category": "Housing",
+    "label": "units per 100 acres",
+    "raw_label": "units",
+    "title": "Residential New Construction",
+    "decimals": 1,
+    "subtitle": "Concentration of residential units permitted for new construction",
+    "related": ["m9", "m47", "m5", "m7", "m6", "m11"]
+  },
+  {
+    "metric": "m31",
+    "category": "Housing",
+    "format": "percent",
+    "title": "Residential Occupancy",
+    "subtitle": "Percentage of housing units that are occupied",
+    "related": ["m32", "m68", "m40", "m78", "m60"]
+  },
+  {
+    "metric": "m9",
+    "category": "Housing",
+    "label": "units per 100 acres",
+    "raw_label": "units",
+    "title": "Residential Renovation",
+    "decimals": 1,
+    "subtitle": "Concentration of residential units permitted for renovation",
+    "related": ["m8", "m76", "m6"]
+  },
+  {
+    "metric": "m30",
+    "category": "Housing",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Single-Family Housing",
+    "subtitle": "Percentage of housing units that are single-family houses",
+    "related": ["m5", "m47", "m35", "m29", "m53", "m36"]
+  },
+  {
+    "metric": "m61",
+    "category": "Safety",
+    "raw_label": "calls",
+    "title": "Calls for Animal Care and Control",
+    "decimals": 1,
+    "subtitle": "Animal control calls per 1,000 residents",
+    "related": ["m52", "m60"]
+  },
+  {
+    "metric": "m59",
+    "category": "Safety",
+    "raw_label": "crimes",
+    "title": "Crime - Property",
+    "decimals": 1,
+    "subtitle": "Property crime rate per 1,000 residents",
+    "related": ["m32", "m58", "m60", "m73"]
+  },
+  {
+    "metric": "m58",
+    "category": "Safety",
+    "raw_label": "crimes",
+    "title": "Crime - Violent",
+    "decimals": 1,
+    "subtitle": "Violent crime rate per 1,000 residents",
+    "related": ["m60", "m59", "m61", "m73", "m32"]
+  },
+  {
+    "metric": "m60",
+    "category": "Safety",
+    "raw_label": "calls",
+    "title": "Disorder-related Calls",
+    "decimals": 1,
+    "subtitle": "Disorder-related calls per 1,000 residents",
+    "related": ["m59", "m58", "m32", "m68", "m52", "m47"]
+  },
+  {
+    "metric": "m78",
+    "category": "Safety",
+    "raw_label": "calls",
+    "title": "Fire Calls for Service",
+    "decimals": 1,
+    "subtitle": "Fire calls for service per 1,000 residents",
+    "related": ["m47", "m13", "m12", "m68"]
+  },
+  {
+    "metric": "m32",
+    "category": "Safety",
+    "raw_label": "violations",
+    "title": "Nuisance Violations",
+    "decimals": 1,
+    "subtitle": "Nuisance violations per 100 housing units",
+    "related": ["m68", "m59", "m60", "m52", "m73"]
+  },
+  {
+    "metric": "m34",
+    "category": "Transportation",
+    "label": "index value (1-3)",
+    "title": "Bicycle Friendliness",
+    "decimals": 1,
+    "subtitle": "Index measuring the transportation network's ability to comfortably support cycling",
+    "related": ["m74", "m35", "m10", "m47"]
+  },
+  {
+    "metric": "m33",
+    "category": "Transportation",
+    "format": "percent",
+    "title": "Long Commute",
+    "subtitle": "Percentage of auto commuters traveling 20 minutes or more to work",
+    "world_val": {
+      "y_2017": 59
+    },
+    "related": ["m10", "m36", "m47", "m75", "m35"]
+  },
+  {
+    "metric": "m36",
+    "category": "Transportation",
+    "format": "percent",
+    "raw_label": "units",
+    "title": "Proximity to Public Transportation",
+    "subtitle": "Percentage of housing units within &#189;-mile of a transit stop",
+    "related": ["m44", "m10", "m33", "m47"]
+  },
+  {
+    "metric": "m70",
+    "category": "Transportation",
+    "format": "percent",
+    "raw_label": "miles",
+    "title": "Sidewalk Availability",
+    "decimals": 1,
+    "subtitle": "Percentage of paved streets that have sidewalks",
+    "related": ["m74", "m35", "m10", "m48"]
+  },
+  {
+    "metric": "m35",
+    "category": "Transportation",
+    "label": "index value (1-3)",
+    "title": "Street Connectivity",
+    "decimals": 2,
+    "subtitle": "Index measuring the connectedness of the street network",
+    "related": ["m70", "m34", "m44", "m47", "m75", "m30"]
+  },
+  {
+    "metric": "m44",
+    "category": "Transportation",
+    "label": "boardings per stop",
+    "raw_label": "weekly boardings",
+    "title": "Transit Ridership",
+    "subtitle": "Average weekly bus and train boardings per stop",
+    "related": ["m36", "m10", "m33", "m47", "m75"]
+  },
+  {
+    "metric": "m88",
+    "category": "Economy",
     "format": "percent",
     "title": "High Speed Internet Access",
-    "years": [
-      "2020"
-    ],
-    "summary": {
-      "mecklenburg": [
-        79
-      ],
-      "charlotte": [
-        77.6
-      ],
-      "cc1": [
-        85.2
-      ],
-      "cc2": [
-        71.2
-      ],
-      "cc3": [
-        69.9
-      ],
-      "cc4": [
-        75.7
-      ],
-      "cc5": [
-        85.4
-      ],
-      "cc6": [
-        86.1
-      ]
-    }
-  },
-  {
-    "metric": "29",
-    "title": "Home Ownership",
-    "years": [
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        56.4
-      ],
-      "charlotte": [
-        53.4
-      ],
-      "cc1": [
-        69.5
-      ],
-      "cc2": [
-        48.8
-      ],
-      "cc3": [
-        45.6
-      ],
-      "cc4": [
-        45.3
-      ],
-      "cc5": [
-        60.4
-      ],
-      "cc6": [
-        69.5
-      ]
-    }
-  },
-  {
-    "metric": "76",
-    "title": "Home Sales Price",
-    "years": [
-      "2013",
-      "2015",
-      "2017",
-      "2019",
-      "2021"
-    ],
-    "format": "currency",
-    "summary": {
-      "mecklenburg": [
-        267916,
-        273064,
-        289439,
-        331095,
-        365860
-      ],
-      "charlotte": [
-        264614,
-        266162,
-        279535,
-        321421,
-        356324
-      ],
-      "cc1": [
-        255477,
-        265626,
-        287225,
-        324949,
-        368070
-      ],
-      "cc2": [
-        160469,
-        156546,
-        197614,
-        237436,
-        270633
-      ],
-      "cc3": [
-        152504,
-        171086,
-        180079,
-        215702,
-        258288
-      ],
-      "cc4": [
-        211391,
-        214168,
-        237734,
-        293692,
-        337862
-      ],
-      "cc5": [
-        391307,
-        407290,
-        432155,
-        504918,
-        553844
-      ],
-      "cc6": [
-        277952,
-        282448,
-        310347,
-        344173,
-        380514
-      ]
-    }
-  },
-  {
-    "metric": "37",
-    "title": "Household Income",
-    "years": [
-      "2020"
-    ],
-    "format": "currency",
-    "summary": {
-      "mecklenburg": [
-        75087
-      ],
-      "charlotte": [
-        71439
-      ],
-      "cc1": [
-        94174
-      ],
-      "cc2": [
-        49774
-      ],
-      "cc3": [
-        53457
-      ],
-      "cc4": [
-        56960
-      ],
-      "cc5": [
-        107019
-      ],
-      "cc6": [
-        91829
-      ]
-    }
-  },
-  {
-    "metric": "7",
-    "title": "Housing Age",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020",
-      "2021"
-    ],
-    "label": "Years",
-    "summary": {
-      "mecklenburg": [
-        29,
-        31,
-        32,
-        33,
-        33,
-        33,
-        34,
-        33
-      ],
-      "charlotte": [
-        31,
-        32,
-        34,
-        35,
-        35,
-        36,
-        37,
-        36
-      ],
-      "cc1": [
-        18,
-        19,
-        21,
-        21,
-        22,
-        23,
-        24,
-        23
-      ],
-      "cc2": [
-        33,
-        35,
-        36,
-        37,
-        37,
-        37,
-        38,
-        37
-      ],
-      "cc3": [
-        30,
-        32,
-        33,
-        34,
-        34,
-        35,
-        36,
-        35
-      ],
-      "cc4": [
-        42,
-        43,
-        45,
-        45,
-        46,
-        46,
-        46,
-        44
-      ],
-      "cc5": [
-        38,
-        40,
-        42,
-        42,
-        43,
-        43,
-        45,
-        45
-      ],
-      "cc6": [
-        20,
-        22,
-        23,
-        24,
-        25,
-        25,
-        26,
-        26
-      ]
-    }
-  },
-  {
-    "metric": "82",
-    "title": "Housing Assistance – Development-Based",
-    "years": [
-      "2013",
-      "2017",
-      "2022"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        2.5,
-        2.5,
-        2.5
-      ],
-      "charlotte": [
-        2.5,
-        2.6,
-        2.7
-      ],
-      "cc1": [
-        1.3,
-        1.5,
-        1.4
-      ],
-      "cc2": [
-        5.4,
-        5,
-        5.6
-      ],
-      "cc3": [
-        2.5,
-        2.8,
-        2.8
-      ],
-      "cc4": [
-        3.4,
-        3.6,
-        3.2
-      ],
-      "cc5": [
-        1.4,
-        1.4,
-        1.6
-      ],
-      "cc6": [
-        0.6,
-        0.8,
-        0.7
-      ]
-    }
-  },
-  {
-    "metric": "68",
-    "title": "Housing Code Violations",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2018",
-      "2020",
-      "2021"
-    ],
-    "label": "Violations per 100 Units",
-    "summary": {
-      "mecklenburg": [
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0
-      ],
-      "charlotte": [
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0
-      ],
-      "cc1": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "cc2": [
-        1,
-        2,
-        2,
-        2,
-        1,
-        1,
-        1
-      ],
-      "cc3": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0
-      ],
-      "cc4": [
-        1,
-        2,
-        2,
-        1,
-        1,
-        1,
-        0
-      ],
-      "cc5": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "cc6": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "metric": "5",
-    "title": "Housing Density",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020",
-      "2021"
-    ],
-    "label": "Units per Acre",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        null,
-        null,
-        1.2,
-        1.3,
-        1.3,
-        1.3,
-        1.4,
-        1.5
-      ],
-      "charlotte": [
-        null,
-        null,
-        1.5,
-        1.5,
-        1.5,
-        1.6,
-        1.6,
-        1.8
-      ],
-      "cc1": [
-        null,
-        null,
-        0.8,
-        0.8,
-        0.8,
-        0.9,
-        0.9,
-        1
-      ],
-      "cc2": [
-        null,
-        null,
-        0.9,
-        0.9,
-        0.9,
-        0.9,
-        1,
-        1.1
-      ],
-      "cc3": [
-        null,
-        null,
-        1.5,
-        1.5,
-        1.6,
-        1.6,
-        1.7,
-        1.8
-      ],
-      "cc4": [
-        null,
-        null,
-        2,
-        2,
-        2,
-        2.1,
-        2.3,
-        2.4
-      ],
-      "cc5": [
-        null,
-        null,
-        2.2,
-        2.2,
-        2.2,
-        2.2,
-        2.2,
-        2.3
-      ],
-      "cc6": [
-        null,
-        null,
-        0.9,
-        1,
-        1,
-        1,
-        1,
-        1.1
-      ]
-    }
-  },
-  {
-    "metric": "6",
-    "title": "Housing Size",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020",
-      "2021"
-    ],
-    "label": "Average Sqft",
-    "summary": {
-      "mecklenburg": [
-        2071,
-        2089,
-        2101,
-        2123,
-        2137,
-        2143,
-        2206,
-        2230
-      ],
-      "charlotte": [
-        1991,
-        2007,
-        2018,
-        2034,
-        2047,
-        2052,
-        2112,
-        2120
-      ],
-      "cc1": [
-        2363,
-        2379,
-        2383,
-        2418,
-        2421,
-        2420,
-        2469,
-        2524
-      ],
-      "cc2": [
-        1533,
-        1552,
-        1567,
-        1581,
-        1601,
-        1618,
-        1684,
-        1698
-      ],
-      "cc3": [
-        1713,
-        1722,
-        1737,
-        1753,
-        1762,
-        1763,
-        1818,
-        1811
-      ],
-      "cc4": [
-        1531,
-        1540,
-        1557,
-        1574,
-        1591,
-        1602,
-        1698,
-        1700
-      ],
-      "cc5": [
-        2493,
-        2516,
-        2527,
-        2550,
-        2573,
-        2575,
-        2689,
-        2704
-      ],
-      "cc6": [
-        2529,
-        2550,
-        2561,
-        2586,
-        2602,
-        2600,
-        2637,
-        2678
-      ]
-    }
-  },
-  {
-    "metric": "4",
-    "title": "Impervious Surface",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        13.8,
-        14.1,
-        14.5,
-        14.7,
-        15,
-        15.2,
-        15.4,
-        15.9
-      ],
-      "charlotte": [
-        16.7,
-        17.1,
-        17.4,
-        17.6,
-        17.9,
-        18.1,
-        18.4,
-        18.9
-      ],
-      "cc1": [
-        8.4,
-        8.5,
-        9.2,
-        9.5,
-        9.7,
-        9.9,
-        10.1,
-        10.6
-      ],
-      "cc2": [
-        14.7,
-        15.3,
-        15.6,
-        15.9,
-        16.2,
-        16.4,
-        16.8,
-        17.3
-      ],
-      "cc3": [
-        15.9,
-        16.1,
-        16.5,
-        16.7,
-        17,
-        17.2,
-        17.4,
-        17.8
-      ],
-      "cc4": [
-        18.6,
-        18.8,
-        18.7,
-        18.9,
-        19.1,
-        19.2,
-        19.4,
-        19.9
-      ],
-      "cc5": [
-        21.6,
-        21.7,
-        21.8,
-        22,
-        22.2,
-        22.3,
-        22.5,
-        22.7
-      ],
-      "cc6": [
-        12.6,
-        13.1,
-        13.5,
-        13.7,
-        14,
-        14.2,
-        14.5,
-        15.1
-      ]
-    }
-  },
-  {
-    "metric": "75",
-    "title": "Job Density",
-    "years": [
-      "2002",
-      "2003",
-      "2004",
-      "2005",
-      "2006",
-      "2007",
-      "2008",
-      "2009",
-      "2010",
-      "2011",
-      "2012",
-      "2013",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019"
-    ],
-    "label": "Jobs per Acre",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.6,
-        1.6,
-        1.6,
-        1.5,
-        1.5,
-        1.7,
-        1.8,
-        1.8,
-        1.9,
-        2,
-        2.1,
-        2.1,
-        2.1,
-        2.1
-      ],
-      "charlotte": [
-        1.8,
-        1.7,
-        1.7,
-        1.8,
-        1.8,
-        1.9,
-        1.8,
-        1.7,
-        1.7,
-        1.9,
-        2,
-        2.1,
-        2.1,
-        2.2,
-        2.4,
-        2.4,
-        2.3,
-        2.3
-      ],
-      "cc1": [
-        0.4,
-        0.4,
-        0.4,
-        0.5,
-        0.5,
-        0.6,
-        0.6,
-        0.5,
-        0.5,
-        0.6,
-        0.7,
-        0.7,
-        0.7,
-        0.8,
-        0.9,
-        0.9,
-        0.8,
-        0.8
-      ],
-      "cc2": [
-        1.8,
-        1.7,
-        1.6,
-        1.7,
-        1.7,
-        1.7,
-        1.8,
-        1.6,
-        1.6,
-        1.7,
-        1.8,
-        1.9,
-        2,
-        2.1,
-        2.3,
-        2.3,
-        2.3,
-        2.3
-      ],
-      "cc3": [
-        2,
-        1.8,
-        1.9,
-        2,
-        2,
-        2.1,
-        2.1,
-        1.9,
-        1.9,
-        2.1,
-        2.2,
-        2.2,
-        2.2,
-        2.2,
-        2.4,
-        2.4,
-        2.4,
-        2.4
-      ],
-      "cc4": [
-        2.7,
-        2.7,
-        2.5,
-        2.6,
-        2.7,
-        2.7,
-        2.7,
-        2.6,
-        2.6,
-        2.7,
-        2.8,
-        2.9,
-        3,
-        3,
-        3,
-        3.1,
-        2.9,
-        3
-      ],
-      "cc5": [
-        2.3,
-        2.3,
-        2.2,
-        2.4,
-        2.4,
-        2.4,
-        2.4,
-        2.3,
-        2.4,
-        2.5,
-        2.6,
-        2.6,
-        2.6,
-        2.7,
-        2.8,
-        2.8,
-        2.7,
-        2.6
-      ],
-      "cc6": [
-        1,
-        1,
-        1,
-        1,
-        1.1,
-        1.2,
-        1.2,
-        1.1,
-        1.1,
-        1.2,
-        1.3,
-        1.4,
-        1.4,
-        1.5,
-        1.5,
-        1.5,
-        1.5,
-        1.5
-      ]
-    }
-  },
-  {
-    "metric": "51",
-    "title": "Library Card Holders",
-    "years": [
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        13.8,
-        18.3,
-        19.1,
-        18.9,
-        18.8
-      ],
-      "charlotte": [
-        13.6,
-        18.3,
-        18.6,
-        18.3,
-        18.3
-      ],
-      "cc1": [
-        13.7,
-        17.9,
-        17.8,
-        17.6,
-        17.2
-      ],
-      "cc2": [
-        12.1,
-        17.5,
-        19.7,
-        19.3,
-        19.2
-      ],
-      "cc3": [
-        12.7,
-        17.9,
-        19.5,
-        19.2,
-        18.9
-      ],
-      "cc4": [
-        13.9,
-        19.2,
-        20.9,
-        20.7,
-        20.2
-      ],
-      "cc5": [
-        15.4,
-        18.6,
-        17.5,
-        16.8,
-        17.7
-      ],
-      "cc6": [
-        15.2,
-        19.7,
-        20.4,
-        20.6,
-        20.4
-      ]
-    }
-  },
-  {
-    "metric": "33",
-    "title": "Long Commute",
-    "years": [
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        59.9
-      ],
-      "charlotte": [
-        59.5
-      ],
-      "cc1": [
-        65.7
-      ],
-      "cc2": [
-        53.9
-      ],
-      "cc3": [
-        61.5
-      ],
-      "cc4": [
-        60.9
-      ],
-      "cc5": [
-        54.3
-      ],
-      "cc6": [
-        65.4
-      ]
-    }
-  },
-  {
-    "metric": "55",
-    "title": "Low Birthweight",
-    "years": [
-      "2012",
-      "2014",
-      "2016",
-      "2019"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        9.6,
-        9,
-        9.4,
-        9.9
-      ],
-      "charlotte": [
-        9.8,
-        9.4,
-        9.8,
-        10.4
-      ],
-      "cc1": [
-        8.6,
-        6.8,
-        8.3,
-        8.5
-      ],
-      "cc2": [
-        11.9,
-        11.5,
-        11.2,
-        11.9
-      ],
-      "cc3": [
-        11.2,
-        10.2,
-        11.4,
-        11.6
-      ],
-      "cc4": [
-        9.9,
-        9.9,
-        9.4,
-        10.5
-      ],
-      "cc5": [
-        7.3,
-        7.2,
-        7.8,
-        7.6
-      ],
-      "cc6": [
-        7.5,
-        7.1,
-        7.2,
-        7.6
-      ]
-    }
-  },
-  {
-    "metric": "72",
-    "title": "Municipal Board/Committee Participation",
-    "years": [
-      "2017",
-      "2018",
-      "2020",
-      "2021"
-    ],
-    "label": "Residents serving per 1,000 People",
-    "summary": {
-      "mecklenburg": [
-        1,
-        1,
-        0,
-        0
-      ],
-      "charlotte": [
-        1,
-        1,
-        0,
-        0
-      ],
-      "cc1": [
-        1,
-        1,
-        0,
-        0
-      ],
-      "cc2": [
-        0,
-        1,
-        0,
-        0
-      ],
-      "cc3": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "cc4": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "cc5": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "cc6": [
-        1,
-        1,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "metric": "73",
-    "title": "Neighborhood Organizations",
-    "years": [
-      "2021"
-    ],
-    "label": "Organizations",
-    "summary": {
-      "mecklenburg": [
-        0
-      ],
-      "charlotte": [
-        1
-      ],
-      "cc1": [
-        1
-      ],
-      "cc2": [
-        1
-      ],
-      "cc3": [
-        1
-      ],
-      "cc4": [
-        1
-      ],
-      "cc5": [
-        1
-      ],
-      "cc6": [
-        1
-      ]
-    }
-  },
-  {
-    "metric": "67",
-    "title": "Neighborhood School Attendance ",
-    "years": [
-      "2011",
-      "2013",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        75.8,
-        82.1,
-        78.4,
-        77.6,
-        76.5,
-        76.6,
-        75.5,
-        75.7
-      ],
-      "charlotte": [
-        73.3,
-        80.4,
-        76.4,
-        75.5,
-        74.4,
-        74.5,
-        73.5,
-        73.9
-      ],
-      "cc1": [
-        87.3,
-        88.7,
-        86.7,
-        85.4,
-        85,
-        84.9,
-        83.7,
-        82
-      ],
-      "cc2": [
-        66.2,
-        76.6,
-        68.6,
-        68,
-        66.2,
-        66,
-        63.7,
-        67.8
-      ],
-      "cc3": [
-        67.9,
-        75.7,
-        72.3,
-        71.7,
-        69.4,
-        69.9,
-        67.9,
-        65.8
-      ],
-      "cc4": [
-        67.6,
-        76.7,
-        74.9,
-        74.2,
-        72.7,
-        73.3,
-        72.2,
-        70.4
-      ],
-      "cc5": [
-        79.7,
-        83.3,
-        81.5,
-        81.7,
-        81.4,
-        82.1,
-        82.1,
-        81.4
-      ],
-      "cc6": [
-        89,
-        92.2,
-        88.8,
-        87.7,
-        87.3,
-        86.6,
-        86.2,
-        87.8
-      ]
-    }
-  },
-  {
-    "metric": "32",
-    "title": "Nuisance Violations",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2020"
-    ],
-    "label": "Violations per 100 Units",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        12,
-        6.4,
-        9,
-        7.3,
-        6.7
-      ],
-      "charlotte": [
-        14.4,
-        7.7,
-        10.7,
-        8,
-        7.1
-      ],
-      "cc1": [
-        2.6,
-        1.5,
-        2.5,
-        3.5,
-        3.2
-      ],
-      "cc2": [
-        22.1,
-        12.5,
-        17.3,
-        13.9,
-        11.4
-      ],
-      "cc3": [
-        20.1,
-        10.2,
-        12.9,
-        10.8,
-        8.7
-      ],
-      "cc4": [
-        20.6,
-        11.5,
-        14.3,
-        9.6,
-        8.4
-      ],
-      "cc5": [
-        7.2,
-        3.7,
-        6.5,
-        3.4,
-        4
-      ],
-      "cc6": [
-        3.8,
-        1.7,
-        3.5,
-        1.9,
-        1.9
-      ]
-    }
-  },
-  {
-    "metric": "13",
-    "title": "Population - Older Adult",
-    "years": [
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        11.2
-      ],
-      "charlotte": [
-        10.3
-      ],
-      "cc1": [
-        12.6
-      ],
-      "cc2": [
-        9
-      ],
-      "cc3": [
-        8.2
-      ],
-      "cc4": [
-        9.1
-      ],
-      "cc5": [
-        14.8
-      ],
-      "cc6": [
-        13.9
-      ]
-    }
-  },
-  {
-    "metric": "12",
-    "title": "Population - Youth",
-    "years": [
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        23.5
-      ],
-      "charlotte": [
-        23.8
-      ],
-      "cc1": [
-        23.9
-      ],
-      "cc2": [
-        24.1
-      ],
-      "cc3": [
-        22.1
-      ],
-      "cc4": [
-        23.6
-      ],
-      "cc5": [
-        22.4
-      ],
-      "cc6": [
-        24.6
-      ]
-    }
-  },
-  {
-    "metric": "47",
-    "title": "Population Density",
-    "years": [
-      "2000",
-      "2010",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020"
-    ],
-    "label": "People per Acre",
-    "summary": {
-      "mecklenburg": [
-        2,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3
-      ],
-      "charlotte": [
-        3,
-        3,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4
-      ],
-      "cc1": [
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2
-      ],
-      "cc2": [
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2
-      ],
-      "cc3": [
-        3,
-        3,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4
-      ],
-      "cc4": [
-        4,
-        4,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5
-      ],
-      "cc5": [
-        4,
-        4,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5
-      ],
-      "cc6": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        3,
-        3,
-        3
-      ]
-    }
-  },
-  {
-    "metric": "56",
-    "title": "Prenatal Care",
-    "years": [
-      "2012",
-      "2014",
-      "2016",
-      "2019"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        71.9,
-        64.9,
-        63.1,
-        57.6
-      ],
-      "charlotte": [
-        71.8,
-        64,
-        62.3,
-        57.3
-      ],
-      "cc1": [
-        72.4,
-        71.5,
-        67.9,
-        59.3
-      ],
-      "cc2": [
-        67.6,
-        57.6,
-        58.1,
-        51.5
-      ],
-      "cc3": [
-        65.7,
-        57.4,
-        57.6,
-        54.7
-      ],
-      "cc4": [
-        67.8,
-        60.5,
-        57.5,
-        53.9
-      ],
-      "cc5": [
-        83.8,
-        77.8,
-        73.2,
-        67.3
-      ],
-      "cc6": [
-        78.3,
-        71.4,
-        69.9,
-        64.1
-      ]
-    }
-  },
-  {
-    "metric": "21",
-    "title": "Proximity to Early Care and Education",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2017",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        71.8,
-        65.6,
-        64.8,
-        62.2,
-        60.7
-      ],
-      "charlotte": [
-        76.8,
-        70.4,
-        69.6,
-        66.6,
-        65.5
-      ],
-      "cc1": [
-        45.2,
-        40.2,
-        42.3,
-        36.7,
-        38.4
-      ],
-      "cc2": [
-        83.5,
-        82.1,
-        82.3,
-        80.1,
-        73.6
-      ],
-      "cc3": [
-        86.4,
-        83.6,
-        81.2,
-        75.4,
-        73.4
-      ],
-      "cc4": [
-        91.7,
-        85.6,
-        83.9,
-        81.9,
-        78.9
-      ],
-      "cc5": [
-        70.2,
-        54.9,
-        53.7,
-        51.4,
-        50.4
-      ],
-      "cc6": [
-        53,
-        50.4,
-        48.8,
-        46.6,
-        48.5
-      ]
-    }
-  },
-  {
-    "metric": "79",
-    "title": "Proximity to Financial Services",
-    "years": [
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        31.6,
-        32.3,
-        32.4,
-        31.8,
-        31.7,
-        32.8,
-        33.8
-      ],
-      "charlotte": [
-        31.3,
-        32,
-        32.1,
-        32,
-        31.8,
-        33,
-        33.9
-      ],
-      "cc1": [
-        26.9,
-        27.5,
-        27.6,
-        27.2,
-        26.9,
-        27.7,
-        28.4
-      ],
-      "cc2": [
-        24.7,
-        26.2,
-        26.7,
-        27.6,
-        25.9,
-        23.8,
-        25.4
-      ],
-      "cc3": [
-        26.3,
-        26.1,
-        26.1,
-        26.2,
-        25.6,
-        28,
-        27
-      ],
-      "cc4": [
-        43.6,
-        43.1,
-        43.4,
-        43.7,
-        45.6,
-        46.1,
-        46.7
-      ],
-      "cc5": [
-        37.6,
-        37.8,
-        37.6,
-        36.2,
-        35.5,
-        36.5,
-        41
-      ],
-      "cc6": [
-        26.5,
-        28.4,
-        28.2,
-        28.6,
-        29.8,
-        30.8,
-        31.8
-      ]
-    }
-  },
-  {
-    "metric": "28",
-    "title": "Proximity to Low-Cost Health Care",
-    "years": [
-      "2016",
-      "2017",
-      "2018",
-      "2019"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        22.9,
-        20.2,
-        18.3,
-        29.6
-      ],
-      "charlotte": [
-        23.9,
-        20.4,
-        18.3,
-        30.8
-      ],
-      "cc1": [
-        11.9,
-        11.9,
-        11.4,
-        22.7
-      ],
-      "cc2": [
-        18.2,
-        18.9,
-        13.8,
-        22.9
-      ],
-      "cc3": [
-        20,
-        16.2,
-        14.8,
-        20.1
-      ],
-      "cc4": [
-        38.4,
-        29,
-        25.7,
-        44.4
-      ],
-      "cc5": [
-        26.5,
-        25.7,
-        25.6,
-        40.2
-      ],
-      "cc6": [
-        20.6,
-        19.4,
-        17.8,
-        24.7
-      ]
-    }
-  },
-  {
-    "metric": "74",
-    "title": "Proximity to Public Outdoor Recreation",
-    "years": [
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        52,
-        52.2,
-        52.2,
-        53.3,
-        54.2,
-        58.4,
-        58.4
-      ],
-      "charlotte": [
-        51.9,
-        52.2,
-        52.1,
-        52.7,
-        53.8,
-        57.7,
-        57.7
-      ],
-      "cc1": [
-        46.5,
-        46.3,
-        46,
-        48.5,
-        48.6,
-        52.6,
-        52.6
-      ],
-      "cc2": [
-        53.1,
-        52.5,
-        51,
-        53,
-        53.3,
-        56.9,
-        56.9
-      ],
-      "cc3": [
-        58.5,
-        56.9,
-        58,
-        58,
-        59.1,
-        59.6,
-        59.6
-      ],
-      "cc4": [
-        64.5,
-        66.5,
-        66.7,
-        67.3,
-        70.3,
-        74.1,
-        74.1
-      ],
-      "cc5": [
-        54.8,
-        55.8,
-        55.8,
-        56.1,
-        56.1,
-        62.4,
-        62.4
-      ],
-      "cc6": [
-        35.2,
-        35.6,
-        36.2,
-        36.7,
-        37.3,
-        44.6,
-        44.6
-      ]
-    }
-  },
-  {
-    "metric": "36",
-    "title": "Proximity to Public Transportation",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        67,
-        67.8,
-        67.3,
-        67.5,
-        67.4,
-        67.4,
-        67.5,
-        67.5
-      ],
-      "charlotte": [
-        70.8,
-        72,
-        71.8,
-        72.2,
-        72,
-        72.4,
-        72.6,
-        72.6
-      ],
-      "cc1": [
-        46.8,
-        47.7,
-        48.2,
-        48.1,
-        48.3,
-        46.7,
-        50.7,
-        50.7
-      ],
-      "cc2": [
-        76.1,
-        76.1,
-        75.9,
-        74.7,
-        75.6,
-        75.8,
-        76.3,
-        76.3
-      ],
-      "cc3": [
-        68,
-        68.6,
-        65.4,
-        66.1,
-        65.7,
-        68.2,
-        74.6,
-        74.6
-      ],
-      "cc4": [
-        87.2,
-        89.6,
-        89.4,
-        89.3,
-        89,
-        87.6,
-        88.6,
-        88.6
-      ],
-      "cc5": [
-        85.4,
-        87.2,
-        88.6,
-        89.2,
-        89,
-        89.5,
-        85.2,
-        85.2
-      ],
-      "cc6": [
-        34.6,
-        35.5,
-        35,
-        36.2,
-        35.8,
-        35.3,
-        31.5,
-        31.5
-      ]
-    }
-  },
-  {
-    "metric": "22",
-    "title": "Proximity to School-Age Care",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2017",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        66.6,
-        66.4,
-        67.6,
-        63,
-        65
-      ],
-      "charlotte": [
-        71.2,
-        71,
-        72.2,
-        67.6,
-        69.4
-      ],
-      "cc1": [
-        44.3,
-        43.6,
-        46.4,
-        39.3,
-        45.5
-      ],
-      "cc2": [
-        82.4,
-        82.4,
-        80.8,
-        74.9,
-        71.3
-      ],
-      "cc3": [
-        82.1,
-        82,
-        79.4,
-        75.9,
-        74.2
-      ],
-      "cc4": [
-        85.9,
-        85.8,
-        84.2,
-        82.7,
-        81.8
-      ],
-      "cc5": [
-        55.4,
-        55.5,
-        62,
-        54.4,
-        62.1
-      ],
-      "cc6": [
-        47.3,
-        47.8,
-        52.4,
-        47.4,
-        52.5
-      ]
-    }
-  },
-  {
-    "metric": "45",
-    "title": "Proximity to a Grocery Store",
-    "years": [
-      "2011",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        26.1,
-        28.6,
-        29.8,
-        29.7,
-        30.2,
-        29.6,
-        31.1,
-        31.6
-      ],
-      "charlotte": [
-        26.3,
-        29.5,
-        30.4,
-        30.4,
-        30.6,
-        30.1,
-        31.7,
-        32.4
-      ],
-      "cc1": [
-        20.3,
-        21.6,
-        24.4,
-        24.3,
-        25,
-        23,
-        23.7,
-        22.1
-      ],
-      "cc2": [
-        16.9,
-        18.9,
-        21.1,
-        21.2,
-        21.9,
-        21.8,
-        23.5,
-        23.1
-      ],
-      "cc3": [
-        25.9,
-        25.6,
-        26.8,
-        27.5,
-        31.6,
-        31,
-        28.2,
-        32.4
-      ],
-      "cc4": [
-        29.9,
-        36.4,
-        36.5,
-        34.8,
-        35.6,
-        33.9,
-        37,
-        36.8
-      ],
-      "cc5": [
-        29.7,
-        35.4,
-        35.3,
-        35.6,
-        33.3,
-        32.1,
-        35.2,
-        34.9
-      ],
-      "cc6": [
-        30.2,
-        30.8,
-        31.1,
-        31,
-        29.8,
-        30.2,
-        29.4,
-        30.5
-      ]
-    }
-  },
-  {
-    "metric": "46",
-    "title": "Proximity to a Pharmacy",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        31,
-        32.6,
-        33.5,
-        34.1,
-        30.5,
-        32.6,
-        34.4,
-        34
-      ],
-      "charlotte": [
-        31.7,
-        33.5,
-        34.7,
-        35.3,
-        31,
-        33.2,
-        34.3,
-        34.1
-      ],
-      "cc1": [
-        23.3,
-        23.4,
-        24.5,
-        25.7,
-        23.7,
-        26.2,
-        30.6,
-        28.3
-      ],
-      "cc2": [
-        21.5,
-        21.7,
-        24.5,
-        25.4,
-        24.5,
-        24.2,
-        22,
-        21.4
-      ],
-      "cc3": [
-        28.4,
-        29.2,
-        29.7,
-        30.4,
-        25.8,
-        26.1,
-        27.4,
-        26.6
-      ],
-      "cc4": [
-        44.5,
-        45,
-        46.8,
-        48.5,
-        43.2,
-        48.5,
-        50.2,
-        48.3
-      ],
-      "cc5": [
-        32.1,
-        37.3,
-        38.3,
-        38.1,
-        30,
-        34.3,
-        34.3,
-        36.6
-      ],
-      "cc6": [
-        30.4,
-        32.6,
-        33.3,
-        33.5,
-        32.4,
-        33.5,
-        33.5,
-        34.3
-      ]
-    }
-  },
-  {
-    "metric": "81",
-    "title": "Public Health Insurance",
-    "years": [
-      "2014",
-      "2015",
-      "2017"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        14.9,
-        17.7,
-        14.8
-      ],
-      "charlotte": [
-        15.8,
-        19.6,
-        16.4
-      ],
-      "cc1": [
-        7.9,
-        8.6,
-        7.3
-      ],
-      "cc2": [
-        24.4,
-        29.7,
-        24.1
-      ],
-      "cc3": [
-        19.3,
-        24.8,
-        20.2
-      ],
-      "cc4": [
-        22.8,
-        26.5,
-        22
-      ],
-      "cc5": [
-        6.5,
-        8.2,
-        7.2
-      ],
-      "cc6": [
-        8.6,
-        9.2,
-        7.9
-      ]
-    }
-  },
-  {
-    "metric": "17",
-    "title": "Race/Ethnicity - All Other Races",
-    "years": [
-      "2000",
-      "2010",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        1.6,
-        2.4,
-        4.5
-      ],
-      "charlotte": [
-        1.7,
-        2.5,
-        4.5
-      ],
-      "cc1": [
-        1.1,
-        2.2,
-        4.8
-      ],
-      "cc2": [
-        1.6,
-        2.4,
-        4.2
-      ],
-      "cc3": [
-        1.9,
-        2.7,
-        4.2
-      ],
-      "cc4": [
-        2.2,
-        2.9,
-        4.8
-      ],
-      "cc5": [
-        1.3,
-        2,
-        4.3
-      ],
-      "cc6": [
-        1.4,
-        2.3,
-        5
-      ]
-    }
-  },
-  {
-    "metric": "16",
-    "title": "Race/Ethnicity - Asian",
-    "years": [
-      "2000",
-      "2010",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        3.1,
-        4.6,
-        6.4
-      ],
-      "charlotte": [
-        3.4,
-        4.9,
-        6.9
-      ],
-      "cc1": [
-        2,
-        3.5,
-        4.2
-      ],
-      "cc2": [
-        2.7,
-        4.6,
-        5.9
-      ],
-      "cc3": [
-        4.1,
-        5.7,
-        6.8
-      ],
-      "cc4": [
-        3.2,
-        3.4,
-        5.2
-      ],
-      "cc5": [
-        3.1,
-        3.2,
-        4.1
-      ],
-      "cc6": [
-        2.9,
-        6.1,
-        10.6
-      ]
-    }
-  },
-  {
-    "metric": "15",
-    "title": "Race/Ethnicity - Black or African American",
-    "years": [
-      "2000",
-      "2010",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        27.7,
-        30.2,
-        29.1
-      ],
-      "charlotte": [
-        31,
-        34.4,
-        33
-      ],
-      "cc1": [
-        10,
-        18.2,
-        22.5
-      ],
-      "cc2": [
-        57.5,
-        54.6,
-        47.1
-      ],
-      "cc3": [
-        48,
-        51.1,
-        49
-      ],
-      "cc4": [
-        38.3,
-        39,
-        32.5
-      ],
-      "cc5": [
-        7.7,
-        10.1,
-        9.8
-      ],
-      "cc6": [
-        7.8,
-        11.9,
-        13.9
-      ]
-    }
-  },
-  {
-    "metric": "18",
-    "title": "Race/Ethnicity - Hispanic or Latino",
-    "years": [
-      "2000",
-      "2010",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        6.5,
-        12.2,
-        15.2
-      ],
-      "charlotte": [
-        7.1,
-        13.2,
-        16.4
-      ],
-      "cc1": [
-        2.8,
-        6.7,
-        9.4
-      ],
-      "cc2": [
-        6.6,
-        14.4,
-        19.7
-      ],
-      "cc3": [
-        9.2,
-        14.5,
-        18
-      ],
-      "cc4": [
-        9.6,
-        18.9,
-        21
-      ],
-      "cc5": [
-        4.9,
-        8.8,
-        10.7
-      ],
-      "cc6": [
-        3.6,
-        9,
-        11.9
-      ]
-    }
-  },
-  {
-    "metric": "14",
-    "title": "Race/Ethnicity - White or Caucasian",
-    "years": [
-      "2000",
-      "2010",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        61.1,
-        50.6,
-        44.7
-      ],
-      "charlotte": [
-        56.8,
-        45,
-        39.2
-      ],
-      "cc1": [
-        84.1,
-        69.4,
-        59.2
-      ],
-      "cc2": [
-        31.6,
-        24,
-        23.1
-      ],
-      "cc3": [
-        36.8,
-        26,
-        22
-      ],
-      "cc4": [
-        46.7,
-        35.8,
-        36.6
-      ],
-      "cc5": [
-        83.1,
-        75.9,
-        71
-      ],
-      "cc6": [
-        84.3,
-        70.7,
-        58.6
-      ]
-    }
-  },
-  {
-    "metric": "40",
-    "title": "Rental Costs",
-    "years": [
-      "2020"
-    ],
-    "format": "currency",
-    "summary": {
-      "mecklenburg": [
-        1153
-      ],
-      "charlotte": [
-        1125
-      ],
-      "cc1": [
-        1400
-      ],
-      "cc2": [
-        1045
-      ],
-      "cc3": [
-        980
-      ],
-      "cc4": [
-        1136
-      ],
-      "cc5": [
-        1086
-      ],
-      "cc6": [
-        1386
-      ]
-    }
-  },
-  {
-    "metric": "53",
-    "title": "Rental Houses",
-    "years": [
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        20.8,
-        20.5,
-        21.7,
-        21.5,
-        21.3,
-        21.2
-      ],
-      "charlotte": [
-        21.9,
-        21.5,
-        22.9,
-        22.7,
-        22.5,
-        22.4
-      ],
-      "cc1": [
-        16.8,
-        17.6,
-        18,
-        18,
-        18.8,
-        19.2
-      ],
-      "cc2": [
-        32.5,
-        31.7,
-        33.8,
-        33.3,
-        32.7,
-        31.5
-      ],
-      "cc3": [
-        28.2,
-        27.5,
-        29.1,
-        28.8,
-        29,
-        29.2
-      ],
-      "cc4": [
-        29.7,
-        26.9,
-        29.5,
-        28.9,
-        27.9,
-        27.4
-      ],
-      "cc5": [
-        12.8,
-        11.7,
-        12.7,
-        12.3,
-        12,
-        11.8
-      ],
-      "cc6": [
-        11.9,
-        12.5,
-        12.7,
-        12.7,
-        12.7,
-        12.4
-      ]
-    }
-  },
-  {
-    "metric": "83",
-    "title": "Residential Demolitions",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020"
-    ],
-    "label": "Demos per 1,000 units",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        0.7,
-        0.9,
-        1.5,
-        1.4,
-        1.8,
-        1.4,
-        1.2
-      ],
-      "charlotte": [
-        0.7,
-        1,
-        1.6,
-        1.6,
-        1.8,
-        1.5,
-        1.3
-      ],
-      "cc1": [
-        0.2,
-        0.8,
-        1.1,
-        0.5,
-        1.4,
-        0.9,
-        1
-      ],
-      "cc2": [
-        1.5,
-        1.4,
-        2.3,
-        1.6,
-        1.8,
-        1.6,
-        1
-      ],
-      "cc3": [
-        0.7,
-        1,
-        1.3,
-        1.3,
-        1.3,
-        1.1,
-        1.2
-      ],
-      "cc4": [
-        1.1,
-        1.8,
-        2.2,
-        2.5,
-        3.3,
-        2.9,
-        1.9
-      ],
-      "cc5": [
-        0.6,
-        1.2,
-        2,
-        2.5,
-        2.7,
-        2.1,
-        2
-      ],
-      "cc6": [
-        0.2,
-        0.2,
-        0.7,
-        0.5,
-        0.6,
-        0.4,
-        0.3
-      ]
-    }
-  },
-  {
-    "metric": "69",
-    "title": "Residential Foreclosures",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        1.2,
-        1.1,
-        1.1,
-        0.5,
-        0.1,
-        0.1,
-        0.1,
-        0.1,
-        0
-      ],
-      "charlotte": [
-        1.3,
-        1.2,
-        1.2,
-        0.5,
-        0.1,
-        0.2,
-        0.1,
-        0.1,
-        0
-      ],
-      "cc1": [
-        1,
-        1,
-        0.9,
-        0.3,
-        0,
-        0.1,
-        0.1,
-        0,
-        0
-      ],
-      "cc2": [
-        1.8,
-        1.6,
-        1.7,
-        0.7,
-        0.1,
-        0.2,
-        0.1,
-        0.1,
-        0
-      ],
-      "cc3": [
-        1.7,
-        1.5,
-        1.7,
-        0.7,
-        0,
-        0.3,
-        0.2,
-        0.1,
-        0
-      ],
-      "cc4": [
-        1.5,
-        1.4,
-        1.3,
-        0.7,
-        0.2,
-        0.2,
-        0.1,
-        0.1,
-        0
-      ],
-      "cc5": [
-        0.6,
-        0.4,
-        0.4,
-        0.2,
-        0.1,
-        0.1,
-        0,
-        0,
-        0
-      ],
-      "cc6": [
-        0.9,
-        0.8,
-        0.7,
-        0.3,
-        0.1,
-        0.1,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "metric": "8",
-    "title": "Residential New Construction",
-    "years": [
-      "2011",
-      "2012",
-      "2013",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Units per 100 Acres",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        1,
-        2,
-        2.7,
-        3.3,
-        3,
-        2.7,
-        3.1,
-        4.3,
-        3.2,
-        4.1,
-        3.8
-      ],
-      "charlotte": [
-        1.2,
-        2.5,
-        3.1,
-        3.9,
-        3.2,
-        2.4,
-        3.5,
-        5.5,
-        3.7,
-        4.3,
-        4.2
-      ],
-      "cc1": [
-        1.1,
-        1.9,
-        2.1,
-        3.3,
-        3.6,
-        2.2,
-        1.8,
-        3.2,
-        1.8,
-        3.1,
-        2.8
-      ],
-      "cc2": [
-        0.6,
-        2.4,
-        2.5,
-        2.3,
-        1.8,
-        2.1,
-        3.3,
-        3,
-        2.5,
-        3.5,
-        4.5
-      ],
-      "cc3": [
-        1,
-        1.6,
-        4.8,
-        3.8,
-        3.8,
-        1.7,
-        3.4,
-        6.8,
-        5,
-        4.6,
-        5.8
-      ],
-      "cc4": [
-        1.9,
-        3.2,
-        2.4,
-        5.7,
-        4.6,
-        4,
-        5.8,
-        9.8,
-        6.2,
-        6.4,
-        5.6
-      ],
-      "cc5": [
-        1,
-        1.2,
-        3,
-        3.2,
-        3.3,
-        2.4,
-        2.9,
-        4.8,
-        2.7,
-        5.4,
-        1.3
-      ],
-      "cc6": [
-        0.9,
-        1.7,
-        1.6,
-        1.8,
-        2,
-        1.7,
-        3.4,
-        3.1,
-        3.4,
-        3.1,
-        3.1
-      ]
-    }
-  },
-  {
-    "metric": "31",
-    "title": "Residential Occupancy",
-    "years": [
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        7.4
-      ],
-      "charlotte": [
-        7.3
-      ],
-      "cc1": [
-        6.6
-      ],
-      "cc2": [
-        7.9
-      ],
-      "cc3": [
-        8
-      ],
-      "cc4": [
-        8.5
-      ],
-      "cc5": [
-        7.3
-      ],
-      "cc6": [
-        4.9
-      ]
-    }
-  },
-  {
-    "metric": "23",
-    "title": "Residential Recycling",
-    "years": [
-      "2013",
-      "2020",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        50.7,
-        66.9,
-        65.1
-      ],
-      "charlotte": [
-        50.8,
-        66.9,
-        65.1
-      ],
-      "cc1": [
-        54.1,
-        66.9,
-        66.4
-      ],
-      "cc2": [
-        43.2,
-        58.6,
-        58.7
-      ],
-      "cc3": [
-        43.4,
-        59.5,
-        57.8
-      ],
-      "cc4": [
-        44.6,
-        60.4,
-        59.3
-      ],
-      "cc5": [
-        60.1,
-        76.3,
-        72.1
-      ],
-      "cc6": [
-        61,
-        80.2,
-        78
-      ]
-    }
-  },
-  {
-    "metric": "9",
-    "title": "Residential Renovation",
-    "years": [
-      "2011",
-      "2012",
-      "2013",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Units per 100 Acres",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        1.2,
-        1.2,
-        1.3,
-        1.4,
-        1.6,
-        1.6,
-        1.7,
-        2,
-        1.8,
-        2.2,
-        2.4
-      ],
-      "charlotte": [
-        1.4,
-        1.4,
-        1.4,
-        1.6,
-        1.9,
-        1.9,
-        2,
-        2.4,
-        2.2,
-        2.7,
-        2.8
-      ],
-      "cc1": [
-        0.8,
-        0.8,
-        0.8,
-        0.8,
-        1,
-        0.9,
-        1,
-        1,
-        1,
-        1.3,
-        1.5
-      ],
-      "cc2": [
-        0.5,
-        0.5,
-        0.5,
-        0.7,
-        0.8,
-        0.8,
-        0.9,
-        1,
-        1,
-        1.1,
-        1.3
-      ],
-      "cc3": [
-        0.7,
-        0.9,
-        0.8,
-        1,
-        1.2,
-        1.2,
-        1.5,
-        2,
-        1.5,
-        1.5,
-        1.8
-      ],
-      "cc4": [
-        1.3,
-        1.3,
-        1.7,
-        1.8,
-        2.3,
-        2.6,
-        2.7,
-        2.4,
-        2.6,
-        2.7,
-        3.1
-      ],
-      "cc5": [
-        3.8,
-        3.6,
-        3.9,
-        4.3,
-        5.1,
-        5,
-        5.3,
-        6.6,
-        5.2,
-        8.3,
-        6.9
-      ],
-      "cc6": [
-        1.3,
-        1.4,
-        1.2,
-        1.1,
-        1.5,
-        1.3,
-        1.3,
-        1.6,
-        1.6,
-        1.8,
-        2.2
-      ]
-    }
-  },
-  {
-    "metric": "24",
-    "title": "Residential Solid Waste",
-    "years": [
-      "2013",
-      "2020",
-      "2021"
-    ],
-    "label": "Pounds per Day per unit",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        7.2,
-        7.6,
-        8.7
-      ],
-      "charlotte": [
-        7.2,
-        7.6,
-        8.7
-      ],
-      "cc1": [
-        5.9,
-        6.7,
-        8.1
-      ],
-      "cc2": [
-        6.7,
-        7.5,
-        8.7
-      ],
-      "cc3": [
-        6.6,
-        7.5,
-        8.3
-      ],
-      "cc4": [
-        7.1,
-        7.6,
-        9.1
-      ],
-      "cc5": [
-        8.3,
-        8.1,
-        9
-      ],
-      "cc6": [
-        7.9,
-        7.5,
-        8.6
-      ]
-    }
-  },
-  {
-    "metric": "25",
-    "title": "Residential Solid Waste Diversion",
-    "years": [
-      "2013",
-      "2020",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        35.8,
-        30.3,
-        25.8
-      ],
-      "charlotte": [
-        35.9,
-        30.3,
-        25.8
-      ],
-      "cc1": [
-        31.9,
-        26.9,
-        24
-      ],
-      "cc2": [
-        29.5,
-        24.1,
-        22
-      ],
-      "cc3": [
-        29,
-        26,
-        21.7
-      ],
-      "cc4": [
-        34.3,
-        31.9,
-        24.4
-      ],
-      "cc5": [
-        45.3,
-        38.4,
-        32.5
-      ],
-      "cc6": [
-        38.3,
-        31.2,
-        29.5
-      ]
-    }
-  },
-  {
-    "metric": "70",
-    "title": "Sidewalk Availability",
-    "years": [
-      "2015"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        0.4
-      ],
-      "charlotte": [
-        0.4
-      ],
-      "cc1": [
-        0.4
-      ],
-      "cc2": [
-        0.4
-      ],
-      "cc3": [
-        0.4
-      ],
-      "cc4": [
-        0.5
-      ],
-      "cc5": [
-        0.5
-      ],
-      "cc6": [
-        0.4
-      ]
-    }
-  },
-  {
-    "metric": "30",
-    "title": "Single-Family Housing",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        62,
-        61.4,
-        61,
-        60.4,
-        60,
-        59.4,
-        57.4,
-        57.4,
-        55.7
-      ],
-      "charlotte": [
-        60.5,
-        60,
-        59.6,
-        59.1,
-        58.5,
-        58,
-        55.7,
-        55.9,
-        54
-      ],
-      "cc1": [
-        74.7,
-        73.5,
-        72.3,
-        71.5,
-        70.8,
-        70,
-        68.7,
-        68.2,
-        66.1
-      ],
-      "cc2": [
-        69.7,
-        68.7,
-        67.1,
-        65.8,
-        65.2,
-        65.1,
-        62.2,
-        62.2,
-        59.2
-      ],
-      "cc3": [
-        57.4,
-        57.1,
-        56.9,
-        56.2,
-        54.9,
-        54.9,
-        53.4,
-        53.3,
-        49.9
-      ],
-      "cc4": [
-        54.2,
-        54,
-        54,
-        53.5,
-        52.9,
-        51.5,
-        47.8,
-        47.6,
-        46.4
-      ],
-      "cc5": [
-        55.8,
-        54.9,
-        55.1,
-        54.5,
-        54.6,
-        54.4,
-        52.7,
-        52.8,
-        51.7
-      ],
-      "cc6": [
-        69.4,
-        69.1,
-        69.2,
-        68.9,
-        68.9,
-        68.4,
-        66.6,
-        67.1,
-        66.2
-      ]
-    }
-  },
-  {
-    "metric": "35",
-    "title": "Street Connectivity",
-    "years": [
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020",
-      "2021"
-    ],
-    "label": "Index Value (1-3)",
-    "format": "decimal",
-    "summary": {
-      "mecklenburg": [
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2
-      ],
-      "charlotte": [
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2
-      ],
-      "cc1": [
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.1,
-        1.2,
-        1.3
-      ],
-      "cc2": [
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.3
-      ],
-      "cc3": [
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2
-      ],
-      "cc4": [
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2,
-        1.2
-      ],
-      "cc5": [
-        1.2,
-        1.1,
-        1.1,
-        1.1,
-        1.1,
-        1.1,
-        1.2
-      ],
-      "cc6": [
-        1.1,
-        1.1,
-        1.1,
-        1.1,
-        1.1,
-        1.1,
-        1.2
-      ]
-    }
-  },
-  {
-    "metric": "66",
-    "title": "Student Absenteeism",
-    "years": [
-      "2013",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        8.2,
-        10.4,
-        10.3,
-        10.4,
-        11.2,
-        11.8,
-        13.5
-      ],
-      "charlotte": [
-        8.5,
-        10.9,
-        10.7,
-        10.9,
-        11.8,
-        12.4,
-        14.2
-      ],
-      "cc1": [
-        6.2,
-        7.7,
-        7.6,
-        7.4,
-        8.3,
-        8.7,
-        10.2
-      ],
-      "cc2": [
-        10.1,
-        14.1,
-        14.1,
-        13.6,
-        15,
-        15.8,
-        18.6
-      ],
-      "cc3": [
-        10.1,
-        12.6,
-        12.2,
-        13.5,
-        15.1,
-        15.7,
-        17.5
-      ],
-      "cc4": [
-        9.9,
-        12.6,
-        12.7,
-        13,
-        13,
-        13.4,
-        16.2
-      ],
-      "cc5": [
-        6.9,
-        8.1,
-        7.7,
-        7.7,
-        8,
-        8.8,
-        10.2
-      ],
-      "cc6": [
-        5.9,
-        6.8,
-        6.9,
-        6.7,
-        7,
-        7.3,
-        7.9
-      ]
-    }
-  },
-  {
-    "metric": "62",
-    "title": "Test Proficiency - Elementary School",
-    "years": [
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        51.2,
-        49.7,
-        51.1,
-        50.8,
-        48.3,
-        48.1
-      ],
-      "charlotte": [
-        48.4,
-        46.8,
-        48.4,
-        48.2,
-        45.7,
-        45.6
-      ],
-      "cc1": [
-        63.2,
-        61.6,
-        62.5,
-        61.5,
-        58.5,
-        57.9
-      ],
-      "cc2": [
-        34.6,
-        31.5,
-        33.9,
-        34.1,
-        32.7,
-        32.8
-      ],
-      "cc3": [
-        38.6,
-        36.8,
-        38.7,
-        37.7,
-        36.1,
-        34.7
-      ],
-      "cc4": [
-        38,
-        38.4,
-        40.2,
-        39.3,
-        38.8,
-        38.6
-      ],
-      "cc5": [
-        67.1,
-        66.4,
-        66.3,
-        66.9,
-        62.9,
-        62.1
-      ],
-      "cc6": [
-        68.9,
-        69.8,
-        70.5,
-        71.1,
-        66.3,
-        66.6
-      ]
-    }
-  },
-  {
-    "metric": "64",
-    "title": "Test Proficiency - High School",
-    "years": [
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        50.4,
-        49.9,
-        48.4,
-        45.8,
-        55.1,
-        47.5
-      ],
-      "charlotte": [
-        48.1,
-        47.2,
-        46.2,
-        42.3,
-        52.5,
-        45.1
-      ],
-      "cc1": [
-        53.7,
-        53.8,
-        51.8,
-        53.4,
-        65,
-        56.1
-      ],
-      "cc2": [
-        38.3,
-        34.1,
-        36.1,
-        32.4,
-        41.6,
-        37.5
-      ],
-      "cc3": [
-        34.7,
-        36.9,
-        34.4,
-        29.4,
-        37.9,
-        33.4
-      ],
-      "cc4": [
-        38.9,
-        39.4,
-        35.3,
-        35.4,
-        38.8,
-        31.4
-      ],
-      "cc5": [
-        63.7,
-        66.1,
-        64,
-        58.6,
-        71.7,
-        56.6
-      ],
-      "cc6": [
-        73,
-        74.4,
-        71.5,
-        67.6,
-        74,
-        68.4
-      ]
-    }
-  },
-  {
-    "metric": "63",
-    "title": "Test Proficiency - middle School",
-    "years": [
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        44.4,
-        45.4,
-        46.2,
-        45.8,
-        41.2,
-        43.5
-      ],
-      "charlotte": [
-        41.1,
-        42,
-        43,
-        42.7,
-        38.4,
-        40.5
-      ],
-      "cc1": [
-        56.6,
-        57.3,
-        58.7,
-        57.8,
-        51.3,
-        54.2
-      ],
-      "cc2": [
-        25.8,
-        26.8,
-        28.6,
-        29.1,
-        26.2,
-        27.8
-      ],
-      "cc3": [
-        29.2,
-        29.5,
-        31.6,
-        29.2,
-        25.9,
-        29.5
-      ],
-      "cc4": [
-        30.3,
-        30.4,
-        30.8,
-        31,
-        29.8,
-        32.9
-      ],
-      "cc5": [
-        61.5,
-        63.9,
-        64.7,
-        63.6,
-        57,
-        58
-      ],
-      "cc6": [
-        66.5,
-        68.1,
-        66.3,
-        65.8,
-        61,
-        63.8
-      ]
-    }
-  },
-  {
-    "metric": "44",
-    "title": "Transit Ridership",
-    "years": [
-      "2013",
-      "2014",
-      "2015",
-      "2019",
-      "2020",
-      "2021"
-    ],
-    "label": "Boardings per stop",
-    "summary": {
-      "mecklenburg": [
-        119,
-        119,
-        114,
-        122,
-        113,
-        42
-      ],
-      "charlotte": [
-        82,
-        81,
-        78,
-        87,
-        81,
-        38
-      ],
-      "cc1": [
-        31,
-        35,
-        35,
-        36,
-        34,
-        8
-      ],
-      "cc2": [
-        115,
-        110,
-        110,
-        105,
-        101,
-        48
-      ],
-      "cc3": [
-        82,
-        77,
-        72,
-        108,
-        96,
-        43
-      ],
-      "cc4": [
-        83,
-        86,
-        81,
-        91,
-        87,
-        41
-      ],
-      "cc5": [
-        33,
-        33,
-        28,
-        34,
-        35,
-        16
-      ],
-      "cc6": [
-        186,
-        188,
-        178,
-        166,
-        129,
-        51
-      ]
-    }
-  },
-  {
-    "metric": "3",
-    "title": "Tree Canopy",
-    "years": [
-      "2012"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        45.1
-      ],
-      "charlotte": [
-        48.4
-      ],
-      "cc1": [
-        53
-      ],
-      "cc2": [
-        47.2
-      ],
-      "cc3": [
-        47.9
-      ],
-      "cc4": [
-        50.5
-      ],
-      "cc5": [
-        56.7
-      ],
-      "cc6": [
-        51.3
-      ]
-    }
-  },
-  {
-    "metric": "49",
-    "title": "Tree Canopy - Residential",
-    "years": [
-      "2012"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        55.5
-      ],
-      "charlotte": [
-        55.1
-      ],
-      "cc1": [
-        51.8
-      ],
-      "cc2": [
-        51.7
-      ],
-      "cc3": [
-        52.7
-      ],
-      "cc4": [
-        57.4
-      ],
-      "cc5": [
-        64.9
-      ],
-      "cc6": [
-        56.5
-      ]
-    }
-  },
-  {
-    "metric": "11",
-    "title": "Vacant Land",
-    "years": [
-      "2011",
-      "2013",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2021"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        18.3,
-        18.2,
-        18.2,
-        18.1,
-        18.1,
-        18.2,
-        16
-      ],
-      "charlotte": [
-        14.8,
-        14.7,
-        14.7,
-        14.6,
-        14.6,
-        14.6,
-        12
-      ],
-      "cc1": [
-        21.9,
-        21.7,
-        21.6,
-        21.7,
-        21.7,
-        21.7,
-        21.1
-      ],
-      "cc2": [
-        22.5,
-        22.4,
-        22.4,
-        22.4,
-        22.4,
-        22.5,
-        18.4
-      ],
-      "cc3": [
-        18.1,
-        17.9,
-        18,
-        17.9,
-        17.8,
-        18,
-        15.5
-      ],
-      "cc4": [
-        12.8,
-        12.7,
-        12.9,
-        12.7,
-        12.8,
-        12.8,
-        10.8
-      ],
-      "cc5": [
-        3.7,
-        3.6,
-        3.6,
-        3.3,
-        3.3,
-        3.4,
-        2.7
-      ],
-      "cc6": [
-        19,
-        19.2,
-        19.1,
-        19,
-        18.9,
-        19.1,
-        16.7
-      ]
-    }
-  },
-  {
-    "metric": "48",
-    "title": "Voter Participation",
-    "years": [
-      "2010",
-      "2012",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2020"
-    ],
-    "format": "percent",
-    "summary": {
-      "mecklenburg": [
-        44.6,
-        78.8,
-        52.1,
-        17.7,
-        74.6,
-        19.8,
-        63,
-        71.7
-      ],
-      "charlotte": [
-        44.2,
-        78.3,
-        51.4,
-        18.6,
-        73.7,
-        20.5,
-        62.4,
-        70.4
-      ],
-      "cc1": [
-        45.6,
-        81.3,
-        54.9,
-        15.7,
-        78.5,
-        18.2,
-        64.2,
-        76.1
-      ],
-      "cc2": [
-        39.2,
-        74.9,
-        46.8,
-        13.1,
-        69.9,
-        15.2,
-        56.2,
-        65
-      ],
-      "cc3": [
-        40.4,
-        75.9,
-        45.8,
-        14.2,
-        70.4,
-        16.3,
-        57.7,
-        65.4
-      ],
-      "cc4": [
-        39.9,
-        75.7,
-        47.5,
-        16.2,
-        70.4,
-        17.4,
-        58.9,
-        67.5
-      ],
-      "cc5": [
-        52,
-        82.3,
-        59.4,
-        28.6,
-        77.7,
-        30.7,
-        71.4,
-        77.6
-      ],
-      "cc6": [
-        47,
-        80.4,
-        55.7,
-        16.5,
-        78,
-        20.1,
-        66.7,
-        76.3
-      ]
-    }
-  },
-  {
-    "metric": "27",
-    "title": "Water Consumption",
-    "years": [
-      "2010",
-      "2013",
-      "2014",
-      "2016",
-      "2018",
-      "2019",
-      "2020"
-    ],
-    "label": "Gallons per Day per unit",
-    "summary": {
-      "mecklenburg": [
-        177,
-        157,
-        153,
-        165,
-        153,
-        154,
-        152
-      ],
-      "charlotte": [
-        175,
-        156,
-        151,
-        162,
-        152,
-        152,
-        151
-      ],
-      "cc1": [
-        176,
-        157,
-        154,
-        168,
-        151,
-        158,
-        154
-      ],
-      "cc2": [
-        145,
-        136,
-        131,
-        138,
-        133,
-        131,
-        135
-      ],
-      "cc3": [
-        148,
-        139,
-        132,
-        141,
-        137,
-        134,
-        138
-      ],
-      "cc4": [
-        144,
-        134,
-        128,
-        136,
-        132,
-        129,
-        132
-      ],
-      "cc5": [
-        211,
-        182,
-        179,
-        194,
-        178,
-        181,
-        173
-      ],
-      "cc6": [
-        220,
-        181,
-        179,
-        196,
-        176,
-        176,
-        168
-      ]
-    }
+    "subtitle": "Percentage of households with high speed Internet access",
+    "related": ["m2", "m14", "m18", "m16", "m15", "m17", "m12", "m13"]
   }
 ]
