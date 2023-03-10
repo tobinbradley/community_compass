@@ -1,21 +1,17 @@
 {
   "name": "Community Compass",
   "short_name": "Compass",
-  "icons": [{
-      "src": "img/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
+  "icons": [
     {
-      "src": "img/android-chrome-512x512.png",
+      "src": "img/android-icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "img/maskable-196x196.png",
-      "sizes": "196x196",
+      "src": "img/android-icon-maskable-512.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     }
   ],
   "start_url": "index.html",
