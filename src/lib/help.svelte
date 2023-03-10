@@ -4,7 +4,7 @@
 </script>
 
 {#if ($help)}
-<div on:click={() => $help = false} class='fixed top-0 bottom-0 left-0 right-0 bg-gray-700 opacity-70 flex justify-center items-center'>
+<div on:click={() => $help = false} on:keydown={() => $help = false} class='fixed top-0 bottom-0 left-0 right-0 bg-gray-700 opacity-70 flex justify-center items-center'>
 </div>
 
   <div class="modal rounded-md p-2 shadow-lg bg-white relative z-100 overflow-y-auto bg-transparent">

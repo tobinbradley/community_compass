@@ -37,6 +37,7 @@
   <div
     class="fixed top-0 left-0 right-0 bottom-0 bg-gray-400 opacity-60"
     on:click={handleOpenToggle}
+    on:keydown={handleOpenToggle}
   />
 {/if}
 
@@ -73,6 +74,7 @@
       <div
         class="flex items-center py-1 hover:bg-gray-300 cursor-pointer"
         on:click={handleAddMetric(metric)}
+        on:keydown={handleAddMetric(metric)}
       >
         <div class="fill-current text-gray-600 ml-1 mr-2">
           <svg class="w-3 h-3">
