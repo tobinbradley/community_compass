@@ -6,7 +6,7 @@
   import Tabular from "./tabular.svelte"
   import Toolbar from "./toolbar.svelte"
   import groups from './data/neighborhod-groups.json'
-  import { download, groupYears } from "./common"
+  import { download, groupYears, formatNumber } from "./common"
 
 
   export let idx
@@ -51,7 +51,7 @@
       header.push(...data.years)
 
       keys.forEach((key) => {
-        const row = [key, ...data.m[key]]
+        const row = [key, ...data.m[key].map(el => formatNumber(el, 'decimal'))]
         body += row.join(",") + "\n"
       })
 
@@ -70,14 +70,14 @@
       header.push("GEOID")
       header.push(...data.years)
 
-      body += "Mecklenburg," + groupYears(data).join(',') + "\n"
-      body += "Charlotte," + groupYears(data, groups["Jurisdiction"]["Charlotte"]).join(',') + "\n"
-      body += "County Commission District 1," + groupYears(data, groups["County Commission"]["1"]).join(',') + "\n"
-      body += "County Commission District 2," + groupYears(data, groups["County Commission"]["2"]).join(',') + "\n"
-      body += "County Commission District 3," + groupYears(data, groups["County Commission"]["3"]).join(',') + "\n"
-      body += "County Commission District 4," + groupYears(data, groups["County Commission"]["4"]).join(',') + "\n"
-      body += "County Commission District 5," + groupYears(data, groups["County Commission"]["5"]).join(',') + "\n"
-      body += "County Commission District 6," + groupYears(data, groups["County Commission"]["6"]).join(',') + "\n"
+      body += "Mecklenburg," + groupYears(data).map(el => formatNumber(el, 'decimal')).join(',') + "\n"
+      body += "Charlotte," + groupYears(data, groups["Jurisdiction"]["Charlotte"]).map(el => formatNumber(el, 'decimal')).join(',') + "\n"
+      body += "County Commission District 1," + groupYears(data, groups["County Commission"]["1"]).map(el => formatNumber(el, 'decimal')).join(',') + "\n"
+      body += "County Commission District 2," + groupYears(data, groups["County Commission"]["2"]).map(el => formatNumber(el, 'decimal')).join(',') + "\n"
+      body += "County Commission District 3," + groupYears(data, groups["County Commission"]["3"]).map(el => formatNumber(el, 'decimal')).join(',') + "\n"
+      body += "County Commission District 4," + groupYears(data, groups["County Commission"]["4"]).map(el => formatNumber(el, 'decimal')).join(',') + "\n"
+      body += "County Commission District 5," + groupYears(data, groups["County Commission"]["5"]).map(el => formatNumber(el, 'decimal')).join(',') + "\n"
+      body += "County Commission District 6," + groupYears(data, groups["County Commission"]["6"]).map(el => formatNumber(el, 'decimal')).join(',') + "\n"
 
       download(
         header.join(",") + "\n" + body,
@@ -93,7 +93,7 @@
         outGeoJSON.features.forEach(elem => {
           elem.properties = {}
           data.years.forEach(year => {
-            if (data.m[elem.id]) elem.properties[year] = data.m[elem.id][data.years.indexOf(year)]
+            if (data.m[elem.id]) elem.properties[year] = formatNumber(data.m[elem.id][data.years.indexOf(year)], 'decimal')
           })
         })
 
