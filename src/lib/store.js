@@ -58,6 +58,15 @@ export let print = writable(false)
 // toggle Help
 export let help = writable(false)
 
+// toast
+export let toastMessage = writable({
+  message: "",
+  messageType: "success",
+  loadDelay: 1000,
+  dismissDelay: 5000,
+  reloadButton: false
+})
+
 // print.subscribe(value => {
 //   console.log(value)
 // })

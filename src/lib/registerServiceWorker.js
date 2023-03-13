@@ -1,4 +1,4 @@
-
+import toastMaker from './toastMaker'
 
 let newWorker
 
@@ -20,7 +20,7 @@ if ('serviceWorker' in navigator) {
             if (navigator.serviceWorker.controller) {
               console.log('New content is available, please refresh.')
               newWorker.postMessage({ type: 'SKIP_WAITING' })
-              //toastMaker( "info", "GeoPortal has been updated.", 0, 8000, true)
+              toastMaker( "info", "Compass has been updated.", 0, 8000, true)
             }
 
             break;
